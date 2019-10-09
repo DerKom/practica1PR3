@@ -239,11 +239,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\orlan\Desktop\practica1_entregable\obj\pkg_vector.o
-   --   C:\Users\orlan\Desktop\practica1_entregable\obj\vectorsearchtest.o
-   --   C:\Users\orlan\Desktop\practica1_entregable\obj\main.o
-   --   -LC:\Users\orlan\Desktop\practica1_entregable\obj\
-   --   -LC:\Users\orlan\Desktop\practica1_entregable\obj\
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_vector.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\vectorsearchtest.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\main.o
+   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
+   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

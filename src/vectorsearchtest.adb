@@ -7,18 +7,48 @@ procedure vectorSearchTest is
    procedure Test_1 is
       vector : constant T_Vector := (1, 2, 3, 4, 5);
    begin
-      Put ("Test 1:  Encuentra 4....................................");
+      Put ("Test 1:  Encuentra 3....................................");
       
       pragma Assert (Search_Value_Inside(vector, 3) = 2);
       Put_Line ("OK");
    end Test_1;
    
+   procedure Test_2 is
+      vector : constant T_Vector := (1, 2, 3, 4, 5);
+   begin
+      Put ("Test 2:  Encuentra 5 al final ....................................");
+      
+      pragma Assert (Search_Value_Inside(vector, 5) = 4);
+      Put_Line ("OK");
+   end Test_2;
+   
+
+   procedure Test_3 is
+      vector : constant T_Vector := (5, 2, 3, 4, 1);
+   begin
+      Put ("Test 3:  Encuentra 5 al principio....................................");
+      
+      pragma Assert (Search_Value_Inside(vector, 5) = 0);
+      Put_Line ("OK");
+   end Test_3;  
+
+   procedure Test_4 is
+      vector : constant T_Vector := (0 => 5);
+   begin
+      Put ("Test 4:  Encuentra 5 al principio, vector de dim 1....................................");
+      
+      pragma Assert (Search_Value_Inside(vector, 5) = 0);
+      Put_Line ("OK");
+   end Test_4; 
+
+   
+   
    begin
    Put_Line ("********************* Tests_Vector_Search");
    Test_1;
-   --Test_2;
-   --Test_3;
-   --Test_4;
+   Test_2;
+   Test_3;
+   Test_4;
    --Test_5;
    --Test_6;
    --Test_7;

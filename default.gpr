@@ -10,10 +10,7 @@ project Default is
    end Linker;
 
    package Compiler is
-      for Switches ("ada") use
-        ("-g", "-fstack-check",
-         "-gnata", "-gnato", "-gnat12",
-	 "-gnatwa", "-gnateE");
+      for Switches ("ada") use ("-g", "-fstack-check", "-gnata", "-gnato", "-gnat12", "-gnatwa", "-gnateE");
    end Compiler;
 
 end Default;

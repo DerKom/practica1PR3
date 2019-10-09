@@ -6,7 +6,7 @@ package body pkg_vector with SPARK_Mode is
    begin
       
       --Vector vacío 
-      if Vector'Length <= 0 then
+      if Vector'Length = 0 then
          return -1;  
       end if; 
       
