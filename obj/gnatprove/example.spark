@@ -1,0 +1,116 @@
+{
+  "spark": [
+    {
+      "name": "Example",
+      "sloc": [
+        {
+          "file": "example.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Example.Absolute_Value",
+      "sloc": [
+        {
+          "file": "example.ads",
+          "line": 3
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "Example.Absolute_Value",
+      "sloc": [
+        {
+          "file": "example.ads",
+          "line": 8
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "example.ads",
+      "line": 8,
+      "col": 43,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Example.Absolute_Value",
+        "sloc": [
+          {
+            "file": "example.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "example__flow__44.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "example.ads",
+      "line": 11,
+      "col": 18,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "Example.Absolute_Value",
+        "sloc": [
+          {
+            "file": "example.ads",
+            "line": 8
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "example__flow__45.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Example.Absolute_Value",
+          "sloc": [
+            {
+              "file": "example.ads",
+              "line": 8
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "Example.Absolute_Value",
+          "sloc": [
+            {
+              "file": "example.ads",
+              "line": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 3.62499995389953E-04,
+    "globals (basic)": 5.93399978242815E-04,
+    "globals/properties (advanced)": 9.41600010264665E-04,
+    "flow analysis": 4.58709988743067E-03
+  }
+}

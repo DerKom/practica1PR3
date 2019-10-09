@@ -1,0 +1,50 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -g
+A -fstack-check
+A -gnata
+A -gnato
+A -gnat12
+A -gnatwa
+A -gnateE
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U main%b		main.adb		e8947f5f OO SU
+Z system%s		system.ads		system.ali
+W tests_abs_func%b	tests_abs_func.adb	tests_abs_func.ali
+W tests_abs_proc%b	tests_abs_proc.adb	tests_abs_proc.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D example.ads		20190923112002 d712a2d7 example%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20190923112326 bda1f360 main%b
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tests_abs_func.adb	20190923112238 f5d114b5 tests_abs_func%b
+D tests_abs_proc.adb	20190923112234 a0e4988a tests_abs_proc%b
+X 8 main.adb
+4U11*Main 4b11 8l5 8t9
+X 14 tests_abs_func.adb
+4U11*Tests_Abs_Func 8|1w6 6s4
+X 15 tests_abs_proc.adb
+4U11*Tests_Abs_Proc 8|2w6 7s4
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS main 0
+GG EK_GLOBALS main local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 2 tests_abs_func tests_abs_proc local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER
