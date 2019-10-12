@@ -1,7 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
-with pkg_vector;     use pkg_vector;
+with pkg_search_value_inside_vector;     use pkg_search_value_inside_vector;
 
-procedure vectorSearchTest is
+procedure Tests_Vector_Search is
    
 
    procedure Test_1 is
@@ -40,6 +40,19 @@ procedure vectorSearchTest is
       pragma Assert (Search_Value_Inside(vector, 5) = 0);
       Put_Line ("OK");
    end Test_4; 
+   
+   
+   --Preguntar cómo hacer el vector vacío. 
+   --procedure Test_5 is
+      --vector : constant T_Vector (1..0) := (others => 0);
+   --begin
+      --Put ("Test 5:  Se le pasa un vector vacío....................................");
+      
+      --pragma Assert (Search_Value_Inside(vector, 5) = -1);
+      --Put_Line ("OK");
+   --end Test_5;    
+   
+   
 
    
    
@@ -54,4 +67,4 @@ procedure vectorSearchTest is
    --Test_7;
 
    
-end vectorSearchTest;
+end Tests_Vector_Search;

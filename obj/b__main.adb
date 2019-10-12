@@ -29,7 +29,9 @@ package body ada_main is
    E110 : Short_Integer; pragma Import (Ada, E110, "system__file_io_E");
    E104 : Short_Integer; pragma Import (Ada, E104, "ada__text_io_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__assertions_E");
-   E116 : Short_Integer; pragma Import (Ada, E116, "pkg_vector_E");
+   E121 : Short_Integer; pragma Import (Ada, E121, "pkg_multiply_vector_by_value_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "pkg_search_value_inside_vector_E");
+   E116 : Short_Integer; pragma Import (Ada, E116, "pkg_sum_of_vectors_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -203,6 +205,8 @@ package body ada_main is
       E104 := E104 + 1;
       System.Assertions'Elab_Spec;
       E118 := E118 + 1;
+      E121 := E121 + 1;
+      E124 := E124 + 1;
       E116 := E116 + 1;
    end adainit;
 
@@ -239,11 +243,15 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_vector.o
-   --   C:\Users\orlan\Documents\practica1PR3\obj\vectorsearchtest.o
-   --   C:\Users\orlan\Documents\practica1PR3\obj\main.o
-   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
-   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_multiply_vector_by_value.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_multiply_by_value.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_search_value_inside_vector.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_vector_search.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_sum_of_vectors.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\Test_Sum_Of_Vectors.o
+   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\main.o
+   --   -LD:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\
+   --   -LD:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

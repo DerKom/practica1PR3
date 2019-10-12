@@ -13,12 +13,18 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_IO
+RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
 
-U main%b		main.adb		4a22190b NE OO SU
-W test_sum_of_vectors%b	test_sum_of_vectors.adb	test_sum_of_vectors.ali
-W tests_multiply_by_value%b  tests_multiply_by_value.adb  tests_multiply_by_value.ali
-W tests_vector_search%b	tests_vector_search.adb	tests_vector_search.ali
+U test_sum_of_vectors%b	test_sum_of_vectors.adb	d2e75159 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_sum_of_vectors%s	pkg_sum_of_vectors.adb	pkg_sum_of_vectors.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -29,9 +35,6 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20191012120816 120c88bf main%b
-D pkg_multiply_vector_by_value.ads  20191012115802 904fc131 pkg_multiply_vector_by_value%s
-D pkg_search_value_inside_vector.ads  20191012113452 e65b71bc pkg_search_value_inside_vector%s
 D pkg_sum_of_vectors.ads  20191012120312 fbe9436e pkg_sum_of_vectors%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
@@ -48,14 +51,33 @@ D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
 D test_sum_of_vectors.adb  20191012122948 a113a16d test_sum_of_vectors%b
-D tests_multiply_by_value.adb  20191012120602 cf081fcf tests_multiply_by_value%b
-D tests_vector_search.adb  20191012120716 36352f16 tests_vector_search%b
-X 10 main.adb
-6U11*Main 6b11 12l5 12t9
-X 28 test_sum_of_vectors.adb
-4U11*Test_Sum_Of_Vectors 10|3w6 10s4
-X 29 tests_multiply_by_value.adb
-4U11*Tests_Multiply_by_Value 10|2w6 9s4
-X 30 tests_vector_search.adb
-4U11*Tests_Vector_Search 10|1w6 8s4
+X 1 ada.ads
+16K9*Ada 20e8 25|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 25|1w10 1r27
+242U14*Put 25|11s7 22s7 34s7 47s7
+263U14*Put_Line 25|14s7 25s7 37s7 50s7 54s4
+X 10 pkg_sum_of_vectors.ads
+1K9*pkg_sum_of_vectors 15e23 25|2w6 2r34
+3A9*T_Vector(integer)<integer> 25|7r26 8r26 9r26 18r26 19r26 20r26 30r26
+. 31r26 32r26 43r26 44r26 45r26
+5V13*Sum_of_Vectors{3A9} 25|13s22 24s22 36s22 49s22
+X 25 test_sum_of_vectors.adb
+4U11*Test_Sum_Of_Vectors 4b11 59l5 59t24
+6U14 Test_1 6b14 15l8 15t14 55s4
+7a7 vector1{10|3A9} 13r37
+8a7 vector2{10|3A9} 13r45
+9a7 result{10|3A9} 13r56
+17U14 Test_2 17b14 26l8 26t14 56s4
+18a7 vector1{10|3A9} 24r37
+19a7 vector2{10|3A9} 24r45
+20a7 result{10|3A9} 24r56
+29U14 Test_3 29b14 38l8 38t14 57s4
+30a7 vector1{10|3A9} 36r37
+31a7 vector2{10|3A9} 36r45
+32a7 result{10|3A9} 36r56
+42U14 Test_4 42b14 51l8 51t14
+43a7 vector1{10|3A9} 49r37
+44a7 vector2{10|3A9} 49r45
+45a7 result{10|3A9} 49r56
 

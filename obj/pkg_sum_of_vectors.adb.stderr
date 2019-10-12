@@ -1,0 +1,1 @@
+pkg_sum_of_vectors.ads:11:06: warning: postcondition does not mention function result

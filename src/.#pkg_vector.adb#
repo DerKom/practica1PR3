@@ -2,13 +2,10 @@ package body pkg_vector with SPARK_Mode is
 
    function Search_Value_Inside (Vector : in T_Vector; Value : in Integer) return Integer is 
    
+      -- Se le pasa un vector y un valor a encontrar dentro de ese vector. Devuelve la posición donde se encuentra,
+      -- en caso de encontrarlo. 
       
    begin
-      
-      --Vector vacío 
-      if Vector'Length = 0 then
-         return -1;  
-      end if; 
       
       for I in Vector'First .. Vector'Last loop
          if Vector(I) = Value then 
@@ -16,9 +13,15 @@ package body pkg_vector with SPARK_Mode is
             return I;
          end if; 
          
+         pragma Loop_Invariant 
+           (for all K in Vector'First..I =>
+              Value /= Vector(K));
+         pragma Loop_Invariant
+           (for some K in Vector'First..
+         
       end loop;
       
-      return -1; 
+      return Vector'Length+1; 
          
  
    end Search_Value_Inside;

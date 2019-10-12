@@ -37,14 +37,14 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#30338d36#;
+   u00001 : constant Version_32 := 16#4a22190b#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
    u00003 : constant Version_32 := 16#35869f17#;
    pragma Export (C, u00003, "system__standard_libraryS");
-   u00004 : constant Version_32 := 16#ca4e5a21#;
-   pragma Export (C, u00004, "vectorsearchtestB");
+   u00004 : constant Version_32 := 16#d2e75159#;
+   pragma Export (C, u00004, "test_sum_of_vectorsB");
    u00005 : constant Version_32 := 16#76789da1#;
    pragma Export (C, u00005, "adaS");
    u00006 : constant Version_32 := 16#d398a95f#;
@@ -265,18 +265,30 @@ package ada_main is
    pragma Export (C, u00113, "system__finalization_rootS");
    u00114 : constant Version_32 := 16#cf3f1b90#;
    pragma Export (C, u00114, "system__file_control_blockS");
-   u00115 : constant Version_32 := 16#188c62e3#;
-   pragma Export (C, u00115, "pkg_vectorB");
-   u00116 : constant Version_32 := 16#bdd03cad#;
-   pragma Export (C, u00116, "pkg_vectorS");
+   u00115 : constant Version_32 := 16#a2cbe306#;
+   pragma Export (C, u00115, "pkg_sum_of_vectorsB");
+   u00116 : constant Version_32 := 16#fbe9436e#;
+   pragma Export (C, u00116, "pkg_sum_of_vectorsS");
    u00117 : constant Version_32 := 16#52f1910f#;
    pragma Export (C, u00117, "system__assertionsB");
    u00118 : constant Version_32 := 16#ff2dadac#;
    pragma Export (C, u00118, "system__assertionsS");
-   u00119 : constant Version_32 := 16#5dc07a5a#;
-   pragma Export (C, u00119, "system__memoryB");
-   u00120 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00120, "system__memoryS");
+   u00119 : constant Version_32 := 16#d75a6da4#;
+   pragma Export (C, u00119, "tests_multiply_by_valueB");
+   u00120 : constant Version_32 := 16#86c9d999#;
+   pragma Export (C, u00120, "pkg_multiply_vector_by_valueB");
+   u00121 : constant Version_32 := 16#904fc131#;
+   pragma Export (C, u00121, "pkg_multiply_vector_by_valueS");
+   u00122 : constant Version_32 := 16#5873edf0#;
+   pragma Export (C, u00122, "tests_vector_searchB");
+   u00123 : constant Version_32 := 16#7408e91d#;
+   pragma Export (C, u00123, "pkg_search_value_inside_vectorB");
+   u00124 : constant Version_32 := 16#e65b71bc#;
+   pragma Export (C, u00124, "pkg_search_value_inside_vectorS");
+   u00125 : constant Version_32 := 16#5dc07a5a#;
+   pragma Export (C, u00125, "system__memoryB");
+   u00126 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00126, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -395,9 +407,15 @@ package ada_main is
    --  ada.text_io%b
    --  system.assertions%s
    --  system.assertions%b
-   --  pkg_vector%s
-   --  pkg_vector%b
-   --  vectorsearchtest%b
+   --  pkg_multiply_vector_by_value%s
+   --  pkg_multiply_vector_by_value%b
+   --  tests_multiply_by_value%b
+   --  pkg_search_value_inside_vector%s
+   --  pkg_search_value_inside_vector%b
+   --  tests_vector_search%b
+   --  pkg_sum_of_vectors%s
+   --  pkg_sum_of_vectors%b
+   --  test_sum_of_vectors%b
    --  main%b
    --  END ELABORATION ORDER
 
