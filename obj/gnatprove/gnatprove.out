@@ -1,28 +1,34 @@
 Summary of SPARK analysis
 =========================
 
-------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total        Flow   Interval   CodePeer   Provers   Justified   Unproved
-------------------------------------------------------------------------------------------------------
-Data Dependencies                 .           .          .          .         .           .          .
-Flow Dependencies                 .           .          .          .         .           .          .
-Initialization                    2           2          .          .         .           .          .
-Non-Aliasing                      .           .          .          .         .           .          .
-Run-time Checks                   .           .          .          .         .           .          .
-Assertions                        .           .          .          .         .           .          .
-Functional Contracts              .           .          .          .         .           .          .
-LSP Verification                  .           .          .          .         .           .          .
-------------------------------------------------------------------------------------------------------
-Total                             2    2 (100%)          .          .         .           .          .
+-------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total      Flow   Interval   CodePeer      Provers   Justified   Unproved
+-------------------------------------------------------------------------------------------------------
+Data Dependencies                 .         .          .          .            .           .          .
+Flow Dependencies                 .         .          .          .            .           .          .
+Initialization                    2         2          .          .            .           .          .
+Non-Aliasing                      .         .          .          .            .           .          .
+Run-time Checks                  22         .          .          .    19 (CVC4)           .          3
+Assertions                        4         .          .          .     2 (CVC4)           .          2
+Functional Contracts              2         .          .          .     1 (CVC4)           .          1
+LSP Verification                  .         .          .          .            .           .          .
+-------------------------------------------------------------------------------------------------------
+Total                            30    2 (7%)          .          .     22 (73%)           .    6 (20%)
 
 
-Analyzed 4 units
+Analyzed 6 units
 in unit example, 3 subprograms and packages out of 3 analyzed
   Example at example.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings)
   Example.Absolute_Value at example.ads:3 flow analyzed (0 errors, 0 checks and 0 warnings)
   Example.Absolute_Value at example.ads:8 flow analyzed (0 errors, 0 checks and 0 warnings)
 in unit main, 0 subprograms and packages out of 1 analyzed
   Main at main.adb:4 skipped
+in unit pkg_multiply_vector_by_value, 2 subprograms and packages out of 2 analyzed
+  pkg_multiply_vector_by_value at pkg_multiply_vector_by_value.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_multiply_vector_by_value.Multiply_by_Value at pkg_multiply_vector_by_value.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 16 checks out of 22 proved
+in unit pkg_search_value_inside_vector, 2 subprograms and packages out of 2 analyzed
+  pkg_search_value_inside_vector at pkg_search_value_inside_vector.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_search_value_inside_vector.Search_Value_Inside at pkg_search_value_inside_vector.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
 in unit tests_abs_func, 0 subprograms and packages out of 1 analyzed
   Tests_Abs_Func at tests_abs_func.adb:4 skipped
 in unit tests_abs_proc, 0 subprograms and packages out of 1 analyzed

@@ -13,9 +13,13 @@ package body pkg_search_value_inside_vector with SPARK_Mode is
             return I;
          end if; 
          
+         pragma Loop_Invariant(for all J in Vector'First .. I =>
+                                 Vector(J) /= Value
+                               );
+         
       end loop;
       
-      return Vector'Length+1; 
+      return Not_Found; 
          
  
    end Search_Value_Inside;

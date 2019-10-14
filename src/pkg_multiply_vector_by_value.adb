@@ -9,7 +9,9 @@ package body pkg_multiply_vector_by_value with SPARK_Mode is
    begin
       
       for I in Vector'First .. Vector'Last loop
+         old := Vector(I); 
          Vector(I) := Vector(I) * Value; 
+         pragma Loop_Invariant(old = Vector(I)/Value);
          
       end loop;
   

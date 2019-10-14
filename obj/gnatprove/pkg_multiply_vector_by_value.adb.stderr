@@ -1,0 +1,6 @@
+pkg_multiply_vector_by_value.adb:13:33: medium: overflow check might fail (e.g. when I = 1 and Value = -2147483648 and Vector = (1 => 2, others => -2147483648))[#1]
+pkg_multiply_vector_by_value.adb:14:32: medium: loop invariant might fail after first iteration, cannot prove old = Vector(I)/Value (e.g. when I = 1 and Value = 11 and Vector = (0 => -2147483648, 1 => -20, others => 11) and old = -2)[#2]
+pkg_multiply_vector_by_value.adb:14:32: medium: loop invariant might fail in first iteration, cannot prove old = Vector(I)/Value (e.g. when I = 0 and Value = 28 and Vector = (0 => -54, others => 0) and old = -2)[#3]
+pkg_multiply_vector_by_value.ads:23:102: medium: overflow check might fail (e.g. when Value = -1)[#4]
+pkg_multiply_vector_by_value.ads:30:44: medium: postcondition might fail, cannot prove Vector(J) = Vector'Old(J) * Value (e.g. when J = 1 and Value = 1 and Vector = (1 => -1, others => 1) and Vector'First = 1 and Vector'Last = 1 and Vector'Old = (1 => 1, others => -1))[#5]
+pkg_multiply_vector_by_value.ads:30:70: medium: overflow check might fail[#0]

@@ -1,12 +1,12 @@
 V "GNAT Lib v2018"
 M P W=b
 A -gnatA
+A -gnatwa
 A -g
 A -fstack-check=specific
 A -gnata
 A -gnato
 A -gnat12
-A -gnatwa
 A -gnateE
 A -mtune=generic
 A -march=x86-64
@@ -33,7 +33,7 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D pkg_multiply_vector_by_value.ads  20191012115802 904fc131 pkg_multiply_vector_by_value%s
+D pkg_multiply_vector_by_value.ads  20191014183122 904fc131 pkg_multiply_vector_by_value%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s

@@ -39,7 +39,17 @@ procedure Tests_Vector_Search is
       
       pragma Assert (Search_Value_Inside(vector, 5) = 0);
       Put_Line ("OK");
-   end Test_4; 
+   end Test_4;
+   
+   procedure Test_5 is
+      vector : constant T_Vector := (0 => 5);
+   begin
+      Put ("Test 5:  No lo encuentra....................................");
+      
+      pragma Assert (Search_Value_Inside(vector, 6) = Not_Found);
+      Put_Line ("OK");
+   end Test_5; 
+      
    
    
    --Preguntar cómo hacer el vector vacío. 
@@ -62,7 +72,7 @@ procedure Tests_Vector_Search is
    Test_2;
    Test_3;
    Test_4;
-   --Test_5;
+   Test_5;
    --Test_6;
    --Test_7;
 
