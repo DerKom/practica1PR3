@@ -1,0 +1,48 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U pkg_multiply_by_max%b	pkg_multiply_by_max.adb	dd7ad8a0 NE OO PK IL
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U pkg_multiply_by_max%s	pkg_multiply_by_max.ads	7bbd8c88 EE NE OO PK IL
+W pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.adb  pkg_multiply_vector_by_value.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D pkg_multiply_by_max.ads  20191016224106 b32f6aa8 pkg_multiply_by_max%s
+D pkg_multiply_by_max.adb  20191016224036 6e55b208 pkg_multiply_by_max%b
+D pkg_multiply_vector_by_value.ads  20191016180638 c892e620 pkg_multiply_vector_by_value%s
+D system.ads		20180524051738 32a08138 system%s
+D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 pkg_multiply_by_max.ads
+2K9*pkg_multiply_by_max 12l5 12e24 4|1b14 29l5 29t24
+6U14*Multiply_by_Max 6=31 6<57 4|3b14 26l8 26t23
+6a31 Vector{5|5A9} 4|3b31 9r16 10r13 11r20 13r51 14r45 15r34 23m25
+6i57 Max{integer} 4|3b57 7m7 10r26 11m13 13r32 13r44 15r47 23r33
+X 4 pkg_multiply_by_max.adb
+9i11 I{integer} 10r20 11r27 13r58 14r61
+14i40 J{integer} 15r41
+X 5 pkg_multiply_vector_by_value.ads
+1K9*pkg_multiply_vector_by_value 3|1w6 1r40 5|38e33
+5A9*T_Vector(integer)<integer> 3|6r47 4|3r47
+7U14*Multiply_by_Value 4|23s7
+

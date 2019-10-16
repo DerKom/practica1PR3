@@ -1,0 +1,947 @@
+{
+  "spark": [
+    {
+      "name": "pkg_multiply_by_max",
+      "sloc": [
+        {
+          "file": "pkg_multiply_by_max.ads",
+          "line": 2
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_multiply_by_max.Multiply_by_Max",
+      "sloc": [
+        {
+          "file": "pkg_multiply_by_max.ads",
+          "line": 6
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 6,
+      "col": 57,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__30.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 17,
+      "col": 9,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__31.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 10,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__32.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 13,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__33.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 14,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__34.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 23,
+      "col": 33,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_multiply_by_max__flow__35.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 15,
+      "col": 41,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 15,
+      "check_col": 41,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 18,
+      "col": 37,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1911,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 18,
+      "check_col": 37,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 14,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 313,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 14,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 14,
+      "col": 16,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 14,
+      "check_col": 16,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 14,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 27,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 14,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 17,
+      "col": 8,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 1424,
+              "time": 1.30000000000000E-01
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 17,
+      "check_col": 8,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 1.29999995231628E-01
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 14,
+      "col": 50,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 14,
+      "check_col": 50,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 13,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 27,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 13,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 13,
+      "col": 58,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 13,
+      "check_col": 58,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 13,
+      "col": 32,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 13,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 18,
+      "col": 34,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 18,
+      "check_col": 34,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    },
+    {
+      "file": "pkg_multiply_by_max.adb",
+      "line": 23,
+      "col": 7,
+      "rule": "VC_PRECONDITION",
+      "severity": "medium",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 82,
+              "time": 0
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Unknown (other)",
+              "steps": 3072,
+              "time": 1.83000000000000E+00
+            },
+            "CVC4_CE": {
+              "result": "Unknown (other)",
+              "steps": 3259,
+              "time": 8.10000000000000E-01
+            }
+          },
+          "transformations": {
+            "split_disj": [
+              {
+                "proof_attempts": {
+                  "CVC4_CE": {
+                    "result": "Unknown (other)",
+                    "steps": 1792,
+                    "time": 2.00000000000000E-01
+                  }
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              },
+              {
+                "proof_attempts": {
+                },
+                "transformations": {
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.adb",
+      "check_line": 23,
+      "check_col": 7,
+      "tracefile": "pkg_multiply_by_max.adb_23_7_precondition.trace",
+      "cntexmp": {
+        "pkg_multiply_by_max.adb": {
+          "7": [
+            {
+              "name": "Max",
+              "value": "0",
+              "kind": "variable"
+            }
+          ],
+          "9": [
+            {
+              "name": "I",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Max",
+              "value": "4303575",
+              "kind": "variable"
+            }
+          ],
+          "11": [
+            {
+              "name": "Max",
+              "value": "0",
+              "kind": "variable"
+            }
+          ]
+        },
+        "pkg_multiply_by_max.ads": {
+          "6": [
+            {
+              "name": "Vector",
+              "value": "(0 => 498, 498 => 498, others => 0)",
+              "kind": "variable"
+            },
+            {
+              "name": "Vector'First",
+              "value": "0",
+              "kind": "variable"
+            },
+            {
+              "name": "Vector'Last",
+              "value": "498",
+              "kind": "variable"
+            }
+          ]
+        }
+      },
+      "msg_id": 0,
+      "how_proved": "prover"
+    },
+    {
+      "file": "pkg_multiply_by_max.ads",
+      "line": 18,
+      "col": 18,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_multiply_by_max.Multiply_by_Max",
+        "sloc": [
+          {
+            "file": "pkg_multiply_by_max.ads",
+            "line": 6
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 0
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_multiply_by_max.ads",
+      "check_line": 18,
+      "check_col": 18,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 0.00000000000000E+00
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+        {
+          "predicate": "CLAIM_EFFECTS",
+          "arg": {
+            "name": "pkg_multiply_vector_by_value.Multiply_by_Value",
+            "sloc": [
+              {
+                "file": "pkg_multiply_vector_by_value.ads",
+                "line": 7
+              }
+            ]
+          }
+        }
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_multiply_by_max.Multiply_by_Max",
+          "sloc": [
+            {
+              "file": "pkg_multiply_by_max.ads",
+              "line": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pkg_multiply_by_max",
+          "sloc": [
+            {
+              "file": "pkg_multiply_by_max.ads",
+              "line": 2
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 2.08600002224557E-04,
+    "globals (basic)": 1.61400006618351E-04,
+    "globals/properties (advanced)": 4.14600013755262E-04,
+    "flow analysis": 2.01310007832944E-03,
+    "codepeer results": 2.49999993684469E-06,
+    "init_why_sections": 1.49900006363168E-04,
+    "translation of standard": 2.47070007026196E-03,
+    "translation of compilation unit": 3.10550001449883E-03,
+    "proof": 3.81370019912720E+00
+  }
+}

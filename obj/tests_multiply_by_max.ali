@@ -13,14 +13,17 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
 
-U main%b		main.adb		462405ae NE OO SU
-W test_sum_of_vectors%b	test_sum_of_vectors.adb	test_sum_of_vectors.ali
-W tests_multiply_by_max%b  tests_multiply_by_max.adb  tests_multiply_by_max.ali
-W tests_multiply_by_value%b  tests_multiply_by_value.adb  tests_multiply_by_value.ali
-W tests_times_repeated%b  tests_times_repeated.adb  tests_times_repeated.ali
-W tests_vector_search%b	tests_vector_search.adb	tests_vector_search.ali
+U tests_multiply_by_max%b  tests_multiply_by_max.adb  4707ef0e NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_multiply_by_max%s	pkg_multiply_by_max.adb	pkg_multiply_by_max.ali
+W pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.adb  pkg_multiply_vector_by_value.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-except.ads		20180524051736 291912d5 ada.exceptions%s
@@ -31,12 +34,8 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D main.adb		20191016213010 605065f5 main%b
 D pkg_multiply_by_max.ads  20191016224106 b32f6aa8 pkg_multiply_by_max%s
 D pkg_multiply_vector_by_value.ads  20191016180638 c892e620 pkg_multiply_vector_by_value%s
-D pkg_search_value_inside_vector.ads  20191014184326 49228441 pkg_search_value_inside_vector%s
-D pkg_sum_of_vectors.ads  20191016140316 2ede8ab0 pkg_sum_of_vectors%s
-D pkg_times_repeated.ads  20191016181422 96835ea7 pkg_times_repeated%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -51,21 +50,36 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_sum_of_vectors.adb  20191016181358 9a47bc2f test_sum_of_vectors%b
 D tests_multiply_by_max.adb  20191016215440 b4a7d0dc tests_multiply_by_max%b
-D tests_multiply_by_value.adb  20191012120602 cf081fcf tests_multiply_by_value%b
-D tests_times_repeated.adb  20191016140316 585bfc1c tests_times_repeated%b
-D tests_vector_search.adb  20191014183252 9fc7ef7b tests_vector_search%b
-X 10 main.adb
-7U11*Main 7b11 15l5 15t9
-X 30 test_sum_of_vectors.adb
-4U11*Test_Sum_Of_Vectors 10|3w6 11s4
-X 31 tests_multiply_by_max.adb
-5U11*Tests_Multiply_by_Max 10|5w6 13s4
-X 32 tests_multiply_by_value.adb
-4U11*Tests_Multiply_by_Value 10|2w6 10s4
-X 33 tests_times_repeated.adb
-4U11*tests_times_repeated 10|4w6 12s4
-X 34 tests_vector_search.adb
-4U11*Tests_Vector_Search 10|1w6 9s4
+X 1 ada.ads
+16K9*Ada 20e8 26|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 26|1w10 1r27
+242U14*Put 26|12s7 23s7 35s7 47s7
+263U14*Put_Line 26|15s7 26s7 39s7 51s7 55s4
+X 10 pkg_multiply_by_max.ads
+2K9*pkg_multiply_by_max 12e24 26|2w6 2r35
+6U14*Multiply_by_Max 26|13s7 24s7 37s7 49s7
+X 11 pkg_multiply_vector_by_value.ads
+1K9*pkg_multiply_vector_by_value 38e33 26|3w6 3r40
+5A9*T_Vector(integer)<integer> 26|8r16 9r26 19r16 20r26 31r16 32r26 43r16
+. 44r26
+X 26 tests_multiply_by_max.adb
+5U11*Tests_Multiply_by_Max 5b11 61l5 61t26
+7U14 Test_1 7b14 16l8 16t14 56s4
+8a7 vector{11|5A9} 13m23 13r23 14r22
+9a7 result{11|5A9} 14r31
+10i7 max{integer} 13m31
+18U14 Test_2 18b14 27l8 27t14 57s4
+19a7 vector{11|5A9} 24m23 24r23 25r22
+20a7 result{11|5A9} 25r31
+21i7 max{integer} 24m31
+30U14 Test_3 30b14 40l8 40t14 58s4
+31a7 vector{11|5A9} 37m23 37r23 38r22
+32a7 result{11|5A9} 38r31
+33i7 max{integer} 37m31
+42U14 Test_4 42b14 52l8 52t14 59s4
+43a7 vector{11|5A9} 49m23 49r23 50r22
+44a7 result{11|5A9} 50r31
+45i7 max{integer} 49m31
 
