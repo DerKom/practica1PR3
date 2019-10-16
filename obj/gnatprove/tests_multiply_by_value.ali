@@ -1,0 +1,78 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -gnatc
+P GP FX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U tests_multiply_by_value%b  tests_multiply_by_value.adb  8f874ab5 OO SU
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.adb  pkg_multiply_vector_by_value.ali
+Z system%s		system.ads		system.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D pkg_multiply_vector_by_value.ads  20191016180638 c892e620 pkg_multiply_vector_by_value%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tests_multiply_by_value.adb  20191012120602 cf081fcf tests_multiply_by_value%b
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r23
+X 4 a-textio.ads
+49K13*Text_IO 471e16 13|1w10 1r27
+242U14*Put 13|10s7 21s7 33s7 44s7
+263U14*Put_Line 13|14s7 25s7 37s7 48s7 52s4
+X 7 pkg_multiply_vector_by_value.ads
+1K9*pkg_multiply_vector_by_value 38e33 13|2w6 2r44
+5A9*T_Vector(integer)<integer> 13|7r16 8r26 18r16 19r26 30r16 31r26 41r16
+. 42r26
+7U14*Multiply_by_Value 13|12s7 23s7 35s7 46s7
+X 13 tests_multiply_by_value.adb
+4U11*Tests_Multiply_by_Value 4b11 58l5 58t28
+6U14 Test_1 15l8 15t14 53s4
+7a7 vector{7|5A9} 12m25 12r25 13r22
+8a7 result{7|5A9} 13r31
+17U14 Test_2 26l8 26t14 54s4
+18a7 vector{7|5A9} 23m25 23r25 24r22
+19a7 result{7|5A9} 24r31
+29U14 Test_3 38l8 38t14 55s4
+30a7 vector{7|5A9} 35m25 35r25 36r22
+31a7 result{7|5A9} 36r31
+40U14 Test_4 49l8 49t14 56s4
+41a7 vector{7|5A9} 46m25 46r25 47r22
+42a7 result{7|5A9} 47r31
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS tests_multiply_by_value__test_1 0
+GG EK_GLOBALS tests_multiply_by_value__test_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_multiply_vector_by_value__multiply_by_value local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS tests_multiply_by_value__test_2 0
+GG EK_GLOBALS tests_multiply_by_value__test_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_multiply_vector_by_value__multiply_by_value local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS tests_multiply_by_value__test_3 0
+GG EK_GLOBALS tests_multiply_by_value__test_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_multiply_vector_by_value__multiply_by_value local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS tests_multiply_by_value__test_4 0
+GG EK_GLOBALS tests_multiply_by_value__test_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_multiply_vector_by_value__multiply_by_value local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS tests_multiply_by_value 0
+GG EK_GLOBALS tests_multiply_by_value local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_multiply_vector_by_value__multiply_by_value local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

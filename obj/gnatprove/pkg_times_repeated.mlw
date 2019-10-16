@@ -1638,70 +1638,7 @@ module Standard__universal_integer__rep
 
 end
 
-(* Module for axiomatizing type "Tt_vectorD1" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__Tt_vectorD1
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type tt_vectorD1 =
-  < range 0 10 >
- 
- function first 
-   : int =
-  0
- 
- function last 
-   : int =
-  10
- 
- predicate in_range 
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = tt_vectorD1, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
- 
- type tt_vectorD1__ref =
-  { mutable tt_vectorD1__content "model_trace:" "name:" : tt_vectorD1 }
- 
- function tt_vectorD1__ref___projection 
-   (a : tt_vectorD1__ref) : tt_vectorD1 =
-  a.tt_vectorD1__content
- 
- meta "model_projection" function tt_vectorD1__ref___projection
- 
- meta "inline : no" function tt_vectorD1__ref___projection
- 
- val tt_vectorD1__havoc 
-   (x : tt_vectorD1__ref) : unit
-  writes {x}
-
-end
-
-(* Module defining to_rep/of_rep for type "Tt_vectorD1" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__Tt_vectorD1__rep
- use        Pkg_times_repeated__Tt_vectorD1
- use import "_gnatprove_standard".Main
-
- function to_rep 
-   (x : Pkg_times_repeated__Tt_vectorD1.tt_vectorD1) : int =
-  (Pkg_times_repeated__Tt_vectorD1.tt_vectorD1'int x)
- 
- clone export "ada__model".Rep_Proj_Int with
- type t = Pkg_times_repeated__Tt_vectorD1.tt_vectorD1, 
- predicate in_range = Pkg_times_repeated__Tt_vectorD1.in_range, 
- function to_rep = to_rep
- 
- meta "model_projection" function to_rep
- 
- meta "inline : no" function to_rep
-
-end
-
-(* Module for axiomatizing the array theory associated to type "Tt_vectorB" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+(* Module for axiomatizing the array theory associated to type "t_vector" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
 module Array__Int__Standard__integer
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -1744,7 +1681,7 @@ module Array__Int__Standard__integer
 
 end
 
-(* Module for axiomatizing concatenation for the array theory associated to type "Tt_vectorB" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+(* Module for axiomatizing concatenation for the array theory associated to type "t_vector" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
 module Array__Int__Standard__integer__Concat
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -1768,7 +1705,7 @@ module Array__Int__Standard__integer__Concat
 
 end
 
-(* Module for axiomatizing comparison for the array theory associated to type "Tt_vectorB" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+(* Module for axiomatizing comparison for the array theory associated to type "t_vector" defined at pkg_times_repeated.ads:4, created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
 module Array__Int__Standard__integer_Comp
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -1795,14 +1732,14 @@ module Array__Int__Standard__integer_Comp
 
 end
 
-(* Module for axiomatizing type "Tt_vectorB" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__Tt_vectorB
+(* Module for axiomatizing type "t_vector" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__t_vector
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer
+ use        Standard__natural
  use        Standard__integer__rep
- use        Pkg_times_repeated__Tt_vectorD1
  use        Array__Int__Standard__integer
 
  type component_type =
@@ -1820,10 +1757,10 @@ module Pkg_times_repeated__Tt_vectorB
  function to_rep = Standard__integer__rep.to_rep, 
  function rep_to_int = index_1_id, 
  predicate in_range_base = Standard__integer.in_range, 
- predicate index_dynamic_property = Pkg_times_repeated__Tt_vectorD1.dynamic_property, 
+ predicate index_dynamic_property = Standard__natural.dynamic_property, 
  predicate index_rep_le = Int.(<=)
  
- type tt_vectorB =
+ type t_vector =
   __t
  
  meta "model_projection" function to_array
@@ -1838,57 +1775,30 @@ module Pkg_times_repeated__Tt_vectorB
  
  meta "inline : no" function last
  
- type tt_vectorB__ref =
-  { mutable tt_vectorB__content "model_trace:" "name:" : tt_vectorB }
+ type t_vector__ref =
+  { mutable t_vector__content "model_trace:" "name:" : t_vector }
  
- function tt_vectorB__ref___projection 
-   (a : tt_vectorB__ref) : tt_vectorB =
-  a.tt_vectorB__content
+ function t_vector__ref___projection 
+   (a : t_vector__ref) : t_vector =
+  a.t_vector__content
  
- meta "model_projection" function tt_vectorB__ref___projection
+ meta "model_projection" function t_vector__ref___projection
  
- meta "inline : no" function tt_vectorB__ref___projection
+ meta "inline : no" function t_vector__ref___projection
  
- val tt_vectorB__havoc 
-   (x : tt_vectorB__ref) : unit
+ val t_vector__havoc 
+   (x : t_vector__ref) : unit
   writes {x}
-
-end
-
-(* Module for axiomatizing type "t_vector" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__t_vector
- use import "_gnatprove_standard".Main
- use import "int".Int
- use        Standard__integer
- use        Array__Int__Standard__integer
-
- type component_type =
-  Standard__integer.integer
- 
- function first 
-   : int =
-  0
- 
- function last 
-   : int =
-  10
- 
- clone export "ada__model".Constr_Array with
- type map = Array__Int__Standard__integer.map, 
- function array_bool_eq = Array__Int__Standard__integer.bool_eq, 
- function first = first, 
- function last = last, 
- type index_rep_type = int
 
 end
 
 (* Module for defining the constant "vector" defined at pkg_times_repeated.ads:7, created in Gnat2Why.Decls.Translate_Constant *)
 module Pkg_times_repeated__times_repeated__vector
  use import "_gnatprove_standard".Main
- use        Array__Int__Standard__integer
+ use        Pkg_times_repeated__t_vector
 
- function vector #"pkg_times_repeated.ads" 7 0 0#"model_projected" "model_trace:2517" "name:Vector" 
-   : Array__Int__Standard__integer.map
+ function vector #"pkg_times_repeated.ads" 7 0 0#"model_projected" "model_trace:2511" "name:Vector" 
+   : Pkg_times_repeated__t_vector.t_vector
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
@@ -1906,7 +1816,7 @@ end
 module Pkg_times_repeated__times_repeated__value
  use import "_gnatprove_standard".Main
 
- function value #"pkg_times_repeated.ads" 7 0 0#"model" "model_trace:2526" "name:Value" 
+ function value #"pkg_times_repeated.ads" 7 0 0#"model" "model_trace:2520" "name:Value" 
    : int
  
  function attr__ATTRIBUTE_ADDRESS 
@@ -1921,203 +1831,14 @@ module Pkg_times_repeated__times_repeated__value___axiom
 
 end
 
-(* Module for axiomatizing type "T8s" defined at pkg_times_repeated.ads:16, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L7s__T8s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t8s =
-  < range 0 10 >
- 
- function first 
-   : int =
-  0
- 
- function last 
-   : int =
-  10
- 
- predicate in_range 
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t8s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
- 
- type t8s__ref =
-  { mutable t8s__content "model_trace:" "name:" : t8s }
- 
- function t8s__ref___projection 
-   (a : t8s__ref) : t8s =
-  a.t8s__content
- 
- meta "model_projection" function t8s__ref___projection
- 
- meta "inline : no" function t8s__ref___projection
- 
- val t8s__havoc 
-   (x : t8s__ref) : unit
-  writes {x}
-
-end
-
-(* Module defining to_rep/of_rep for type "T8s" defined at pkg_times_repeated.ads:16, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L7s__T8s__rep
- use        Pkg_times_repeated__times_repeated__L7s__T8s
- use import "_gnatprove_standard".Main
-
- function to_rep 
-   (x : Pkg_times_repeated__times_repeated__L7s__T8s.t8s) : int =
-  (Pkg_times_repeated__times_repeated__L7s__T8s.t8s'int x)
- 
- clone export "ada__model".Rep_Proj_Int with
- type t = Pkg_times_repeated__times_repeated__L7s__T8s.t8s, 
- predicate in_range = Pkg_times_repeated__times_repeated__L7s__T8s.in_range, 
- function to_rep = to_rep
- 
- meta "model_projection" function to_rep
- 
- meta "inline : no" function to_rep
-
-end
-
-(* Module for axiomatizing type "T10s" defined at pkg_times_repeated.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L9s__T10s
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t10s =
-  < range 0 10 >
- 
- function first 
-   : int =
-  0
- 
- function last 
-   : int =
-  10
- 
- predicate in_range 
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t10s, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
- 
- type t10s__ref =
-  { mutable t10s__content "model_trace:" "name:" : t10s }
- 
- function t10s__ref___projection 
-   (a : t10s__ref) : t10s =
-  a.t10s__content
- 
- meta "model_projection" function t10s__ref___projection
- 
- meta "inline : no" function t10s__ref___projection
- 
- val t10s__havoc 
-   (x : t10s__ref) : unit
-  writes {x}
-
-end
-
-(* Module defining to_rep/of_rep for type "T10s" defined at pkg_times_repeated.ads:18, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L9s__T10s__rep
- use        Pkg_times_repeated__times_repeated__L9s__T10s
- use import "_gnatprove_standard".Main
-
- function to_rep 
-   (x : Pkg_times_repeated__times_repeated__L9s__T10s.t10s) : int =
-  (Pkg_times_repeated__times_repeated__L9s__T10s.t10s'int x)
- 
- clone export "ada__model".Rep_Proj_Int with
- type t = Pkg_times_repeated__times_repeated__L9s__T10s.t10s, 
- predicate in_range = Pkg_times_repeated__times_repeated__L9s__T10s.in_range, 
- function to_rep = to_rep
- 
- meta "model_projection" function to_rep
- 
- meta "inline : no" function to_rep
-
-end
-
-(* Module for axiomatizing type "T1b" defined at pkg_times_repeated.adb:7, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__T1b
- use import "_gnatprove_standard".Main
- use import "int".Int
-
- type t1b =
-  < range 0 10 >
- 
- function first 
-   : int =
-  0
- 
- function last 
-   : int =
-  10
- 
- predicate in_range 
-   (x : int)  =
-  ( (first <= x) /\ (x <= last) )
- 
- clone export "ada__model".Static_Discrete with
- type t = t1b, 
- function first = first, 
- function last = last, 
- predicate in_range = in_range
- 
- type t1b__ref =
-  { mutable t1b__content "model_trace:" "name:" : t1b }
- 
- function t1b__ref___projection 
-   (a : t1b__ref) : t1b =
-  a.t1b__content
- 
- meta "model_projection" function t1b__ref___projection
- 
- meta "inline : no" function t1b__ref___projection
- 
- val t1b__havoc 
-   (x : t1b__ref) : unit
-  writes {x}
-
-end
-
-(* Module defining to_rep/of_rep for type "T1b" defined at pkg_times_repeated.adb:7, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__T1b__rep
- use        Pkg_times_repeated__times_repeated__L_1__T1b
- use import "_gnatprove_standard".Main
-
- function to_rep 
-   (x : Pkg_times_repeated__times_repeated__L_1__T1b.t1b) : int =
-  (Pkg_times_repeated__times_repeated__L_1__T1b.t1b'int x)
- 
- clone export "ada__model".Rep_Proj_Int with
- type t = Pkg_times_repeated__times_repeated__L_1__T1b.t1b, 
- predicate in_range = Pkg_times_repeated__times_repeated__L_1__T1b.in_range, 
- function to_rep = to_rep
- 
- meta "model_projection" function to_rep
- 
- meta "inline : no" function to_rep
-
-end
-
-(* Module for axiomatizing type "T7b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__L6b__T7b
+(* Module for axiomatizing type "T9s" defined at pkg_times_repeated.ads:18, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L8s__T9s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t7b =
+ type t9s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2125,37 +1846,37 @@ module Pkg_times_repeated__times_repeated__L_1__L6b__T7b
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t7b, 
+ type t = t9s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t7b__ref =
-  { mutable t7b__content "model_trace:" "name:" : t7b }
+ type t9s__ref =
+  { mutable t9s__content "model_trace:" "name:" : t9s }
  
- function t7b__ref___projection 
-   (a : t7b__ref) : t7b =
-  a.t7b__content
+ function t9s__ref___projection 
+   (a : t9s__ref) : t9s =
+  a.t9s__content
  
- meta "model_projection" function t7b__ref___projection
+ meta "model_projection" function t9s__ref___projection
  
- meta "inline : no" function t7b__ref___projection
+ meta "inline : no" function t9s__ref___projection
  
- val t7b__havoc 
-   (x : t7b__ref) : unit
+ val t9s__havoc 
+   (x : t9s__ref) : unit
   writes {x}
 
 end
 
-(* Module for axiomatizing type "T3b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__L2b__T3b
+(* Module for axiomatizing type "T11s" defined at pkg_times_repeated.ads:20, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L10s__T11s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t3b =
+ type t11s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2163,37 +1884,37 @@ module Pkg_times_repeated__times_repeated__L_1__L2b__T3b
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t3b, 
+ type t = t11s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t3b__ref =
-  { mutable t3b__content "model_trace:" "name:" : t3b }
+ type t11s__ref =
+  { mutable t11s__content "model_trace:" "name:" : t11s }
  
- function t3b__ref___projection 
-   (a : t3b__ref) : t3b =
-  a.t3b__content
+ function t11s__ref___projection 
+   (a : t11s__ref) : t11s =
+  a.t11s__content
  
- meta "model_projection" function t3b__ref___projection
+ meta "model_projection" function t11s__ref___projection
  
- meta "inline : no" function t3b__ref___projection
+ meta "inline : no" function t11s__ref___projection
  
- val t3b__havoc 
-   (x : t3b__ref) : unit
+ val t11s__havoc 
+   (x : t11s__ref) : unit
   writes {x}
 
 end
 
-(* Module for axiomatizing type "T9b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__L8b__T9b
+(* Module for axiomatizing type "TS1bP1" defined at pkg_times_repeated.adb:3, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__TS1bP1
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t9b =
+ type tS1bP1 =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2201,37 +1922,97 @@ module Pkg_times_repeated__times_repeated__L_1__L8b__T9b
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t9b, 
+ type t = tS1bP1, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t9b__ref =
-  { mutable t9b__content "model_trace:" "name:" : t9b }
+ type tS1bP1__ref =
+  { mutable tS1bP1__content "model_trace:" "name:" : tS1bP1 }
  
- function t9b__ref___projection 
-   (a : t9b__ref) : t9b =
-  a.t9b__content
+ function tS1bP1__ref___projection 
+   (a : tS1bP1__ref) : tS1bP1 =
+  a.tS1bP1__content
  
- meta "model_projection" function t9b__ref___projection
+ meta "model_projection" function tS1bP1__ref___projection
  
- meta "inline : no" function t9b__ref___projection
+ meta "inline : no" function tS1bP1__ref___projection
  
- val t9b__havoc 
-   (x : t9b__ref) : unit
+ val tS1bP1__havoc 
+   (x : tS1bP1__ref) : unit
   writes {x}
 
 end
 
-(* Module for axiomatizing type "T5b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_times_repeated__times_repeated__L_1__L4b__T5b
+(* Module for axiomatizing type "S1b" defined at pkg_times_repeated.adb:3, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__S1b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer
+ use        Standard__integer__rep
+ use        Array__Int__Standard__integer
+ use        Pkg_times_repeated__times_repeated__TS1bP1
+
+ type component_type =
+  Standard__integer.integer
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with
+ type map = Array__Int__Standard__integer.map, 
+ function array_bool_eq = Array__Int__Standard__integer.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Pkg_times_repeated__times_repeated__TS1bP1.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type s1b =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline : no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline : no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline : no" function last
+ 
+ type s1b__ref =
+  { mutable s1b__content "model_trace:" "name:" : s1b }
+ 
+ function s1b__ref___projection 
+   (a : s1b__ref) : s1b =
+  a.s1b__content
+ 
+ meta "model_projection" function s1b__ref___projection
+ 
+ meta "inline : no" function s1b__ref___projection
+ 
+ val s1b__havoc 
+   (x : s1b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T2b" defined at pkg_times_repeated.adb:7, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L_1__T2b
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t5b =
+ type t2b =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -2239,25 +2020,177 @@ module Pkg_times_repeated__times_repeated__L_1__L4b__T5b
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t5b, 
+ type t = t2b, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t5b__ref =
-  { mutable t5b__content "model_trace:" "name:" : t5b }
+ type t2b__ref =
+  { mutable t2b__content "model_trace:" "name:" : t2b }
  
- function t5b__ref___projection 
-   (a : t5b__ref) : t5b =
-  a.t5b__content
+ function t2b__ref___projection 
+   (a : t2b__ref) : t2b =
+  a.t2b__content
  
- meta "model_projection" function t5b__ref___projection
+ meta "model_projection" function t2b__ref___projection
  
- meta "inline : no" function t5b__ref___projection
+ meta "inline : no" function t2b__ref___projection
  
- val t5b__havoc 
-   (x : t5b__ref) : unit
+ val t2b__havoc 
+   (x : t2b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T8b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L_1__L7b__T8b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t8b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t8b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t8b__ref =
+  { mutable t8b__content "model_trace:" "name:" : t8b }
+ 
+ function t8b__ref___projection 
+   (a : t8b__ref) : t8b =
+  a.t8b__content
+ 
+ meta "model_projection" function t8b__ref___projection
+ 
+ meta "inline : no" function t8b__ref___projection
+ 
+ val t8b__havoc 
+   (x : t8b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T4b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L_1__L3b__T4b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t4b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t4b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t4b__ref =
+  { mutable t4b__content "model_trace:" "name:" : t4b }
+ 
+ function t4b__ref___projection 
+   (a : t4b__ref) : t4b =
+  a.t4b__content
+ 
+ meta "model_projection" function t4b__ref___projection
+ 
+ meta "inline : no" function t4b__ref___projection
+ 
+ val t4b__havoc 
+   (x : t4b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T10b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L_1__L9b__T10b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t10b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t10b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t10b__ref =
+  { mutable t10b__content "model_trace:" "name:" : t10b }
+ 
+ function t10b__ref___projection 
+   (a : t10b__ref) : t10b =
+  a.t10b__content
+ 
+ meta "model_projection" function t10b__ref___projection
+ 
+ meta "inline : no" function t10b__ref___projection
+ 
+ val t10b__havoc 
+   (x : t10b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T6b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_times_repeated__times_repeated__L_1__L5b__T6b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t6b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t6b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t6b__ref =
+  { mutable t6b__content "model_trace:" "name:" : t6b }
+ 
+ function t6b__ref___projection 
+   (a : t6b__ref) : t6b =
+  a.t6b__content
+ 
+ meta "model_projection" function t6b__ref___projection
+ 
+ meta "inline : no" function t6b__ref___projection
+ 
+ val t6b__havoc 
+   (x : t6b__ref) : unit
   writes {x}
 
 end
@@ -2265,7 +2198,7 @@ end
 module Pkg_times_repeated__times_repeated__result
  use import "_gnatprove_standard".Main
 
- val result__ #"pkg_times_repeated.ads" 7 0 0#"model_projected" "model_trace:2535" "name:Result"  : int__ref 
+ val result__ #"pkg_times_repeated.ads" 7 0 0#"model_projected" "model_trace:2529" "name:Result"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
@@ -2681,80 +2614,90 @@ module Pkg_times_repeated__times_repeated__L_1___axiom
 
 end
 
-(* Module giving axioms for type "Tt_vectorD1" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__Tt_vectorD1___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for type "Tt_vectorB" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__Tt_vectorB___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
 (* Module giving axioms for type "t_vector" defined at pkg_times_repeated.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Pkg_times_repeated__t_vector___axiom
  use import "_gnatprove_standard".Main
- use        Array__Int__Standard__integer
- use        Array__Int__Standard__integer
+ use        Standard__natural
+ use        Pkg_times_repeated__t_vector
 
  predicate dynamic_invariant "inline" 
-   (temp___expr_159 : Array__Int__Standard__integer.map) (temp___is_init_155 : bool) (temp___skip_constant_156 : bool) (temp___do_toplevel_157 : bool) (temp___do_typ_inv_158 : bool)  =
-  true
+   (temp___expr_159 : Pkg_times_repeated__t_vector.t_vector) (temp___is_init_155 : bool) (temp___skip_constant_156 : bool) (temp___do_toplevel_157 : bool) (temp___do_typ_inv_158 : bool)  =
+  (if (temp___skip_constant_156) then (
+   true) else (
+   (Pkg_times_repeated__t_vector.dynamic_property Standard__natural.first Standard__natural.last (Pkg_times_repeated__t_vector.first temp___expr_159) (Pkg_times_repeated__t_vector.last temp___expr_159))))
+
+end
+
+(* Module giving axioms for type "T9s" defined at pkg_times_repeated.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L8s__T9s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T11s" defined at pkg_times_repeated.ads:20, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L10s__T11s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "TS1bP1" defined at pkg_times_repeated.adb:3, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__TS1bP1___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "S1b" defined at pkg_times_repeated.adb:3, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__S1b___axiom
+ use import "_gnatprove_standard".Main
+ use        Pkg_times_repeated__t_vector
+ use        Pkg_times_repeated__times_repeated__vector
+ use        Pkg_times_repeated__times_repeated__S1b
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_166 : Pkg_times_repeated__times_repeated__S1b.s1b) (temp___is_init_162 : bool) (temp___skip_constant_163 : bool) (temp___do_toplevel_164 : bool) (temp___do_typ_inv_165 : bool)  =
+  (if (temp___skip_constant_163) then (
+   true) else (
+   ( (Pkg_times_repeated__times_repeated__S1b.dynamic_property (Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector) (Pkg_times_repeated__times_repeated__S1b.first temp___expr_166) (Pkg_times_repeated__times_repeated__S1b.last temp___expr_166)) /\ ( ((Pkg_times_repeated__times_repeated__S1b.first temp___expr_166) = (Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector)) /\ ((Pkg_times_repeated__times_repeated__S1b.last temp___expr_166) = (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) )))
  
  predicate default_initial_assumption "inline" 
-   (temp___expr_161 : Array__Int__Standard__integer.map) (temp___skip_top_level_162 : bool)  =
+   (temp___expr_168 : Pkg_times_repeated__times_repeated__S1b.s1b) (temp___skip_top_level_169 : bool)  =
   true
 
 end
 
-(* Module giving axioms for type "T8s" defined at pkg_times_repeated.ads:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L7s__T8s___axiom
+(* Module giving axioms for type "T2b" defined at pkg_times_repeated.adb:7, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L_1__T2b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T10s" defined at pkg_times_repeated.ads:18, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L9s__T10s___axiom
+(* Module giving axioms for type "T8b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L_1__L7b__T8b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T1b" defined at pkg_times_repeated.adb:7, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L_1__T1b___axiom
+(* Module giving axioms for type "T4b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L_1__L3b__T4b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T7b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L_1__L6b__T7b___axiom
+(* Module giving axioms for type "T10b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L_1__L9b__T10b___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T3b" defined at pkg_times_repeated.adb:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L_1__L2b__T3b___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for type "T9b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L_1__L8b__T9b___axiom
- use import "_gnatprove_standard".Main
-
-
-end
-
-(* Module giving axioms for type "T5b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_times_repeated__times_repeated__L_1__L4b__T5b___axiom
+(* Module giving axioms for type "T6b" defined at pkg_times_repeated.adb:19, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_times_repeated__times_repeated__L_1__L5b__T6b___axiom
  use import "_gnatprove_standard".Main
 
 
@@ -2767,16 +2710,18 @@ module Pkg_times_repeated__times_repeated___axiom
  use        Standard__integer___axiom
  use        Standard__integer__rep
  use        Array__Int__Standard__integer
+ use        Pkg_times_repeated__t_vector
+ use        Array__Int__Standard__integer
  use        Array__Int__Standard__integer
 
  val times_repeated 
-   (vector : Array__Int__Standard__integer.map) (value : int) (result__ : int__ref) : unit
-  requires {  true }
+   (vector : Pkg_times_repeated__t_vector.t_vector) (value : int) (result__ : int__ref) : unit
+  requires {  ( ((Pkg_times_repeated__t_vector.length vector) < 500) /\ ( ((Pkg_times_repeated__t_vector.length vector) > 0) /\ ((Pkg_times_repeated__t_vector.first vector) = 0) ) ) }
   ensures {  ( ( (if ((result__.int__content <> ( -1 ))) then (
    (exists j  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get vector j)) = value) ))) else (
+    ( ( ((Pkg_times_repeated__t_vector.first vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last vector)) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array vector) j)) = value) ))) else (
    (forall j   "model" "model_trace:2595" "name:J"  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get vector j)) <> value) )))) /\ ( (( -1 ) <= result__.int__content) /\ (result__.int__content <= 11) ) ) /\ (Standard__integer___axiom.dynamic_invariant result__.int__content True True True True) ) }
+    ( ( ((Pkg_times_repeated__t_vector.first vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array vector) j)) <> value) )))) /\ ( (( -1 ) <= result__.int__content) /\ (result__.int__content <= (Pkg_times_repeated__t_vector.length vector)) ) ) /\ (Standard__integer___axiom.dynamic_invariant result__.int__content True True True True) ) }
   writes {result__}
 
 end
@@ -2794,12 +2739,12 @@ module Pkg_times_repeated__package_def
   (#"pkg_times_repeated.ads" 3 0 0# ());
   (#"pkg_times_repeated.ads" 4 0 0# ());
   (#"pkg_times_repeated.ads" 7 0 0# ());
+  (#"pkg_times_repeated.ads" 17 0 0# ());
   (#"pkg_times_repeated.ads" 15 0 0# ());
-  (#"pkg_times_repeated.ads" 13 0 0# ());
+  (#"pkg_times_repeated.ads" 12 0 0# ());
   (#"pkg_times_repeated.ads" 12 0 0# ());
   (#"pkg_times_repeated.ads" 12 0 0# ());
   (#"pkg_times_repeated.ads" 11 0 0# ());
-  (#"pkg_times_repeated.ads" 10 0 0# ());
   (#"pkg_times_repeated.ads" 10 0 0# ());
   (#"pkg_times_repeated.ads" 10 0 0# ());
   (#"pkg_times_repeated.ads" 10 0 0# ());
@@ -2817,16 +2762,30 @@ module Pkg_times_repeated__times_repeated__subprogram_def
  use        Standard__integer
  use        Standard__integer___axiom
  use        Standard__integer__rep
- use        Pkg_times_repeated__Tt_vectorD1
  use        Array__Int__Standard__integer
+ use        Pkg_times_repeated__t_vector
  use        Pkg_times_repeated__t_vector___axiom
  use        Pkg_times_repeated__times_repeated__vector
  use        Pkg_times_repeated__times_repeated__value
  use        Pkg_times_repeated__times_repeated__result
  use        Pkg_times_repeated__times_repeated__L_1
- use        Pkg_times_repeated__times_repeated__L_1__T1b
+ use        Pkg_times_repeated__times_repeated__L_1__T2b
  use        Pkg_times_repeated__times_repeated__L_1__i
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
+ use        Array__Int__Standard__integer
  use        Standard__integer___axiom
+ use        Standard__natural___axiom
  use        Standard__integer___axiom
  use        Pkg_times_repeated__times_repeated__L_1__i___axiom
  use        Pkg_times_repeated__times_repeated__L_1___axiom
@@ -2834,18 +2793,17 @@ module Pkg_times_repeated__times_repeated__subprogram_def
  use        Pkg_times_repeated__times_repeated__vector___axiom
  use        Pkg_times_repeated__times_repeated__value___axiom
  use        Pkg_times_repeated__times_repeated__result___axiom
- use        Pkg_times_repeated__Tt_vectorD1___axiom
- use        Pkg_times_repeated__times_repeated__L_1__T1b___axiom
+ use        Pkg_times_repeated__times_repeated__L_1__T2b___axiom
 
  let def #"pkg_times_repeated.ads" 7 0 0#"W:diverges:N" "GP_Subp:pkg_times_repeated.ads:7" 
    (__void_param : unit)
   requires { #"pkg_times_repeated.ads" 7 0 0# true }
-  ensures { #"pkg_times_repeated.ads" 7 0 0# (#"pkg_times_repeated.ads" 15 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:pkg_times_repeated.ads:15:7" "GP_Reason:VC_POSTCONDITION" "GP_Id:6" "comment:     ((if Result /= Not_Found then
-      ^ pkg_times_repeated.ads:15:7:VC_POSTCONDITION" "GP_Shape:pragargs__if" ( (if ((Pkg_times_repeated__times_repeated__result.result__.int__content <> ( -1 ))) then (
+  ensures { #"pkg_times_repeated.ads" 7 0 0# (#"pkg_times_repeated.ads" 17 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:pkg_times_repeated.ads:17:7" "GP_Reason:VC_POSTCONDITION" "GP_Id:10" "comment:     ((if Result /= Not_Found then
+      ^ pkg_times_repeated.ads:17:7:VC_POSTCONDITION" "GP_Shape:pragargs__if" ( (if ((Pkg_times_repeated__times_repeated__result.result__.int__content <> ( -1 ))) then (
    (exists j  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) /\ ( "GP_Pretty_Ada:2593" "GP_Sloc:pkg_times_repeated.ads:16:40" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) = Pkg_times_repeated__times_repeated__value.value) ) ))) else (
-   (forall j #"pkg_times_repeated.ads" 15 0 0#  "model" "model_trace:2595" "name:J"  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) -> ( "GP_Pretty_Ada:2609" "GP_Sloc:pkg_times_repeated.ads:18:39" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) <> Pkg_times_repeated__times_repeated__value.value) ) )))) /\ ( "GP_Pretty_Ada:2614" "GP_Sloc:pkg_times_repeated.ads:20:14" ( (( -1 ) <= Pkg_times_repeated__times_repeated__result.result__.int__content) /\ (Pkg_times_repeated__times_repeated__result.result__.int__content <= 11) ) ) ) )) }
+    ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) /\ ( "GP_Pretty_Ada:2593" "GP_Sloc:pkg_times_repeated.ads:18:40" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) = Pkg_times_repeated__times_repeated__value.value) ) ))) else (
+   (forall j #"pkg_times_repeated.ads" 17 0 0#  "model" "model_trace:2595" "name:J"  : int.
+    ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) -> ( "GP_Pretty_Ada:2609" "GP_Sloc:pkg_times_repeated.ads:20:39" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) <> Pkg_times_repeated__times_repeated__value.value) ) )))) /\ ( "GP_Pretty_Ada:2614" "GP_Sloc:pkg_times_repeated.ads:22:14" ( (( -1 ) <= Pkg_times_repeated__times_repeated__result.result__.int__content) /\ (Pkg_times_repeated__times_repeated__result.result__.int__content <= (Pkg_times_repeated__t_vector.length Pkg_times_repeated__times_repeated__vector.vector)) ) ) ) )) }
    =
   ( () (* Assume dynamic invariants of inputs of the subprogram pkg_times_repeated.ads:7 *)
   ;
@@ -2857,37 +2815,53 @@ module Pkg_times_repeated__times_repeated__subprogram_def
   ;
   () (* Check for RTE in the Pre of the subprogram pkg_times_repeated.ads:7 *)
   ;
-   abstract ensures {true}(let _ = ( (Boolean.of_int(1)) && (Boolean.of_int(1)) ) in (
+   abstract ensures {true}(let _ = ( ((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+   ()))
+   end ;
+  (Pkg_times_repeated__t_vector.length(Pkg_times_repeated__times_repeated__vector.vector)) ) < 500) && ( ((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+   ()))
+   end ;
+  (Pkg_times_repeated__t_vector.length(Pkg_times_repeated__times_repeated__vector.vector)) ) > 0) && ((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+   ()))
+   end ;
+  (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) = 0) ) ) in (
    ()))
    end ;
   () (* Assume Pre of the subprogram pkg_times_repeated.ads:7 *)
   ;
-   assume {  true };
+   assume {  ( ((Pkg_times_repeated__t_vector.length Pkg_times_repeated__times_repeated__vector.vector) < 500) /\ ( ((Pkg_times_repeated__t_vector.length Pkg_times_repeated__times_repeated__vector.vector) > 0) /\ ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) = 0) ) ) };
    try
-   ( (#"pkg_times_repeated.adb" 7 0 0# ());
+   ( (#"pkg_times_repeated.adb" 3 0 0# ());
+   (#"pkg_times_repeated.adb" 7 0 0# ());
    ( "GP_Sloc:pkg_times_repeated.adb:6:14" (#"pkg_times_repeated.adb" 6 0 0# #"pkg_times_repeated.adb" 6 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( 0 )) );
-   ( "GP_Sloc:pkg_times_repeated.adb:7:29" (#"pkg_times_repeated.adb" 7 0 0# (let temp___166 = 0 in (
-   (let temp___167 = 10 in (
-    ( #"pkg_times_repeated.adb" 7 0 0# Pkg_times_repeated__times_repeated__L_1__i.i.int__content <- ( temp___166 );
+   ( "GP_Sloc:pkg_times_repeated.adb:7:29" (#"pkg_times_repeated.adb" 7 0 0# (let temp___172 = ( #"pkg_times_repeated.adb" 7 0 0# abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+    ()))
+    end ;
+   (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) in (
+   (let temp___173 = ( #"pkg_times_repeated.adb" 7 0 0# abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+    ()))
+    end ;
+   (Pkg_times_repeated__t_vector.last(Pkg_times_repeated__times_repeated__vector.vector)) ) in (
+    ( #"pkg_times_repeated.adb" 7 0 0# Pkg_times_repeated__times_repeated__L_1__i.i.int__content <- ( temp___172 );
     () (* Translation of an Ada loop from pkg_times_repeated.adb:7 *)
     ;
-    (if ((Boolean.andb((temp___166 <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)) ((Pkg_times_repeated__times_repeated__L_1__i.i.int__content <= temp___167)))) then (
+    (if ((Boolean.andb((temp___172 <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)) ((Pkg_times_repeated__times_repeated__L_1__i.i.int__content <= temp___173)))) then (
      #"pkg_times_repeated.adb" 7 0 0# try
       ( #"pkg_times_repeated.adb" 7 0 0# abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__result.result__.int__content in (
        ()))
        end ;
-      (let temp___169 = #"pkg_times_repeated.adb" 7 0 0# (any int
+      (let temp___175 = #"pkg_times_repeated.adb" 7 0 0# (any int
       ensures {#"pkg_times_repeated.adb" 7 0 0# (result = Pkg_times_repeated__times_repeated__result.result__.int__content)} 
       ) in (
        ( #"pkg_times_repeated.adb" 7 0 0# abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__L_1__i.i.int__content in (
         ()))
         end ;
-       (let temp___168 = #"pkg_times_repeated.adb" 7 0 0# (any int
+       (let temp___174 = #"pkg_times_repeated.adb" 7 0 0# (any int
        ensures {#"pkg_times_repeated.adb" 7 0 0# (result = Pkg_times_repeated__times_repeated__L_1__i.i.int__content)} 
        ) in (
         ( () (* First unroling of the loop statements appearing before the loop invariant of loop pkg_times_repeated.adb:7 *)
         ;
-        ( "GP_Sloc:pkg_times_repeated.adb:8:10" (#"pkg_times_repeated.adb" 8 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) (Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) = Pkg_times_repeated__times_repeated__value.value)) then (
+        ( "GP_Sloc:pkg_times_repeated.adb:8:10" (#"pkg_times_repeated.adb" 8 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) (Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) = Pkg_times_repeated__times_repeated__value.value)) then (
          ( "GP_Sloc:pkg_times_repeated.adb:9:20" (#"pkg_times_repeated.adb" 9 0 0# #"pkg_times_repeated.adb" 9 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( (#"pkg_times_repeated.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:9:30" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Result := Result + 1;            
                              ^ pkg_times_repeated.adb:9:30:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__result_assign__add" (Standard__integer.range_check_((Pkg_times_repeated__times_repeated__result.result__.int__content + 1))) )) )) )) else (
          ()))) );
@@ -2895,32 +2869,36 @@ module Pkg_times_repeated__times_repeated__subprogram_def
         ;
          while True do
          invariant { 
-          (#"pkg_times_repeated.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:12:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:1" "comment:         pragma Loop_Invariant (Result in 0 .. I+1); 
+          (#"pkg_times_repeated.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:12:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:2" "comment:         pragma Loop_Invariant (Result in 0 .. I+1); 
                                 ^ pkg_times_repeated.adb:12:33:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__in" ( "GP_Pretty_Ada:2379" "GP_Sloc:pkg_times_repeated.adb:12:33" ( (0 <= Pkg_times_repeated__times_repeated__result.result__.int__content) /\ (Pkg_times_repeated__times_repeated__result.result__.int__content <= (Pkg_times_repeated__times_repeated__L_1__i.i.int__content + 1)) ) ) ))
           }
          invariant { 
-          (#"pkg_times_repeated.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:pkg_times_repeated.adb:15:15" "GP_Id:4" "comment:              (if Result = 0 then
+          (#"pkg_times_repeated.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:pkg_times_repeated.adb:15:15" "GP_Id:5" "comment:              (if Result = 0 then
               ^ pkg_times_repeated.adb:15:15:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__if" (if ((Pkg_times_repeated__times_repeated__result.result__.int__content = 0)) then (
            (forall j #"pkg_times_repeated.adb" 15 0 0#  "model" "name:J" "model_trace:2392"  : int.
-            ( ( (0 <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) -> ( "GP_Pretty_Ada:2409" "GP_Sloc:pkg_times_repeated.adb:17:22" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) <> Pkg_times_repeated__times_repeated__value.value) ) ))) else (
+            ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) -> ( "GP_Pretty_Ada:2409" "GP_Sloc:pkg_times_repeated.adb:17:22" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) <> Pkg_times_repeated__times_repeated__value.value) ) ))) else (
            (exists j  : int.
-            ( ( (0 <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) /\ ( "GP_Pretty_Ada:2428" "GP_Sloc:pkg_times_repeated.adb:20:23" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) = Pkg_times_repeated__times_repeated__value.value) ) )))) ))
+            ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) /\ ( "GP_Pretty_Ada:2428" "GP_Sloc:pkg_times_repeated.adb:20:23" ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) = Pkg_times_repeated__times_repeated__value.value) ) )))) ))
           }
          ( () (* Assume implicit invariants from the loop pkg_times_repeated.adb:7 *)
          ;
-          assume {  (Boolean.andb(( ( ( ( true /\ (if ((Pkg_times_repeated__times_repeated__L_1__T1b.first <= Pkg_times_repeated__times_repeated__L_1__T1b.last)) then (
-          (Pkg_times_repeated__times_repeated__L_1__T1b.dynamic_property Pkg_times_repeated__times_repeated__L_1__T1b.first Pkg_times_repeated__times_repeated__L_1__T1b.last Pkg_times_repeated__times_repeated__L_1__i.i.int__content)) else true) ) /\ true ) /\ (Standard__integer___axiom.dynamic_invariant Pkg_times_repeated__times_repeated__result.result__.int__content False True True True) ) /\ true )) (( (0 <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) /\ (Pkg_times_repeated__times_repeated__L_1__i.i.int__content <= 10) ))) };
+          assume {  (Boolean.andb(( ( ( ( true /\ (if (((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector))) then (
+          (Pkg_times_repeated__times_repeated__L_1__T2b.dynamic_property (Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector) Pkg_times_repeated__times_repeated__L_1__i.i.int__content)) else true) ) /\ true ) /\ (Standard__integer___axiom.dynamic_invariant Pkg_times_repeated__times_repeated__result.result__.int__content False True True True) ) /\ true )) (( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) /\ (Pkg_times_repeated__times_repeated__L_1__i.i.int__content <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ))) };
          () (* Check for absence of RTE in the invariant of loop pkg_times_repeated.adb:7 *)
          ;
-          abstract ensures {true}(let _ = (Boolean.andb((0 <= Pkg_times_repeated__times_repeated__result.result__.int__content)) ((Pkg_times_repeated__times_repeated__result.result__.int__content <= (Pkg_times_repeated__times_repeated__L_1__i.i.int__content + 1)))) in (
+          abstract ensures {true}(let _ = (Boolean.andb((0 <= Pkg_times_repeated__times_repeated__result.result__.int__content)) ((Pkg_times_repeated__times_repeated__result.result__.int__content <= (#"pkg_times_repeated.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_times_repeated.adb:12:49" "GP_Id:1" "comment:         pragma Loop_Invariant (Result in 0 .. I+1); 
+                                                ^ pkg_times_repeated.adb:12:49:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__in__range__add" (Standard__integer.range_check_((Pkg_times_repeated__times_repeated__L_1__i.i.int__content + 1))) ))))) in (
           ()))
           end ;
           abstract ensures {true}(let _ = (if ((Pkg_times_repeated__times_repeated__result.result__.int__content = 0)) then (
           ( (let j =  (any int
           ) in (
-           (if ((Boolean.andb((0 <= j)) ((j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) then (
-             abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) ((  assert {  (#"pkg_times_repeated.adb" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:17:29" "GP_Reason:VC_INDEX_CHECK" "GP_Id:2" "comment:                     Vector(J) /= Value
-                            ^ pkg_times_repeated.adb:17:29:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__if__forall__cmp__ixdcomp" ( (Pkg_times_repeated__Tt_vectorD1.first <= j) /\ (j <= Pkg_times_repeated__Tt_vectorD1.last) ) )) };
+           (if ((Boolean.andb(((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+            ()))
+            end ;
+           (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) <= j)) ((j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) then (
+             abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) ((  assert {  (#"pkg_times_repeated.adb" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:17:29" "GP_Reason:VC_INDEX_CHECK" "GP_Id:3" "comment:                     Vector(J) /= Value
+                            ^ pkg_times_repeated.adb:17:29:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__if__forall__cmp__ixdcomp" ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) )) };
             j ))))) <> Pkg_times_repeated__times_repeated__value.value) in (
              ()))
              end ))))
@@ -2928,13 +2906,16 @@ module Pkg_times_repeated__times_repeated__subprogram_def
            (any bool
           requires { true} 
           ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2392"  : int.
-           ( ( (0 <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) <> Pkg_times_repeated__times_repeated__value.value) )) )} 
+           ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) <> Pkg_times_repeated__times_repeated__value.value) )) )} 
           ) )) else (
           ( (let j =  (any int
           ) in (
-           (if ((Boolean.andb((0 <= j)) ((j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) then (
-             abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) ((  assert {  (#"pkg_times_repeated.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_times_repeated.adb:20:30" "GP_Id:3" "comment:                      Vector(J) = Value
-                             ^ pkg_times_repeated.adb:20:30:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__if__forsome__cmp__ixdcomp" ( (Pkg_times_repeated__Tt_vectorD1.first <= j) /\ (j <= Pkg_times_repeated__Tt_vectorD1.last) ) )) };
+           (if ((Boolean.andb(((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+            ()))
+            end ;
+           (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) <= j)) ((j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) then (
+             abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) ((  assert {  (#"pkg_times_repeated.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_times_repeated.adb:20:30" "GP_Id:4" "comment:                      Vector(J) = Value
+                             ^ pkg_times_repeated.adb:20:30:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__if__forsome__cmp__ixdcomp" ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) )) };
             j ))))) = Pkg_times_repeated__times_repeated__value.value) in (
              ()))
              end ))))
@@ -2942,7 +2923,7 @@ module Pkg_times_repeated__times_repeated__subprogram_def
            (any bool
           requires { true} 
           ensures { ( (result = True) <-> (exists j  : int.
-           ( ( (0 <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) = Pkg_times_repeated__times_repeated__value.value) )) )} 
+           ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= Pkg_times_repeated__times_repeated__L_1__i.i.int__content) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) = Pkg_times_repeated__times_repeated__value.value) )) )} 
           ) ))) in (
           ()))
           end ;
@@ -2950,10 +2931,10 @@ module Pkg_times_repeated__times_repeated__subprogram_def
          ;
          () (* Check for the exit condition and loop statements appearing before the loop invariant of loop pkg_times_repeated.adb:7 *)
          ;
-         (if ((Pkg_times_repeated__times_repeated__L_1__i.i.int__content = temp___167)) then (
+         (if ((Pkg_times_repeated__times_repeated__L_1__i.i.int__content = temp___173)) then (
            raise Pkg_times_repeated__times_repeated__L_1.L_1));
           Pkg_times_repeated__times_repeated__L_1__i.i.int__content <- ( (Pkg_times_repeated__times_repeated__L_1__i.i.int__content + 1) );
-         ( "GP_Sloc:pkg_times_repeated.adb:8:10" (#"pkg_times_repeated.adb" 8 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) (Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) = Pkg_times_repeated__times_repeated__value.value)) then (
+         ( "GP_Sloc:pkg_times_repeated.adb:8:10" (#"pkg_times_repeated.adb" 8 0 0# (if (((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) (Pkg_times_repeated__times_repeated__L_1__i.i.int__content)))) = Pkg_times_repeated__times_repeated__value.value)) then (
           ( "GP_Sloc:pkg_times_repeated.adb:9:20" (#"pkg_times_repeated.adb" 9 0 0# #"pkg_times_repeated.adb" 9 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( (#"pkg_times_repeated.adb" 9 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.adb:9:30" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Result := Result + 1;            
                              ^ pkg_times_repeated.adb:9:30:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__result_assign__add" (Standard__integer.range_check_((Pkg_times_repeated__times_repeated__result.result__.int__content + 1))) )) )) )) else (
           ()))) ) )
@@ -2966,7 +2947,7 @@ module Pkg_times_repeated__times_repeated__subprogram_def
    ))
    ) );
    ( "GP_Sloc:pkg_times_repeated.adb:28:7" (#"pkg_times_repeated.adb" 28 0 0# (if ((Pkg_times_repeated__times_repeated__result.result__.int__content > 0)) then (
-    ( "GP_Sloc:pkg_times_repeated.adb:29:17" (#"pkg_times_repeated.adb" 29 0 0# #"pkg_times_repeated.adb" 29 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( (#"pkg_times_repeated.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_times_repeated.adb:29:27" "GP_Id:5" "comment:         Result := Result - 1; 
+    ( "GP_Sloc:pkg_times_repeated.adb:29:17" (#"pkg_times_repeated.adb" 29 0 0# #"pkg_times_repeated.adb" 29 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( (#"pkg_times_repeated.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_times_repeated.adb:29:27" "GP_Id:6" "comment:         Result := Result - 1; 
                           ^ pkg_times_repeated.adb:29:27:VC_OVERFLOW_CHECK" "GP_Shape:if__result_assign__sub" (Standard__integer.range_check_((Pkg_times_repeated__times_repeated__result.result__.int__content - 1))) )) )) )) else (
     ( "GP_Sloc:pkg_times_repeated.adb:30:12" (#"pkg_times_repeated.adb" 30 0 0# (if ((Pkg_times_repeated__times_repeated__result.result__.int__content = 0)) then (
      ( "GP_Sloc:pkg_times_repeated.adb:31:20" (#"pkg_times_repeated.adb" 31 0 0# #"pkg_times_repeated.adb" 31 0 0# Pkg_times_repeated__times_repeated__result.result__.int__content <- ( ( -1 ) )) )) else (
@@ -2978,28 +2959,48 @@ module Pkg_times_repeated__times_repeated__subprogram_def
    abstract ensures {true}(let _ = ( (if ((Pkg_times_repeated__times_repeated__result.result__.int__content <> ( -1 ))) then (
    ( (let j =  (any int
    ) in (
-    (if ((Boolean.andb((0 <= j)) ((j <= 10)))) then (
-      abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) (j)))) = Pkg_times_repeated__times_repeated__value.value) in (
+    (if ((Boolean.andb(((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+     ()))
+     end ;
+    (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) <= j)) ((j <= (  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+     ()))
+     end ;
+    (Pkg_times_repeated__t_vector.last(Pkg_times_repeated__times_repeated__vector.vector)) ))))) then (
+      abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) ((  assert {  (#"pkg_times_repeated.ads" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_times_repeated.ads:18:47" "GP_Id:8" "comment:        (for some J in Vector'Range => Vector(J) = Value)
+                                              ^ pkg_times_repeated.ads:18:47:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forsome__cmp__ixdcomp" ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) )) };
+     j ))))) = Pkg_times_repeated__times_repeated__value.value) in (
       ()))
       end ))))
    ;
     (any bool
    requires { true} 
    ensures { ( (result = True) <-> (exists j  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) = Pkg_times_repeated__times_repeated__value.value) )) )} 
+    ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) /\ ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) = Pkg_times_repeated__times_repeated__value.value) )) )} 
    ) )) else (
    ( (let j =  (any int
    ) in (
-    (if ((Boolean.andb((0 <= j)) ((j <= 10)))) then (
-      abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get(Pkg_times_repeated__times_repeated__vector.vector) (j)))) <> Pkg_times_repeated__times_repeated__value.value) in (
+    (if ((Boolean.andb(((  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+     ()))
+     end ;
+    (Pkg_times_repeated__t_vector.first(Pkg_times_repeated__times_repeated__vector.vector)) ) <= j)) ((j <= (  abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+     ()))
+     end ;
+    (Pkg_times_repeated__t_vector.last(Pkg_times_repeated__times_repeated__vector.vector)) ))))) then (
+      abstract ensures {true}(let _ = ((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_times_repeated__t_vector.to_array(Pkg_times_repeated__times_repeated__vector.vector))) ((  assert {  (#"pkg_times_repeated.ads" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_times_repeated.ads:20:46" "GP_Id:9" "comment:        (for all J in Vector'Range => Vector(J) /= Value )) 
+                                             ^ pkg_times_repeated.ads:20:46:VC_INDEX_CHECK" "GP_Shape:pragargs__if__forall__cmp__ixdcomp" ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) )) };
+     j ))))) <> Pkg_times_repeated__times_repeated__value.value) in (
       ()))
       end ))))
    ;
     (any bool
    requires { true} 
    ensures { ( (result = True) <-> (forall j   "model" "model_trace:2595" "name:J"  : int.
-    ( ( (0 <= j) /\ (j <= 10) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get Pkg_times_repeated__times_repeated__vector.vector j)) <> Pkg_times_repeated__times_repeated__value.value) )) )} 
-   ) ))) && (Boolean.andb((( -1 ) <= Pkg_times_repeated__times_repeated__result.result__.int__content)) ((Pkg_times_repeated__times_repeated__result.result__.int__content <= 11))) ) in (
+    ( ( ((Pkg_times_repeated__t_vector.first Pkg_times_repeated__times_repeated__vector.vector) <= j) /\ (j <= (Pkg_times_repeated__t_vector.last Pkg_times_repeated__times_repeated__vector.vector)) ) -> ((Standard__integer__rep.to_rep (Array__Int__Standard__integer.get (Pkg_times_repeated__t_vector.to_array Pkg_times_repeated__times_repeated__vector.vector) j)) <> Pkg_times_repeated__times_repeated__value.value) )) )} 
+   ) ))) && (Boolean.andb((( -1 ) <= Pkg_times_repeated__times_repeated__result.result__.int__content)) ((Pkg_times_repeated__times_repeated__result.result__.int__content <= (#"pkg_times_repeated.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_times_repeated.ads:22:36" "GP_Reason:VC_RANGE_CHECK" "GP_Id:7" "comment:     (Result in Not_Found .. Vector'Length)
+                                   ^ pkg_times_repeated.ads:22:36:VC_RANGE_CHECK" "GP_Shape:pragargs__in__range__typeconv__length_ref" (Standard__integer.range_check_(( #"pkg_times_repeated.ads" 22 0 0# abstract ensures {true}(let _ = Pkg_times_repeated__times_repeated__vector.vector in (
+   ()))
+   end ;
+  (Pkg_times_repeated__t_vector.length(Pkg_times_repeated__times_repeated__vector.vector)) ))) ))))) ) in (
    ()))
    end  )
 end

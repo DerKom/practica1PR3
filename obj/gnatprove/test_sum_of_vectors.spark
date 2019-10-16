@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "Test_Sum_Of_Vectors",
+      "sloc": [
+        {
+          "file": "test_sum_of_vectors.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 1.24839995987713E-03,
+    "globals (basic)": 8.36570002138615E-03,
+    "globals/properties (advanced)": 1.40623003244400E-02,
+    "flow analysis": 5.61999986530282E-05,
+    "codepeer results": 2.79999994745594E-06,
+    "init_why_sections": 1.69899998581968E-04,
+    "translation of standard": 2.65619996935129E-03,
+    "translation of compilation unit": 3.33034992218018E-02,
+    "proof": 1.69999998433923E-06
+  }
+}

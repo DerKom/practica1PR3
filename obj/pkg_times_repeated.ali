@@ -18,31 +18,31 @@ RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U pkg_times_repeated%b	pkg_times_repeated.adb	49328159 NE OO PK IL
+U pkg_times_repeated%b	pkg_times_repeated.adb	bf42c084 NE OO PK IL
 Z system.assertions%s	s-assert.adb		s-assert.ali
 
-U pkg_times_repeated%s	pkg_times_repeated.ads	60f31f7a EE NE OO PK IL
+U pkg_times_repeated%s	pkg_times_repeated.ads	96835ea7 EE NE OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D pkg_times_repeated.ads  20191016115136 60f31f7a pkg_times_repeated%s
-D pkg_times_repeated.adb  20191016114244 29c19e23 pkg_times_repeated%b
+D pkg_times_repeated.ads  20191016181422 96835ea7 pkg_times_repeated%s
+D pkg_times_repeated.adb  20191016140316 29c19e23 pkg_times_repeated%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
 X 3 pkg_times_repeated.ads
-1K9*pkg_times_repeated 25l5 25e23 4|1b14 40l5 40t23
-3N4*Not_Found 15r21 20r17
+1K9*pkg_times_repeated 27l5 27e23 4|1b14 40l5 40t23
+3N4*Not_Found 17r21 22r17
 4A9*T_Vector(integer)<integer> 7r42 4|3r42
 7U14*Times_Repeated 7>30 7>52 7<72 4|3b14 37l8 37t22
-7a30 Vector{4A9} 11r29 12r15 12r46 16r24 16r40 18r23 18r39 20r30 4|3b30 7r16
-. 8r13 16r31 17r22 19r33 20r23
-7i52 Value{integer} 11r37 16r52 18r52 4|3b52 8r25 17r35 20r35
-7i72 Result{integer} 11r18 15r11 20r7 4|3b72 6m7 9m13 9r23 12r33 15r19 28r10
+7a30 Vector{4A9} 11r29 12r15 12r46 13r7 18r24 18r40 20r23 20r39 22r30 4|3b30
+. 7r16 8r13 16r31 17r22 19r33 20r23
+7i52 Value{integer} 11r37 18r52 20r52 4|3b52 8r25 17r35 20r35
+7i72 Result{integer} 11r18 17r11 22r7 4|3b72 6m7 9m13 9r23 12r33 15r19 28r10
 . 29m10 29r20 30r15 31m13
-16i19 J{integer} 16r47
-18i18 J{integer} 18r46
+18i19 J{integer} 18r47
+20i18 J{integer} 20r46
 X 4 pkg_times_repeated.adb
 7i11 I{integer} 8r20 12r48 16r47 19r47
 16i26 J{integer} 17r29

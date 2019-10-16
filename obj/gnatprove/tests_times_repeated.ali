@@ -19,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U tests_times_repeated%b  tests_times_repeated.adb  b0b5503c OO SU IL
+U tests_times_repeated%b  tests_times_repeated.adb  46c511e1 OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_times_repeated%s	pkg_times_repeated.adb	pkg_times_repeated.ali
@@ -31,13 +31,13 @@ D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
 D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D pkg_times_repeated.ads  20191016115136 60f31f7a pkg_times_repeated%s
+D pkg_times_repeated.ads  20191016181422 96835ea7 pkg_times_repeated%s
 D system.ads		20180524051738 32a08138 system%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D tests_times_repeated.adb  20191016115220 585bfc1c tests_times_repeated%b
+D tests_times_repeated.adb  20191016140316 585bfc1c tests_times_repeated%b
 X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 4 a-textio.ads
@@ -45,7 +45,7 @@ X 4 a-textio.ads
 242U14*Put 13|10s7 20s7 31s7 41s7
 263U14*Put_Line 13|13s7 23s7 34s7 44s7 49s4
 X 7 pkg_times_repeated.ads
-1K9*pkg_times_repeated 25e23 13|2w6 2r34
+1K9*pkg_times_repeated 27e23 13|2w6 2r34
 3N4*Not_Found 13|43r31
 4A9*T_Vector(integer)<integer> 13|7r25 17r25 28r25 38r25
 7U14*Times_Repeated 13|11s7 21s7 32s7 42s7

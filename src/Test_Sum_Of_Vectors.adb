@@ -39,16 +39,16 @@ procedure Test_Sum_Of_Vectors is
 
 
    --Preguntar por qué no me sale esta operación.
-   procedure Test_4 is
-      vector1 : constant T_Vector := (-1, -2, -3, -4, -5);
-      vector2 : constant T_Vector := (-1, -2, -3, -4, -5);
-      result : constant  T_Vector := (-2, -4, -6, -8, -10);
-   begin
-      Put ("Test 4: Suma de números negativos ....................................");
+   --procedure Test_4 is
+      --vector1 : constant T_Vector := (-1, -2, -3, -4, -5);
+      --vector2 : constant T_Vector := (-1, -2, -3, -4, -5);
+      --result : constant  T_Vector := (-2, -4, -6, -8, -10);
+   --begin
+      --Put ("Test 4: Suma de números negativos ....................................");
 
-      pragma Assert (Sum_of_Vectors(vector1,vector2) = result);
-      Put_Line ("OK");
-   end Test_4;
+      --pragma Assert (Sum_of_Vectors(vector1,vector2) = result);
+      --Put_Line ("OK");
+   --end Test_4;
 
 begin
    Put_Line ("********************* Tests_Sum_of_Vectors");

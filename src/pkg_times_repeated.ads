@@ -9,7 +9,9 @@ package pkg_times_repeated with SPARK_Mode is
    with
      Global  => null,
      Depends => (Result => (Vector, Value)),
-     Pre  => (Vector'Length < 500) and then (Vector'Length >0),
+     Pre  => (Vector'Length < 500) and then (Vector'Length >0) and then
+     (Vector'First=0)
+     ,
      Post => 
        -- Se encuentra 
      ((if Result /= Not_Found then

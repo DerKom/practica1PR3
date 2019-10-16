@@ -1,24 +1,41 @@
 Summary of SPARK analysis
 =========================
 
--------------------------------------------------------------------------------------------------------
-SPARK Analysis results        Total       Flow   Interval   CodePeer     Provers   Justified   Unproved
--------------------------------------------------------------------------------------------------------
-Data Dependencies                 .          .          .          .           .           .          .
-Flow Dependencies                 .          .          .          .           .           .          .
-Initialization                    9          9          .          .           .           .          .
-Non-Aliasing                      .          .          .          .           .           .          .
-Run-time Checks                   4          .          .          .    4 (CVC4)           .          .
-Assertions                        4          .          .          .    4 (CVC4)           .          .
-Functional Contracts              1          .          .          .    1 (CVC4)           .          .
-LSP Verification                  .          .          .          .           .           .          .
--------------------------------------------------------------------------------------------------------
-Total                            18    9 (50%)          .          .     9 (50%)           .          .
+---------------------------------------------------------------------------------------------------------
+SPARK Analysis results        Total        Flow   Interval   CodePeer      Provers   Justified   Unproved
+---------------------------------------------------------------------------------------------------------
+Data Dependencies                 .           .          .          .            .           .          .
+Flow Dependencies                 .           .          .          .            .           .          .
+Initialization                   12          12          .          .            .           .          .
+Non-Aliasing                      .           .          .          .            .           .          .
+Run-time Checks                  52           .          .          .    52 (CVC4)           .          .
+Assertions                       10           .          .          .    10 (CVC4)           .          .
+Functional Contracts              4           .          .          .     4 (CVC4)           .          .
+LSP Verification                  .           .          .          .            .           .          .
+---------------------------------------------------------------------------------------------------------
+Total                            78    12 (15%)          .          .     66 (85%)           .          .
 
 
-Analyzed 2 units
+Analyzed 9 units
+in unit main, 0 subprograms and packages out of 1 analyzed
+  Main at main.adb:7 skipped
+in unit pkg_multiply_vector_by_value, 2 subprograms and packages out of 2 analyzed
+  pkg_multiply_vector_by_value at pkg_multiply_vector_by_value.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_multiply_vector_by_value.Multiply_by_Value at pkg_multiply_vector_by_value.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (22 checks)
+in unit pkg_search_value_inside_vector, 2 subprograms and packages out of 2 analyzed
+  pkg_search_value_inside_vector at pkg_search_value_inside_vector.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_search_value_inside_vector.Search_Value_Inside at pkg_search_value_inside_vector.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (6 checks)
+in unit pkg_sum_of_vectors, 2 subprograms and packages out of 2 analyzed
+  pkg_sum_of_vectors at pkg_sum_of_vectors.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
+  pkg_sum_of_vectors.Sum_of_Vectors at pkg_sum_of_vectors.ads:5 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (25 checks)
 in unit pkg_times_repeated, 2 subprograms and packages out of 2 analyzed
   pkg_times_repeated at pkg_times_repeated.ads:1 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  pkg_times_repeated.Times_Repeated at pkg_times_repeated.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (9 checks)
+  pkg_times_repeated.Times_Repeated at pkg_times_repeated.ads:7 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (13 checks)
+in unit test_sum_of_vectors, 0 subprograms and packages out of 1 analyzed
+  Test_Sum_Of_Vectors at test_sum_of_vectors.adb:4 skipped
+in unit tests_multiply_by_value, 0 subprograms and packages out of 1 analyzed
+  Tests_Multiply_by_Value at tests_multiply_by_value.adb:4 skipped
 in unit tests_times_repeated, 0 subprograms and packages out of 1 analyzed
   tests_times_repeated at tests_times_repeated.adb:4 skipped
+in unit tests_vector_search, 0 subprograms and packages out of 1 analyzed
+  Tests_Vector_Search at tests_vector_search.adb:4 skipped
