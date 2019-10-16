@@ -5,11 +5,14 @@ package body pkg_sum_of_vectors with SPARK_Mode is
       -- A la función se le pasan dos vectores del mismo tamaño y se suman sus valores entre sí. 
       -- La función devuelve otro vector con el resultado. 
       
-      result : T_Vector (Vector1'First..Vector1'Last); 
+      result : T_Vector (Vector1'First..Vector1'Last):= (others=> 0); 
    begin 
       
       for I in Vector1'Range loop
          result(I) := Vector1(I) + Vector2(I); 
+         pragma Loop_Invariant(for all J in Vector1'First .. I =>
+                                 result(J) = Vector1(J) + Vector2(J)
+                              ); 
       end loop;
       
       return result; 

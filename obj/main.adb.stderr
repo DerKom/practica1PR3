@@ -1,15 +1,1 @@
-pkg_multiply_vector_by_value.ads:9:17: missing "("
-pkg_multiply_vector_by_value.ads:13:20: missing ";"
-pkg_multiply_vector_by_value.ads:14:22: statement expected
-pkg_multiply_vector_by_value.ads:14:28: reserved word "all" cannot be used as identifier
-pkg_multiply_vector_by_value.ads:17:36: missing ";"
-pkg_multiply_vector_by_value.ads:19:31: missing ";"
-pkg_multiply_vector_by_value.ads:20:16: reserved word "else" cannot be used as identifier
-pkg_multiply_vector_by_value.ads:23:65: extra ")" ignored
-pkg_multiply_vector_by_value.ads:28:16: extra ")" ignored
-pkg_multiply_vector_by_value.ads:29:10: missing ":="
-pkg_multiply_vector_by_value.ads:29:19: reserved word "all" cannot be used as identifier
-pkg_multiply_vector_by_value.ads:33:01: "end loop;" expected for "loop" at line 29
-pkg_multiply_vector_by_value.ads:33:01: "end if;" expected for "if" at line 16
-pkg_multiply_vector_by_value.ads:33:01: "end loop;" expected for "loop" at line 14
-pkg_multiply_vector_by_value.ads:33:01: "end if;" expected for "if" at line 13
+main.adb:2:06: warning: unit "Tests_Multiply_by_Value" is not referenced

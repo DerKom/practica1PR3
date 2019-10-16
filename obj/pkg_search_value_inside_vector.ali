@@ -12,31 +12,35 @@ A -march=x86-64
 P ZX
 
 RN
+RV NO_IMPLICIT_CONDITIONALS
 RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U pkg_search_value_inside_vector%b  pkg_search_value_inside_vector.adb  d200e857 NE OO PK IL
+U pkg_search_value_inside_vector%b  pkg_search_value_inside_vector.adb  9fa7b6ff NE OO PK IL
 Z system.assertions%s	s-assert.adb		s-assert.ali
 
-U pkg_search_value_inside_vector%s  pkg_search_value_inside_vector.ads  a314662c EE NE OO PK IL
+U pkg_search_value_inside_vector%s  pkg_search_value_inside_vector.ads  49228441 EE NE OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D pkg_search_value_inside_vector.ads  20191014183954 a314662c pkg_search_value_inside_vector%s
-D pkg_search_value_inside_vector.adb  20191014183024 71148e7b pkg_search_value_inside_vector%b
+D pkg_search_value_inside_vector.ads  20191016101910 49228441 pkg_search_value_inside_vector%s
+D pkg_search_value_inside_vector.adb  20191016101910 d68532be pkg_search_value_inside_vector%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
 X 3 pkg_search_value_inside_vector.ads
-1K9*pkg_search_value_inside_vector 16l5 16e35 4|1b14 24l5 24t35
-3N4*Not_Found 4|18r14
+1K9*pkg_search_value_inside_vector 19l5 19e35 4|1b14 28l5 28t35
+3N4*Not_Found 12r48 4|22r14
 4A9*T_Vector(integer)<integer> 6r46 4|3r46
-6V13*Search_Value_Inside{integer} 6>34 6>56 10r18 4|3b13 21l8 21t27
-6a34 Vector{4A9} 10r49 4|3b34 10r16 10r32 11r13
-6i56 Value{integer} 10r57 4|3b56 11r25
+6V13*Search_Value_Inside{integer} 6>34 6>56 10r18 12r18 13r24 4|3b13 25l8
+. 25t27
+6a34 Vector{4A9} 10r49 13r17 14r33 14r49 4|3b34 10r16 10r32 11r13 16r45 17r34
+6i56 Value{integer} 10r57 13r54 14r62 4|3b56 11r25 17r47
+14i28 J{integer} 14r56
 X 4 pkg_search_value_inside_vector.adb
-10i11 I{integer} 11r20 13r20
+10i11 I{integer} 11r20 13r20 16r61
+16i40 J{integer} 17r41
 

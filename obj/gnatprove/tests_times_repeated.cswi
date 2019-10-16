@@ -1,0 +1,14 @@
+20191016115226
+-c
+-x
+ada
+-gnatA
+-gnatwa
+-g
+-fstack-check
+-gnata
+-gnato
+-gnat12
+-gnateE
+-gnatc
+-gnates=C:\Users\orlan\Documents\practica1PR3\obj\gnatprove\64060822.tmp

@@ -38,9 +38,9 @@ procedure tests_times_repeated is
       vector : constant T_Vector := (1, 2, 3, 4, 5);
       result : Integer := 0; 
    begin
-      Put ("Test 2:  No se encuentra el valor....................................");
+      Put ("Test 4:  No se encuentra el valor....................................");
       times_repeated(vector, 6, result);
-      pragma Assert (result = 0);
+      pragma Assert (result = Not_Found);
       Put_Line ("OK");
    end Test_4; 
    
