@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#462405ae#;
+   u00001 : constant Version_32 := 16#5c026de1#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -273,18 +273,18 @@ package ada_main is
    pragma Export (C, u00117, "system__assertionsB");
    u00118 : constant Version_32 := 16#ff2dadac#;
    pragma Export (C, u00118, "system__assertionsS");
-   u00119 : constant Version_32 := 16#4707ef0e#;
-   pragma Export (C, u00119, "tests_multiply_by_maxB");
-   u00120 : constant Version_32 := 16#dd7ad8a0#;
-   pragma Export (C, u00120, "pkg_multiply_by_maxB");
-   u00121 : constant Version_32 := 16#7bbd8c88#;
-   pragma Export (C, u00121, "pkg_multiply_by_maxS");
-   u00122 : constant Version_32 := 16#e454e923#;
-   pragma Export (C, u00122, "pkg_multiply_vector_by_valueB");
-   u00123 : constant Version_32 := 16#c892e620#;
-   pragma Export (C, u00123, "pkg_multiply_vector_by_valueS");
-   u00124 : constant Version_32 := 16#8f874ab5#;
-   pragma Export (C, u00124, "tests_multiply_by_valueB");
+   u00119 : constant Version_32 := 16#b652f205#;
+   pragma Export (C, u00119, "tests_multiply_by_valueB");
+   u00120 : constant Version_32 := 16#ae664d8d#;
+   pragma Export (C, u00120, "pkg_multiply_vector_by_valueB");
+   u00121 : constant Version_32 := 16#f1475e90#;
+   pragma Export (C, u00121, "pkg_multiply_vector_by_valueS");
+   u00122 : constant Version_32 := 16#cbb61979#;
+   pragma Export (C, u00122, "tests_switch_to_uppercaseB");
+   u00123 : constant Version_32 := 16#307cb4a8#;
+   pragma Export (C, u00123, "pkg_switch_to_uppercaseB");
+   u00124 : constant Version_32 := 16#c84c2fd2#;
+   pragma Export (C, u00124, "pkg_switch_to_uppercaseS");
    u00125 : constant Version_32 := 16#46c511e1#;
    pragma Export (C, u00125, "tests_times_repeatedB");
    u00126 : constant Version_32 := 16#bf42c084#;
@@ -422,15 +422,15 @@ package ada_main is
    --  pkg_multiply_vector_by_value%s
    --  pkg_multiply_vector_by_value%b
    --  tests_multiply_by_value%b
-   --  pkg_multiply_by_max%s
-   --  pkg_multiply_by_max%b
-   --  tests_multiply_by_max%b
    --  pkg_search_value_inside_vector%s
    --  pkg_search_value_inside_vector%b
    --  tests_vector_search%b
    --  pkg_sum_of_vectors%s
    --  pkg_sum_of_vectors%b
    --  test_sum_of_vectors%b
+   --  pkg_switch_to_uppercase%s
+   --  pkg_switch_to_uppercase%b
+   --  tests_switch_to_uppercase%b
    --  pkg_times_repeated%s
    --  pkg_times_repeated%b
    --  tests_times_repeated%b

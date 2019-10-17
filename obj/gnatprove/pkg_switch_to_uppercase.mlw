@@ -1,0 +1,4481 @@
+(* Module for axiomatizing type "short_short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_short_integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type short_short_integer =
+  < range -128 127 >
+ 
+ function first 
+   : int =
+  ( -128 )
+ 
+ function last 
+   : int =
+  127
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = short_short_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_short_integer__ref =
+  { mutable short_short_integer__content "model_trace:" "name:" : short_short_integer }
+ 
+ function short_short_integer__ref___projection 
+   (a : short_short_integer__ref) : short_short_integer =
+  a.short_short_integer__content
+ 
+ meta "model_projection" function short_short_integer__ref___projection
+ 
+ meta "inline : no" function short_short_integer__ref___projection
+ 
+ val short_short_integer__havoc 
+   (x : short_short_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_short_integer__rep
+ use        Standard__short_short_integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__short_short_integer.short_short_integer) : int =
+  (Standard__short_short_integer.short_short_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__short_short_integer.short_short_integer, 
+ predicate in_range = Standard__short_short_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type short_integer =
+  < range -32768 32767 >
+ 
+ function first 
+   : int =
+  ( -32768 )
+ 
+ function last 
+   : int =
+  32767
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = short_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_integer__ref =
+  { mutable short_integer__content "model_trace:" "name:" : short_integer }
+ 
+ function short_integer__ref___projection 
+   (a : short_integer__ref) : short_integer =
+  a.short_integer__content
+ 
+ meta "model_projection" function short_integer__ref___projection
+ 
+ meta "inline : no" function short_integer__ref___projection
+ 
+ val short_integer__havoc 
+   (x : short_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_integer__rep
+ use        Standard__short_integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__short_integer.short_integer) : int =
+  (Standard__short_integer.short_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__short_integer.short_integer, 
+ predicate in_range = Standard__short_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type integer =
+  < range -2147483648 2147483647 >
+ 
+ function first 
+   : int =
+  ( -2147483648 )
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer__ref =
+  { mutable integer__content "model_trace:" "name:" : integer }
+ 
+ function integer__ref___projection 
+   (a : integer__ref) : integer =
+  a.integer__content
+ 
+ meta "model_projection" function integer__ref___projection
+ 
+ meta "inline : no" function integer__ref___projection
+ 
+ val integer__havoc 
+   (x : integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer__rep
+ use        Standard__integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__integer.integer) : int =
+  (Standard__integer.integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__integer.integer, 
+ predicate in_range = Standard__integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type long_integer =
+  < range -2147483648 2147483647 >
+ 
+ function first 
+   : int =
+  ( -2147483648 )
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = long_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_integer__ref =
+  { mutable long_integer__content "model_trace:" "name:" : long_integer }
+ 
+ function long_integer__ref___projection 
+   (a : long_integer__ref) : long_integer =
+  a.long_integer__content
+ 
+ meta "model_projection" function long_integer__ref___projection
+ 
+ meta "inline : no" function long_integer__ref___projection
+ 
+ val long_integer__havoc 
+   (x : long_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_integer__rep
+ use        Standard__long_integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__long_integer.long_integer) : int =
+  (Standard__long_integer.long_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__long_integer.long_integer, 
+ predicate in_range = Standard__long_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_long_integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type long_long_integer =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ function first 
+   : int =
+  ( -9223372036854775808 )
+ 
+ function last 
+   : int =
+  9223372036854775807
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = long_long_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_long_integer__ref =
+  { mutable long_long_integer__content "model_trace:" "name:" : long_long_integer }
+ 
+ function long_long_integer__ref___projection 
+   (a : long_long_integer__ref) : long_long_integer =
+  a.long_long_integer__content
+ 
+ meta "model_projection" function long_long_integer__ref___projection
+ 
+ meta "inline : no" function long_long_integer__ref___projection
+ 
+ val long_long_integer__havoc 
+   (x : long_long_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_long_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_long_integer__rep
+ use        Standard__long_long_integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__long_long_integer.long_long_integer) : int =
+  (Standard__long_long_integer.long_long_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__long_long_integer.long_long_integer, 
+ predicate in_range = Standard__long_long_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "natural", created in Gnat2Why.Types.Translate_Type *)
+module Standard__natural
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type natural =
+  < range 0 2147483647 >
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = natural, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type natural__ref =
+  { mutable natural__content "model_trace:" "name:" : natural }
+ 
+ function natural__ref___projection 
+   (a : natural__ref) : natural =
+  a.natural__content
+ 
+ meta "model_projection" function natural__ref___projection
+ 
+ meta "inline : no" function natural__ref___projection
+ 
+ val natural__havoc 
+   (x : natural__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "natural", created in Gnat2Why.Types.Translate_Type *)
+module Standard__natural__rep
+ use        Standard__natural
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__natural.natural) : int =
+  (Standard__natural.natural'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__natural.natural, 
+ predicate in_range = Standard__natural.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "positive", created in Gnat2Why.Types.Translate_Type *)
+module Standard__positive
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type positive =
+  < range 1 2147483647 >
+ 
+ function first 
+   : int =
+  1
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = positive, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type positive__ref =
+  { mutable positive__content "model_trace:" "name:" : positive }
+ 
+ function positive__ref___projection 
+   (a : positive__ref) : positive =
+  a.positive__content
+ 
+ meta "model_projection" function positive__ref___projection
+ 
+ meta "inline : no" function positive__ref___projection
+ 
+ val positive__havoc 
+   (x : positive__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "positive", created in Gnat2Why.Types.Translate_Type *)
+module Standard__positive__rep
+ use        Standard__positive
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__positive.positive) : int =
+  (Standard__positive.positive'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__positive.positive, 
+ predicate in_range = Standard__positive.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "short_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_float
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float32
+
+ type short_float 
+ 
+ function first 
+   : Float32.t =
+  (Float32.neg (340282346638528859811704183484516925440.0:Float32.t))
+ 
+ function last 
+   : Float32.t =
+  (340282346638528859811704183484516925440.0:Float32.t)
+ 
+ predicate in_range 
+   (x : Float32.t)  =
+  (Float32.t'isFinite x)
+ 
+ clone export "ada__model".Static_Float32 with
+ type t = short_float, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type short_float__ref =
+  { mutable short_float__content "model_trace:" "name:" : short_float }
+ 
+ function short_float__ref___projection 
+   (a : short_float__ref) : short_float =
+  a.short_float__content
+ 
+ meta "model_projection" function short_float__ref___projection
+ 
+ meta "inline : no" function short_float__ref___projection
+ 
+ val short_float__havoc 
+   (x : short_float__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "short_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__short_float__rep
+ use        Standard__short_float
+ use        "_gnatprove_standard".Float32
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Float32 with
+ type t = Standard__short_float.short_float, 
+ predicate in_range = Standard__short_float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float32
+
+ type float 
+ 
+ function first 
+   : Float32.t =
+  (Float32.neg (340282346638528859811704183484516925440.0:Float32.t))
+ 
+ function last 
+   : Float32.t =
+  (340282346638528859811704183484516925440.0:Float32.t)
+ 
+ predicate in_range 
+   (x : Float32.t)  =
+  (Float32.t'isFinite x)
+ 
+ clone export "ada__model".Static_Float32 with
+ type t = float, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type float__ref =
+  { mutable float__content "model_trace:" "name:" : float }
+ 
+ function float__ref___projection 
+   (a : float__ref) : float =
+  a.float__content
+ 
+ meta "model_projection" function float__ref___projection
+ 
+ meta "inline : no" function float__ref___projection
+ 
+ val float__havoc 
+   (x : float__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__float__rep
+ use        Standard__float
+ use        "_gnatprove_standard".Float32
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Float32 with
+ type t = Standard__float.float, 
+ predicate in_range = Standard__float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "long_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_float
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float64
+
+ type long_float 
+ 
+ function first 
+   : Float64.t =
+  (Float64.neg (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.0:Float64.t))
+ 
+ function last 
+   : Float64.t =
+  (179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.0:Float64.t)
+ 
+ predicate in_range 
+   (x : Float64.t)  =
+  (Float64.t'isFinite x)
+ 
+ clone export "ada__model".Static_Float64 with
+ type t = long_float, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type long_float__ref =
+  { mutable long_float__content "model_trace:" "name:" : long_float }
+ 
+ function long_float__ref___projection 
+   (a : long_float__ref) : long_float =
+  a.long_float__content
+ 
+ meta "model_projection" function long_float__ref___projection
+ 
+ meta "inline : no" function long_float__ref___projection
+ 
+ val long_float__havoc 
+   (x : long_float__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "long_float", created in Gnat2Why.Types.Translate_Type *)
+module Standard__long_float__rep
+ use        Standard__long_float
+ use        "_gnatprove_standard".Float64
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Float64 with
+ type t = Standard__long_float.long_float, 
+ predicate in_range = Standard__long_float.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type character 
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  255
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type character__ref =
+  { mutable character__content "model_trace:" "name:" : character }
+ 
+ function character__ref___projection 
+   (a : character__ref) : character =
+  a.character__content
+ 
+ meta "model_projection" function character__ref___projection
+ 
+ meta "inline : no" function character__ref___projection
+ 
+ val character__havoc 
+   (x : character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__character__rep
+ use        Standard__character
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__character.character, 
+ predicate in_range = Standard__character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type wide_character 
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  65535
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = wide_character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type wide_character__ref =
+  { mutable wide_character__content "model_trace:" "name:" : wide_character }
+ 
+ function wide_character__ref___projection 
+   (a : wide_character__ref) : wide_character =
+  a.wide_character__content
+ 
+ meta "model_projection" function wide_character__ref___projection
+ 
+ meta "inline : no" function wide_character__ref___projection
+ 
+ val wide_character__havoc 
+   (x : wide_character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_character__rep
+ use        Standard__wide_character
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__wide_character.wide_character, 
+ predicate in_range = Standard__wide_character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "wide_wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type wide_wide_character 
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = wide_wide_character, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type wide_wide_character__ref =
+  { mutable wide_wide_character__content "model_trace:" "name:" : wide_wide_character }
+ 
+ function wide_wide_character__ref___projection 
+   (a : wide_wide_character__ref) : wide_wide_character =
+  a.wide_wide_character__content
+ 
+ meta "model_projection" function wide_wide_character__ref___projection
+ 
+ meta "inline : no" function wide_wide_character__ref___projection
+ 
+ val wide_wide_character__havoc 
+   (x : wide_wide_character__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "wide_wide_character", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_character__rep
+ use        Standard__wide_wide_character
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__wide_wide_character.wide_wide_character, 
+ predicate in_range = Standard__wide_wide_character.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing the array theory associated to type "string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__character
+ use        Standard__character__rep
+
+ function index_I1_one 
+   : int =
+  1
+ 
+ type component_type =
+  Standard__character.character
+ 
+ clone export "_gnatprove_standard".Array__1 with
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_91   : int.
+   (if (( (a__first <= temp___idx_91) /\ (temp___idx_91 <= a__last) )) then (
+    ((Standard__character__rep.to_rep (get a temp___idx_91)) = (Standard__character__rep.to_rep (get b ((b__first - a__first) + temp___idx_91))))) else true)) )
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_91   : int.
+    (if (( (a__first <= temp___idx_91) /\ (temp___idx_91 <= a__last) )) then (
+     ((Standard__character__rep.to_rep (get a temp___idx_91)) = (Standard__character__rep.to_rep (get b ((b__first - a__first) + temp___idx_91))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__character__Concat
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int__Standard__character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with
+ type component_type = Array__Int__Standard__character.component_type, 
+ type map = Array__Int__Standard__character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__character_Comp
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__character__rep
+ use        Array__Int__Standard__character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
+ type component_type = Array__Int__Standard__character.component_type, 
+ function to_rep = Standard__character__rep.to_rep, 
+ type map = Array__Int__Standard__character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__character.get, 
+ function bool_eq = Array__Int__Standard__character.bool_eq
+
+end
+
+(* Module for axiomatizing type "string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__string
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+ use        Standard__integer
+ use        Standard__positive
+ use        Standard__character
+ use        Array__Int__Standard__character
+ use        Standard__integer__rep
+
+ type component_type =
+  Standard__character.character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline : no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline : no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline : no" function last
+ 
+ function to_string 
+   (x : Main.__image) : string
+ 
+ function from_string 
+   (x : string) : Main.__image
+ 
+ type string__ref =
+  { mutable string__content "model_trace:" "name:" : string }
+ 
+ function string__ref___projection 
+   (a : string__ref) : string =
+  a.string__content
+ 
+ meta "model_projection" function string__ref___projection
+ 
+ meta "inline : no" function string__ref___projection
+ 
+ val string__havoc 
+   (x : string__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing the array theory associated to type "wide_string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__wide_character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_character
+ use        Standard__wide_character__rep
+
+ function index_I1_one 
+   : int =
+  1
+ 
+ type component_type =
+  Standard__wide_character.wide_character
+ 
+ clone export "_gnatprove_standard".Array__1 with
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_98   : int.
+   (if (( (a__first <= temp___idx_98) /\ (temp___idx_98 <= a__last) )) then (
+    ((Standard__wide_character__rep.to_rep (get a temp___idx_98)) = (Standard__wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_98))))) else true)) )
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_98   : int.
+    (if (( (a__first <= temp___idx_98) /\ (temp___idx_98 <= a__last) )) then (
+     ((Standard__wide_character__rep.to_rep (get a temp___idx_98)) = (Standard__wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_98))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "wide_string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__wide_character__Concat
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int__Standard__wide_character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with
+ type component_type = Array__Int__Standard__wide_character.component_type, 
+ type map = Array__Int__Standard__wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "wide_string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__wide_character_Comp
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_character__rep
+ use        Array__Int__Standard__wide_character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
+ type component_type = Array__Int__Standard__wide_character.component_type, 
+ function to_rep = Standard__wide_character__rep.to_rep, 
+ type map = Array__Int__Standard__wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_character.get, 
+ function bool_eq = Array__Int__Standard__wide_character.bool_eq
+
+end
+
+(* Module for axiomatizing type "wide_string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_string
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__positive
+ use        Standard__wide_character
+ use        Standard__integer__rep
+ use        Array__Int__Standard__wide_character
+
+ type component_type =
+  Standard__wide_character.wide_character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with
+ type map = Array__Int__Standard__wide_character.map, 
+ function array_bool_eq = Array__Int__Standard__wide_character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type wide_string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline : no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline : no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline : no" function last
+ 
+ type wide_string__ref =
+  { mutable wide_string__content "model_trace:" "name:" : wide_string }
+ 
+ function wide_string__ref___projection 
+   (a : wide_string__ref) : wide_string =
+  a.wide_string__content
+ 
+ meta "model_projection" function wide_string__ref___projection
+ 
+ meta "inline : no" function wide_string__ref___projection
+ 
+ val wide_string__havoc 
+   (x : wide_string__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Create_Rep_Array_Theory *)
+module Array__Int__Standard__wide_wide_character
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_wide_character
+ use        Standard__wide_wide_character__rep
+
+ function index_I1_one 
+   : int =
+  1
+ 
+ type component_type =
+  Standard__wide_wide_character.wide_wide_character
+ 
+ clone export "_gnatprove_standard".Array__1 with
+ type I1.t = int, 
+ predicate I1.le = Int.(<=), 
+ predicate I1.lt = Int.(<), 
+ predicate I1.gt = Int.(>), 
+ function I1.add = Int.(+), 
+ function I1.sub = Int.(-), 
+ function I1.one = index_I1_one, 
+ type component_type = component_type
+ 
+ function bool_eq 
+   (a : map) (a__first : int) (a__last : int) (b : map) (b__first : int) (b__last : int) : bool =
+  ( (if ((a__first <= a__last)) then (
+   ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+   (b__first > b__last))) /\ (forall temp___idx_105   : int.
+   (if (( (a__first <= temp___idx_105) /\ (temp___idx_105 <= a__last) )) then (
+    ((Standard__wide_wide_character__rep.to_rep (get a temp___idx_105)) = (Standard__wide_wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_105))))) else true)) )
+ 
+ axiom bool_eq_rev :
+  (forall a   b   : map.
+  (forall a__first   a__last   b__first   b__last   : int.
+   ( ((bool_eq b b__first b__last a a__first a__last) = True) -> ( (if ((a__first <= a__last)) then (
+    ( (b__first <= b__last) /\ ((a__last - a__first) = (b__last - b__first)) )) else (
+    (b__first > b__last))) /\ (forall temp___idx_105   : int.
+    (if (( (a__first <= temp___idx_105) /\ (temp___idx_105 <= a__last) )) then (
+     ((Standard__wide_wide_character__rep.to_rep (get a temp___idx_105)) = (Standard__wide_wide_character__rep.to_rep (get b ((b__first - a__first) + temp___idx_105))))) else true)) ) )))
+
+end
+
+(* Module for axiomatizing concatenation for the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Declare_Concatenation_Symbols *)
+module Array__Int__Standard__wide_wide_character__Concat
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Array__Int__Standard__wide_wide_character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "_gnatprove_standard".Array__1__Concat with
+ type component_type = Array__Int__Standard__wide_wide_character.component_type, 
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_wide_character.get
+
+end
+
+(* Module for axiomatizing comparison for the array theory associated to type "wide_wide_string", created in Why.Gen.Arrays.Declare_Comparison_Symbols *)
+module Array__Int__Standard__wide_wide_character_Comp
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_wide_character__rep
+ use        Array__Int__Standard__wide_wide_character
+
+ function index_Index_one 
+   : int =
+  1
+ 
+ clone export "ada__model".Array_Int_Rep_Comparison_Axiom with
+ type component_type = Array__Int__Standard__wide_wide_character.component_type, 
+ function to_rep = Standard__wide_wide_character__rep.to_rep, 
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ type Index.t = int, 
+ predicate Index.le = Int.(<=), 
+ predicate Index.lt = Int.(<), 
+ predicate Index.gt = Int.(>), 
+ function Index.add = Int.(+), 
+ function Index.sub = Int.(-), 
+ function Index.one = index_Index_one, 
+ function get = Array__Int__Standard__wide_wide_character.get, 
+ function bool_eq = Array__Int__Standard__wide_wide_character.bool_eq
+
+end
+
+(* Module for axiomatizing type "wide_wide_string", created in Gnat2Why.Types.Translate_Type *)
+module Standard__wide_wide_string
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__positive
+ use        Standard__wide_wide_character
+ use        Standard__integer__rep
+ use        Array__Int__Standard__wide_wide_character
+
+ type component_type =
+  Standard__wide_wide_character.wide_wide_character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with
+ type map = Array__Int__Standard__wide_wide_character.map, 
+ function array_bool_eq = Array__Int__Standard__wide_wide_character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Standard__positive.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type wide_wide_string =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline : no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline : no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline : no" function last
+ 
+ type wide_wide_string__ref =
+  { mutable wide_wide_string__content "model_trace:" "name:" : wide_wide_string }
+ 
+ function wide_wide_string__ref___projection 
+   (a : wide_wide_string__ref) : wide_wide_string =
+  a.wide_wide_string__content
+ 
+ meta "model_projection" function wide_wide_string__ref___projection
+ 
+ meta "inline : no" function wide_wide_string__ref___projection
+ 
+ val wide_wide_string__havoc 
+   (x : wide_wide_string__ref) : unit
+  writes {x}
+
+end
+
+(* Module for fixed-point operation for type at system.ads:1, created in Why.Gen.Scalars.Create_Fixed_Point_Theory_If_Needed *)
+module Fixed_Point__1_1000000000
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ function num_small 
+   : int =
+  1
+ 
+ function den_small 
+   : int =
+  1000000000
+ 
+ clone export "ada__model".Fixed_Point_Rep with
+ function num_small = num_small, 
+ function den_small = den_small
+
+end
+
+(* Module for axiomatizing type "duration", created in Gnat2Why.Types.Translate_Type *)
+module Standard__duration
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Main
+
+ type duration 
+ 
+ function num_small 
+   : Main.__fixed =
+  1
+ 
+ function den_small 
+   : Main.__fixed =
+  1000000000
+ 
+ function first 
+   : Main.__fixed =
+  ( -9223372036854775808 )
+ 
+ function last 
+   : Main.__fixed =
+  9223372036854775807
+ 
+ predicate in_range 
+   (x : Main.__fixed)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Fixed_Point with
+ type t = duration, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type duration__ref =
+  { mutable duration__content "model_trace:" "name:" : duration }
+ 
+ function duration__ref___projection 
+   (a : duration__ref) : duration =
+  a.duration__content
+ 
+ meta "model_projection" function duration__ref___projection
+ 
+ meta "inline : no" function duration__ref___projection
+ 
+ val duration__havoc 
+   (x : duration__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "integer_8", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_8
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type integer_8 =
+  < range -128 127 >
+ 
+ function first 
+   : int =
+  ( -128 )
+ 
+ function last 
+   : int =
+  127
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = integer_8, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_8__ref =
+  { mutable integer_8__content "model_trace:" "name:" : integer_8 }
+ 
+ function integer_8__ref___projection 
+   (a : integer_8__ref) : integer_8 =
+  a.integer_8__content
+ 
+ meta "model_projection" function integer_8__ref___projection
+ 
+ meta "inline : no" function integer_8__ref___projection
+ 
+ val integer_8__havoc 
+   (x : integer_8__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_8", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_8__rep
+ use        Standard__integer_8
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__integer_8.integer_8) : int =
+  (Standard__integer_8.integer_8'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__integer_8.integer_8, 
+ predicate in_range = Standard__integer_8.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_16", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_16
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type integer_16 =
+  < range -32768 32767 >
+ 
+ function first 
+   : int =
+  ( -32768 )
+ 
+ function last 
+   : int =
+  32767
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = integer_16, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_16__ref =
+  { mutable integer_16__content "model_trace:" "name:" : integer_16 }
+ 
+ function integer_16__ref___projection 
+   (a : integer_16__ref) : integer_16 =
+  a.integer_16__content
+ 
+ meta "model_projection" function integer_16__ref___projection
+ 
+ meta "inline : no" function integer_16__ref___projection
+ 
+ val integer_16__havoc 
+   (x : integer_16__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_16", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_16__rep
+ use        Standard__integer_16
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__integer_16.integer_16) : int =
+  (Standard__integer_16.integer_16'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__integer_16.integer_16, 
+ predicate in_range = Standard__integer_16.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_32", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_32
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type integer_32 =
+  < range -2147483648 2147483647 >
+ 
+ function first 
+   : int =
+  ( -2147483648 )
+ 
+ function last 
+   : int =
+  2147483647
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = integer_32, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_32__ref =
+  { mutable integer_32__content "model_trace:" "name:" : integer_32 }
+ 
+ function integer_32__ref___projection 
+   (a : integer_32__ref) : integer_32 =
+  a.integer_32__content
+ 
+ meta "model_projection" function integer_32__ref___projection
+ 
+ meta "inline : no" function integer_32__ref___projection
+ 
+ val integer_32__havoc 
+   (x : integer_32__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_32", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_32__rep
+ use        Standard__integer_32
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__integer_32.integer_32) : int =
+  (Standard__integer_32.integer_32'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__integer_32.integer_32, 
+ predicate in_range = Standard__integer_32.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "integer_64", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_64
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type integer_64 =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ function first 
+   : int =
+  ( -9223372036854775808 )
+ 
+ function last 
+   : int =
+  9223372036854775807
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = integer_64, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type integer_64__ref =
+  { mutable integer_64__content "model_trace:" "name:" : integer_64 }
+ 
+ function integer_64__ref___projection 
+   (a : integer_64__ref) : integer_64 =
+  a.integer_64__content
+ 
+ meta "model_projection" function integer_64__ref___projection
+ 
+ meta "inline : no" function integer_64__ref___projection
+ 
+ val integer_64__havoc 
+   (x : integer_64__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "integer_64", created in Gnat2Why.Types.Translate_Type *)
+module Standard__integer_64__rep
+ use        Standard__integer_64
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__integer_64.integer_64) : int =
+  (Standard__integer_64.integer_64'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__integer_64.integer_64, 
+ predicate in_range = Standard__integer_64.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "universal_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__universal_integer
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type universal_integer =
+  < range -9223372036854775808 9223372036854775807 >
+ 
+ function first 
+   : int =
+  ( -9223372036854775808 )
+ 
+ function last 
+   : int =
+  9223372036854775807
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = universal_integer, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type universal_integer__ref =
+  { mutable universal_integer__content "model_trace:" "name:" : universal_integer }
+ 
+ function universal_integer__ref___projection 
+   (a : universal_integer__ref) : universal_integer =
+  a.universal_integer__content
+ 
+ meta "model_projection" function universal_integer__ref___projection
+ 
+ meta "inline : no" function universal_integer__ref___projection
+ 
+ val universal_integer__havoc 
+   (x : universal_integer__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "universal_integer", created in Gnat2Why.Types.Translate_Type *)
+module Standard__universal_integer__rep
+ use        Standard__universal_integer
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Standard__universal_integer.universal_integer) : int =
+  (Standard__universal_integer.universal_integer'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Standard__universal_integer.universal_integer, 
+ predicate in_range = Standard__universal_integer.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:44, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_control__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 44 0 0#"model" "model_trace:2686" "name:Item" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:44, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_control__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_control" defined at a-chahan.ads:44, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_control
+ use import "_gnatprove_standard".Main
+
+ function is_control 
+   (item : int) : bool
+ 
+ predicate is_control__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:45, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_graphic__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 45 0 0#"model" "name:Item" "model_trace:2705" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:45, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_graphic__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_graphic" defined at a-chahan.ads:45, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_graphic
+ use import "_gnatprove_standard".Main
+
+ function is_graphic 
+   (item : int) : bool
+ 
+ predicate is_graphic__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:46, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_letter__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 46 0 0#"model" "name:Item" "model_trace:2724" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:46, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_letter__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_letter" defined at a-chahan.ads:46, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_letter
+ use import "_gnatprove_standard".Main
+
+ function is_letter 
+   (item : int) : bool
+ 
+ predicate is_letter__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:47, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_lower__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 47 0 0#"model" "name:Item" "model_trace:2743" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:47, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_lower__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_lower" defined at a-chahan.ads:47, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_lower
+ use import "_gnatprove_standard".Main
+
+ function is_lower 
+   (item : int) : bool
+ 
+ predicate is_lower__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:48, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_upper__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 48 0 0#"model" "name:Item" "model_trace:2762" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:48, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_upper__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_upper" defined at a-chahan.ads:48, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_upper
+ use import "_gnatprove_standard".Main
+
+ function is_upper 
+   (item : int) : bool
+ 
+ predicate is_upper__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:49, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_basic__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 49 0 0#"model" "name:Item" "model_trace:2781" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:49, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_basic__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_basic" defined at a-chahan.ads:49, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_basic
+ use import "_gnatprove_standard".Main
+
+ function is_basic 
+   (item : int) : bool
+ 
+ predicate is_basic__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:50, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_digit__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 50 0 0#"model" "name:Item" "model_trace:2800" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:50, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_digit__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_digit" defined at a-chahan.ads:50, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_digit
+ use import "_gnatprove_standard".Main
+
+ function is_digit 
+   (item : int) : bool
+ 
+ predicate is_digit__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:53, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_hexadecimal_digit__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 53 0 0#"model" "name:Item" "model_trace:2839" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:53, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_hexadecimal_digit__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_hexadecimal_digit" defined at a-chahan.ads:53, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_hexadecimal_digit
+ use import "_gnatprove_standard".Main
+
+ function is_hexadecimal_digit 
+   (item : int) : bool
+ 
+ predicate is_hexadecimal_digit__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:54, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_alphanumeric__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 54 0 0#"model" "name:Item" "model_trace:2858" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:54, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_alphanumeric__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_alphanumeric" defined at a-chahan.ads:54, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_alphanumeric
+ use import "_gnatprove_standard".Main
+
+ function is_alphanumeric 
+   (item : int) : bool
+ 
+ predicate is_alphanumeric__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:55, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_special__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 55 0 0#"model" "name:Item" "model_trace:2877" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:55, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_special__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_special" defined at a-chahan.ads:55, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_special
+ use import "_gnatprove_standard".Main
+
+ function is_special 
+   (item : int) : bool
+ 
+ predicate is_special__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:56, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_line_terminator__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 56 0 0#"model" "name:Item" "model_trace:2896" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:56, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_line_terminator__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_line_terminator" defined at a-chahan.ads:56, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_line_terminator
+ use import "_gnatprove_standard".Main
+
+ function is_line_terminator 
+   (item : int) : bool
+ 
+ predicate is_line_terminator__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:57, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_mark__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 57 0 0#"model" "name:Item" "model_trace:2915" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:57, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_mark__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_mark" defined at a-chahan.ads:57, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_mark
+ use import "_gnatprove_standard".Main
+
+ function is_mark 
+   (item : int) : bool
+ 
+ predicate is_mark__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:58, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_other_format__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 58 0 0#"model" "name:Item" "model_trace:2934" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:58, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_other_format__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_other_format" defined at a-chahan.ads:58, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_other_format
+ use import "_gnatprove_standard".Main
+
+ function is_other_format 
+   (item : int) : bool
+ 
+ predicate is_other_format__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:59, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_punctuation_connector__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 59 0 0#"model" "name:Item" "model_trace:2953" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:59, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_punctuation_connector__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_punctuation_connector" defined at a-chahan.ads:59, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_punctuation_connector
+ use import "_gnatprove_standard".Main
+
+ function is_punctuation_connector 
+   (item : int) : bool
+ 
+ predicate is_punctuation_connector__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:60, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_space__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 60 0 0#"model" "name:Item" "model_trace:2972" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:60, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_space__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_space" defined at a-chahan.ads:60, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_space
+ use import "_gnatprove_standard".Main
+
+ function is_space 
+   (item : int) : bool
+ 
+ predicate is_space__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:66, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_lower__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 66 0 0#"model" "name:Item" "model_trace:2991" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:66, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_lower__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_lower" defined at a-chahan.ads:66, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_lower
+ use import "_gnatprove_standard".Main
+
+ function to_lower 
+   (item : int) : int
+ 
+ predicate to_lower__function_guard 
+   (result : int) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:67, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_upper__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 67 0 0#"model" "name:Item" "model_trace:3010" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:67, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_upper__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_upper" defined at a-chahan.ads:67, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_upper
+ use import "_gnatprove_standard".Main
+
+ function to_upper 
+   (item : int) : int
+ 
+ predicate to_upper__function_guard 
+   (result : int) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:68, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_basic__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 68 0 0#"model" "name:Item" "model_trace:3029" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:68, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_basic__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_basic" defined at a-chahan.ads:68, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_basic
+ use import "_gnatprove_standard".Main
+
+ function to_basic 
+   (item : int) : int
+ 
+ predicate to_basic__function_guard 
+   (result : int) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:70, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_lower__2__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 70 0 0#"model_projected" "name:Item" "model_trace:3048" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:70, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_lower__2__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_lower__2" defined at a-chahan.ads:70, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_lower__2
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function to_lower__2 
+   (item : Standard__string.string) : Standard__string.string
+ 
+ predicate to_lower__2__function_guard 
+   (result : Standard__string.string) (item : Standard__string.string) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:71, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_upper__2__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 71 0 0#"model_projected" "name:Item" "model_trace:3067" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:71, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_upper__2__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_upper__2" defined at a-chahan.ads:71, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_upper__2
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function to_upper__2 
+   (item : Standard__string.string) : Standard__string.string
+ 
+ predicate to_upper__2__function_guard 
+   (result : Standard__string.string) (item : Standard__string.string) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:72, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_basic__2__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 72 0 0#"model_projected" "name:Item" "model_trace:3086" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:72, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_basic__2__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_basic__2" defined at a-chahan.ads:72, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_basic__2
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function to_basic__2 
+   (item : Standard__string.string) : Standard__string.string
+ 
+ predicate to_basic__2__function_guard 
+   (result : Standard__string.string) (item : Standard__string.string) 
+
+end
+
+(* Module for axiomatizing type "iso_646" defined at a-chahan.ads:78, created in Gnat2Why.Types.Translate_Type *)
+module Ada__characters__handling__iso_646
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type iso_646 
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  127
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = iso_646, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type iso_646__ref =
+  { mutable iso_646__content "model_trace:" "name:" : iso_646 }
+ 
+ function iso_646__ref___projection 
+   (a : iso_646__ref) : iso_646 =
+  a.iso_646__content
+ 
+ meta "model_projection" function iso_646__ref___projection
+ 
+ meta "inline : no" function iso_646__ref___projection
+ 
+ val iso_646__havoc 
+   (x : iso_646__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "iso_646" defined at a-chahan.ads:78, created in Gnat2Why.Types.Translate_Type *)
+module Ada__characters__handling__iso_646__rep
+ use        Ada__characters__handling__iso_646
+ use import "_gnatprove_standard".Main
+
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Ada__characters__handling__iso_646.iso_646, 
+ predicate in_range = Ada__characters__handling__iso_646.in_range
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:81, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_iso_646__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 81 0 0#"model" "name:Item" "model_trace:3125" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:81, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_iso_646__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_iso_646" defined at a-chahan.ads:81, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_iso_646
+ use import "_gnatprove_standard".Main
+
+ function is_iso_646 
+   (item : int) : bool
+ 
+ predicate is_iso_646__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:82, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_iso_646__2__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 82 0 0#"model_projected" "name:Item" "model_trace:3144" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:82, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_iso_646__2__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_iso_646__2" defined at a-chahan.ads:82, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_iso_646__2
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function is_iso_646__2 
+   (item : Standard__string.string) : bool
+ 
+ predicate is_iso_646__2__function_guard 
+   (result : bool) (item : Standard__string.string) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:85, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_iso_646__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 85 0 0#"model" "name:Item" "model_trace:3163" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:85, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_iso_646__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "substitute" defined at a-chahan.ads:86, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_iso_646__substitute
+ use import "_gnatprove_standard".Main
+
+ function substitute #"a-chahan.ads" 86 0 0#"model" "model_trace:3172" "name:Substitute" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "substitute" defined at a-chahan.ads:86, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_iso_646__substitute___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_iso_646" defined at a-chahan.ads:84, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_iso_646
+ use import "_gnatprove_standard".Main
+
+ function to_iso_646 
+   (item : int) (substitute : int) : int
+ 
+ predicate to_iso_646__function_guard 
+   (result : int) (item : int) (substitute : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:89, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_iso_646__2__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 89 0 0#"model_projected" "name:Item" "model_trace:3192" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:89, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_iso_646__2__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "substitute" defined at a-chahan.ads:90, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_iso_646__2__substitute
+ use import "_gnatprove_standard".Main
+
+ function substitute #"a-chahan.ads" 90 0 0#"model" "name:Substitute" "model_trace:3201" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "substitute" defined at a-chahan.ads:90, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_iso_646__2__substitute___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_iso_646__2" defined at a-chahan.ads:88, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_iso_646__2
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function to_iso_646__2 
+   (item : Standard__string.string) (substitute : int) : Standard__string.string
+ 
+ predicate to_iso_646__2__function_guard 
+   (result : Standard__string.string) (item : Standard__string.string) (substitute : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:105, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_character__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 105 0 0#"model" "name:Item" "model_trace:3221" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:105, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_character__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_character" defined at a-chahan.ads:105, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_character
+ use import "_gnatprove_standard".Main
+
+ function is_character 
+   (item : int) : bool
+ 
+ predicate is_character__function_guard 
+   (result : bool) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:106, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__is_string__item
+ use import "_gnatprove_standard".Main
+ use        Standard__wide_string
+
+ function item #"a-chahan.ads" 106 0 0#"model_projected" "name:Item" "model_trace:3240" 
+   : Standard__wide_string.wide_string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:106, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__is_string__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "is_string" defined at a-chahan.ads:106, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__is_string
+ use import "_gnatprove_standard".Main
+ use        Standard__wide_string
+
+ function is_string 
+   (item : Standard__wide_string.wide_string) : bool
+ 
+ predicate is_string__function_guard 
+   (result : bool) (item : Standard__wide_string.wide_string) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:122, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_character__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 122 0 0#"model" "name:Item" "model_trace:3259" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:122, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_character__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "substitute" defined at a-chahan.ads:123, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_character__substitute
+ use import "_gnatprove_standard".Main
+
+ function substitute #"a-chahan.ads" 123 0 0#"model" "name:Substitute" "model_trace:3268" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "substitute" defined at a-chahan.ads:123, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_character__substitute___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_character" defined at a-chahan.ads:121, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_character
+ use import "_gnatprove_standard".Main
+
+ function to_character 
+   (item : int) (substitute : int) : int
+ 
+ predicate to_character__function_guard 
+   (result : int) (item : int) (substitute : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:126, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_string__item
+ use import "_gnatprove_standard".Main
+ use        Standard__wide_string
+
+ function item #"a-chahan.ads" 126 0 0#"model_projected" "name:Item" "model_trace:3288" 
+   : Standard__wide_string.wide_string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:126, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_string__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the constant "substitute" defined at a-chahan.ads:127, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_string__substitute
+ use import "_gnatprove_standard".Main
+
+ function substitute #"a-chahan.ads" 127 0 0#"model" "name:Substitute" "model_trace:3297" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "substitute" defined at a-chahan.ads:127, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_string__substitute___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_string" defined at a-chahan.ads:125, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_string
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__wide_string
+
+ function to_string 
+   (item : Standard__wide_string.wide_string) (substitute : int) : Standard__string.string
+ 
+ predicate to_string__function_guard 
+   (result : Standard__string.string) (item : Standard__wide_string.wide_string) (substitute : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:130, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_wide_character__item
+ use import "_gnatprove_standard".Main
+
+ function item #"a-chahan.ads" 130 0 0#"model" "name:Item" "model_trace:3317" 
+   : int
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:130, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_wide_character__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_wide_character" defined at a-chahan.ads:129, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_wide_character
+ use import "_gnatprove_standard".Main
+
+ function to_wide_character 
+   (item : int) : int
+ 
+ predicate to_wide_character__function_guard 
+   (result : int) (item : int) 
+
+end
+
+(* Module for defining the constant "item" defined at a-chahan.ads:133, created in Gnat2Why.Decls.Translate_Constant *)
+module Ada__characters__handling__to_wide_string__item
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+
+ function item #"a-chahan.ads" 133 0 0#"model_projected" "name:Item" "model_trace:3336" 
+   : Standard__string.string
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "item" defined at a-chahan.ads:133, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Ada__characters__handling__to_wide_string__item___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for possibly declaring a logic function for "to_wide_string" defined at a-chahan.ads:132, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Ada__characters__handling__to_wide_string
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__wide_string
+
+ function to_wide_string 
+   (item : Standard__string.string) : Standard__wide_string.wide_string
+ 
+ predicate to_wide_string__function_guard 
+   (result : Standard__wide_string.wide_string) (item : Standard__string.string) 
+
+end
+
+(* Module for axiomatizing type "Tch_arrayD1" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__Tch_arrayD1
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type tch_arrayD1 =
+  < range 0 4 >
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  4
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = tch_arrayD1, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type tch_arrayD1__ref =
+  { mutable tch_arrayD1__content "model_trace:" "name:" : tch_arrayD1 }
+ 
+ function tch_arrayD1__ref___projection 
+   (a : tch_arrayD1__ref) : tch_arrayD1 =
+  a.tch_arrayD1__content
+ 
+ meta "model_projection" function tch_arrayD1__ref___projection
+ 
+ meta "inline : no" function tch_arrayD1__ref___projection
+ 
+ val tch_arrayD1__havoc 
+   (x : tch_arrayD1__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "Tch_arrayD1" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__Tch_arrayD1__rep
+ use        Pkg_switch_to_uppercase__Tch_arrayD1
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Pkg_switch_to_uppercase__Tch_arrayD1.tch_arrayD1) : int =
+  (Pkg_switch_to_uppercase__Tch_arrayD1.tch_arrayD1'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Pkg_switch_to_uppercase__Tch_arrayD1.tch_arrayD1, 
+ predicate in_range = Pkg_switch_to_uppercase__Tch_arrayD1.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "Tch_arrayB" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__Tch_arrayB
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__character
+ use        Array__Int__Standard__character
+ use        Standard__integer__rep
+ use        Pkg_switch_to_uppercase__Tch_arrayD1
+
+ type component_type =
+  Standard__character.character
+ 
+ function index_1_id 
+   (x : int) : int =
+  x
+ 
+ clone export "ada__model".Unconstr_Array with
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ type index_base_type = Standard__integer.integer, 
+ type index_rep_type = int, 
+ function to_rep = Standard__integer__rep.to_rep, 
+ function rep_to_int = index_1_id, 
+ predicate in_range_base = Standard__integer.in_range, 
+ predicate index_dynamic_property = Pkg_switch_to_uppercase__Tch_arrayD1.dynamic_property, 
+ predicate index_rep_le = Int.(<=)
+ 
+ type tch_arrayB =
+  __t
+ 
+ meta "model_projection" function to_array
+ 
+ meta "inline : no" function to_array
+ 
+ meta "model_projection" function first
+ 
+ meta "inline : no" function first
+ 
+ meta "model_projection" function last
+ 
+ meta "inline : no" function last
+ 
+ type tch_arrayB__ref =
+  { mutable tch_arrayB__content "model_trace:" "name:" : tch_arrayB }
+ 
+ function tch_arrayB__ref___projection 
+   (a : tch_arrayB__ref) : tch_arrayB =
+  a.tch_arrayB__content
+ 
+ meta "model_projection" function tch_arrayB__ref___projection
+ 
+ meta "inline : no" function tch_arrayB__ref___projection
+ 
+ val tch_arrayB__havoc 
+   (x : tch_arrayB__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "ch_array" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__ch_array
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__character
+ use        Array__Int__Standard__character
+
+ type component_type =
+  Standard__character.character
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  4
+ 
+ clone export "ada__model".Constr_Array with
+ type map = Array__Int__Standard__character.map, 
+ function array_bool_eq = Array__Int__Standard__character.bool_eq, 
+ function first = first, 
+ function last = last, 
+ type index_rep_type = int
+
+end
+
+(* Module for axiomatizing type "T10s" defined at pkg_switch_to_uppercase.ads:17, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+
+ type t10s =
+  < range 0 4 >
+ 
+ function first 
+   : int =
+  0
+ 
+ function last 
+   : int =
+  4
+ 
+ predicate in_range 
+   (x : int)  =
+  ( (first <= x) /\ (x <= last) )
+ 
+ clone export "ada__model".Static_Discrete with
+ type t = t10s, 
+ function first = first, 
+ function last = last, 
+ predicate in_range = in_range
+ 
+ type t10s__ref =
+  { mutable t10s__content "model_trace:" "name:" : t10s }
+ 
+ function t10s__ref___projection 
+   (a : t10s__ref) : t10s =
+  a.t10s__content
+ 
+ meta "model_projection" function t10s__ref___projection
+ 
+ meta "inline : no" function t10s__ref___projection
+ 
+ val t10s__havoc 
+   (x : t10s__ref) : unit
+  writes {x}
+
+end
+
+(* Module defining to_rep/of_rep for type "T10s" defined at pkg_switch_to_uppercase.ads:17, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s__rep
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s
+ use import "_gnatprove_standard".Main
+
+ function to_rep 
+   (x : Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s.t10s) : int =
+  (Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s.t10s'int x)
+ 
+ clone export "ada__model".Rep_Proj_Int with
+ type t = Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s.t10s, 
+ predicate in_range = Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s.in_range, 
+ function to_rep = to_rep
+ 
+ meta "model_projection" function to_rep
+ 
+ meta "inline : no" function to_rep
+
+end
+
+(* Module for axiomatizing type "T4b" defined at pkg_switch_to_uppercase.adb:21, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1__L3b__T4b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t4b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t4b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t4b__ref =
+  { mutable t4b__content "model_trace:" "name:" : t4b }
+ 
+ function t4b__ref___projection 
+   (a : t4b__ref) : t4b =
+  a.t4b__content
+ 
+ meta "model_projection" function t4b__ref___projection
+ 
+ meta "inline : no" function t4b__ref___projection
+ 
+ val t4b__havoc 
+   (x : t4b__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T2b" defined at pkg_switch_to_uppercase.adb:21, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1__L1b__T2b
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t2b =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t2b, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t2b__ref =
+  { mutable t2b__content "model_trace:" "name:" : t2b }
+ 
+ function t2b__ref___projection 
+   (a : t2b__ref) : t2b =
+  a.t2b__content
+ 
+ meta "model_projection" function t2b__ref___projection
+ 
+ meta "inline : no" function t2b__ref___projection
+ 
+ val t2b__havoc 
+   (x : t2b__ref) : unit
+  writes {x}
+
+end
+(* Module for defining a ref holding the value of variable "char" defined at pkg_switch_to_uppercase.ads:6, created in Gnat2Why.Decls.Translate_Variable *)
+module Pkg_switch_to_uppercase__char
+ use import "_gnatprove_standard".Main
+
+ val char #"pkg_switch_to_uppercase.ads" 6 0 0#"model_projected" "model_trace:2509" "name:char"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "char" defined at pkg_switch_to_uppercase.ads:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Pkg_switch_to_uppercase__char___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "vector" defined at pkg_switch_to_uppercase.ads:8, created in Gnat2Why.Decls.Translate_Variable *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__vector
+ use import "_gnatprove_standard".Main
+ use        Array__Int__Standard__character
+
+ val vector #"pkg_switch_to_uppercase.ads" 8 0 0#"model_projected" "model_trace:2525" "name:Vector"  : Array__Int__Standard__character.map__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "vector" defined at pkg_switch_to_uppercase.ads:8, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__vector___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "times" defined at pkg_switch_to_uppercase.adb:8, created in Gnat2Why.Decls.Translate_Variable *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__times
+ use import "_gnatprove_standard".Main
+
+ val times #"pkg_switch_to_uppercase.adb" 8 0 0#"model_projected" "model_trace:2337" "name:times"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "times" defined at pkg_switch_to_uppercase.adb:8, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__times___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining a ref holding the value of variable "i" defined at pkg_switch_to_uppercase.adb:9, created in Gnat2Why.Decls.Translate_Variable *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__i
+ use import "_gnatprove_standard".Main
+
+ val i #"pkg_switch_to_uppercase.adb" 9 0 0#"model_projected" "model_trace:2346" "name:I"  : int__ref 
+ 
+ function attr__ATTRIBUTE_ADDRESS 
+   : int
+
+end
+
+(* Module giving an empty axiom for the entity "i" defined at pkg_switch_to_uppercase.adb:9, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__i___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+(* Module giving axioms for type "short_short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_short_integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__short_short_integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_4 : int) (temp___is_init_0 : bool) (temp___skip_constant_1 : bool) (temp___do_toplevel_2 : bool) (temp___do_typ_inv_3 : bool)  =
+  (if (( temp___is_init_0 \/ (Standard__short_short_integer.first <= Standard__short_short_integer.last) )) then (
+   (Standard__short_short_integer.dynamic_property Standard__short_short_integer.first Standard__short_short_integer.last temp___expr_4)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_5 : int) (temp___skip_top_level_6 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "short_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__short_integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_11 : int) (temp___is_init_7 : bool) (temp___skip_constant_8 : bool) (temp___do_toplevel_9 : bool) (temp___do_typ_inv_10 : bool)  =
+  (if (( temp___is_init_7 \/ (Standard__short_integer.first <= Standard__short_integer.last) )) then (
+   (Standard__short_integer.dynamic_property Standard__short_integer.first Standard__short_integer.last temp___expr_11)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_12 : int) (temp___skip_top_level_13 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_18 : int) (temp___is_init_14 : bool) (temp___skip_constant_15 : bool) (temp___do_toplevel_16 : bool) (temp___do_typ_inv_17 : bool)  =
+  (if (( temp___is_init_14 \/ (Standard__integer.first <= Standard__integer.last) )) then (
+   (Standard__integer.dynamic_property Standard__integer.first Standard__integer.last temp___expr_18)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_19 : int) (temp___skip_top_level_20 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "long_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__long_integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_25 : int) (temp___is_init_21 : bool) (temp___skip_constant_22 : bool) (temp___do_toplevel_23 : bool) (temp___do_typ_inv_24 : bool)  =
+  (if (( temp___is_init_21 \/ (Standard__long_integer.first <= Standard__long_integer.last) )) then (
+   (Standard__long_integer.dynamic_property Standard__long_integer.first Standard__long_integer.last temp___expr_25)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_26 : int) (temp___skip_top_level_27 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "long_long_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_long_integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__long_long_integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_32 : int) (temp___is_init_28 : bool) (temp___skip_constant_29 : bool) (temp___do_toplevel_30 : bool) (temp___do_typ_inv_31 : bool)  =
+  (if (( temp___is_init_28 \/ (Standard__long_long_integer.first <= Standard__long_long_integer.last) )) then (
+   (Standard__long_long_integer.dynamic_property Standard__long_long_integer.first Standard__long_long_integer.last temp___expr_32)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_33 : int) (temp___skip_top_level_34 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "natural", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__natural___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__natural
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_39 : int) (temp___is_init_35 : bool) (temp___skip_constant_36 : bool) (temp___do_toplevel_37 : bool) (temp___do_typ_inv_38 : bool)  =
+  (if (( temp___is_init_35 \/ (Standard__natural.first <= Standard__natural.last) )) then (
+   (Standard__natural.dynamic_property Standard__natural.first Standard__natural.last temp___expr_39)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_40 : int) (temp___skip_top_level_41 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "positive", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__positive___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__positive
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_46 : int) (temp___is_init_42 : bool) (temp___skip_constant_43 : bool) (temp___do_toplevel_44 : bool) (temp___do_typ_inv_45 : bool)  =
+  (if (( temp___is_init_42 \/ (Standard__positive.first <= Standard__positive.last) )) then (
+   (Standard__positive.dynamic_property Standard__positive.first Standard__positive.last temp___expr_46)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_47 : int) (temp___skip_top_level_48 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "short_float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__short_float___axiom
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float32
+ use        Standard__short_float
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_53 : Float32.t) (temp___is_init_49 : bool) (temp___skip_constant_50 : bool) (temp___do_toplevel_51 : bool) (temp___do_typ_inv_52 : bool)  =
+  (if (( temp___is_init_49 \/ (Float32.le Standard__short_float.first Standard__short_float.last) )) then (
+   (Standard__short_float.dynamic_property Standard__short_float.first Standard__short_float.last temp___expr_53)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_54 : Float32.t) (temp___skip_top_level_55 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__float___axiom
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float32
+ use        Standard__float
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_60 : Float32.t) (temp___is_init_56 : bool) (temp___skip_constant_57 : bool) (temp___do_toplevel_58 : bool) (temp___do_typ_inv_59 : bool)  =
+  (if (( temp___is_init_56 \/ (Float32.le Standard__float.first Standard__float.last) )) then (
+   (Standard__float.dynamic_property Standard__float.first Standard__float.last temp___expr_60)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_61 : Float32.t) (temp___skip_top_level_62 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "long_float", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__long_float___axiom
+ use import "_gnatprove_standard".Main
+ use        "_gnatprove_standard".Float64
+ use        Standard__long_float
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_67 : Float64.t) (temp___is_init_63 : bool) (temp___skip_constant_64 : bool) (temp___do_toplevel_65 : bool) (temp___do_typ_inv_66 : bool)  =
+  (if (( temp___is_init_63 \/ (Float64.le Standard__long_float.first Standard__long_float.last) )) then (
+   (Standard__long_float.dynamic_property Standard__long_float.first Standard__long_float.last temp___expr_67)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_68 : Float64.t) (temp___skip_top_level_69 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__character___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__character
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_74 : int) (temp___is_init_70 : bool) (temp___skip_constant_71 : bool) (temp___do_toplevel_72 : bool) (temp___do_typ_inv_73 : bool)  =
+  (if (( temp___is_init_70 \/ (Standard__character.first <= Standard__character.last) )) then (
+   (Standard__character.dynamic_property Standard__character.first Standard__character.last temp___expr_74)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_75 : int) (temp___skip_top_level_76 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "wide_character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_character___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_character
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_81 : int) (temp___is_init_77 : bool) (temp___skip_constant_78 : bool) (temp___do_toplevel_79 : bool) (temp___do_typ_inv_80 : bool)  =
+  (if (( temp___is_init_77 \/ (Standard__wide_character.first <= Standard__wide_character.last) )) then (
+   (Standard__wide_character.dynamic_property Standard__wide_character.first Standard__wide_character.last temp___expr_81)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_82 : int) (temp___skip_top_level_83 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "wide_wide_character", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_wide_character___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__wide_wide_character
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_88 : int) (temp___is_init_84 : bool) (temp___skip_constant_85 : bool) (temp___do_toplevel_86 : bool) (temp___do_typ_inv_87 : bool)  =
+  (if (( temp___is_init_84 \/ (Standard__wide_wide_character.first <= Standard__wide_wide_character.last) )) then (
+   (Standard__wide_wide_character.dynamic_property Standard__wide_wide_character.first Standard__wide_wide_character.last temp___expr_88)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_89 : int) (temp___skip_top_level_90 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__positive
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_96 : Standard__string.string) (temp___is_init_92 : bool) (temp___skip_constant_93 : bool) (temp___do_toplevel_94 : bool) (temp___do_typ_inv_95 : bool)  =
+  (if (temp___skip_constant_93) then (
+   true) else (
+   (Standard__string.dynamic_property Standard__positive.first Standard__positive.last (Standard__string.first temp___expr_96) (Standard__string.last temp___expr_96))))
+
+end
+
+(* Module giving axioms for type "wide_string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__positive
+ use        Standard__wide_string
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_103 : Standard__wide_string.wide_string) (temp___is_init_99 : bool) (temp___skip_constant_100 : bool) (temp___do_toplevel_101 : bool) (temp___do_typ_inv_102 : bool)  =
+  (if (temp___skip_constant_100) then (
+   true) else (
+   (Standard__wide_string.dynamic_property Standard__positive.first Standard__positive.last (Standard__wide_string.first temp___expr_103) (Standard__wide_string.last temp___expr_103))))
+
+end
+
+(* Module giving axioms for type "wide_wide_string", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__wide_wide_string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__positive
+ use        Standard__wide_wide_string
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_110 : Standard__wide_wide_string.wide_wide_string) (temp___is_init_106 : bool) (temp___skip_constant_107 : bool) (temp___do_toplevel_108 : bool) (temp___do_typ_inv_109 : bool)  =
+  (if (temp___skip_constant_107) then (
+   true) else (
+   (Standard__wide_wide_string.dynamic_property Standard__positive.first Standard__positive.last (Standard__wide_wide_string.first temp___expr_110) (Standard__wide_wide_string.last temp___expr_110))))
+
+end
+
+(* Module giving axioms for type "duration", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__duration___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__duration
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_116 : Standard__duration.duration) (temp___is_init_112 : bool) (temp___skip_constant_113 : bool) (temp___do_toplevel_114 : bool) (temp___do_typ_inv_115 : bool)  =
+  true
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_117 : Standard__duration.duration) (temp___skip_top_level_118 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "integer_8", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_8___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer_8
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_123 : int) (temp___is_init_119 : bool) (temp___skip_constant_120 : bool) (temp___do_toplevel_121 : bool) (temp___do_typ_inv_122 : bool)  =
+  (if (( temp___is_init_119 \/ (Standard__integer_8.first <= Standard__integer_8.last) )) then (
+   (Standard__integer_8.dynamic_property Standard__integer_8.first Standard__integer_8.last temp___expr_123)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_124 : int) (temp___skip_top_level_125 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "integer_16", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_16___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer_16
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_130 : int) (temp___is_init_126 : bool) (temp___skip_constant_127 : bool) (temp___do_toplevel_128 : bool) (temp___do_typ_inv_129 : bool)  =
+  (if (( temp___is_init_126 \/ (Standard__integer_16.first <= Standard__integer_16.last) )) then (
+   (Standard__integer_16.dynamic_property Standard__integer_16.first Standard__integer_16.last temp___expr_130)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_131 : int) (temp___skip_top_level_132 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "integer_32", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_32___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer_32
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_137 : int) (temp___is_init_133 : bool) (temp___skip_constant_134 : bool) (temp___do_toplevel_135 : bool) (temp___do_typ_inv_136 : bool)  =
+  (if (( temp___is_init_133 \/ (Standard__integer_32.first <= Standard__integer_32.last) )) then (
+   (Standard__integer_32.dynamic_property Standard__integer_32.first Standard__integer_32.last temp___expr_137)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_138 : int) (temp___skip_top_level_139 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "integer_64", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__integer_64___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer_64
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_144 : int) (temp___is_init_140 : bool) (temp___skip_constant_141 : bool) (temp___do_toplevel_142 : bool) (temp___do_typ_inv_143 : bool)  =
+  (if (( temp___is_init_140 \/ (Standard__integer_64.first <= Standard__integer_64.last) )) then (
+   (Standard__integer_64.dynamic_property Standard__integer_64.first Standard__integer_64.last temp___expr_144)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_145 : int) (temp___skip_top_level_146 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "universal_integer", created in Gnat2Why.Types.Generate_Type_Completion *)
+module Standard__universal_integer___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__universal_integer
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_151 : int) (temp___is_init_147 : bool) (temp___skip_constant_148 : bool) (temp___do_toplevel_149 : bool) (temp___do_typ_inv_150 : bool)  =
+  (if (( temp___is_init_147 \/ (Standard__universal_integer.first <= Standard__universal_integer.last) )) then (
+   (Standard__universal_integer.dynamic_property Standard__universal_integer.first Standard__universal_integer.last temp___expr_151)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_152 : int) (temp___skip_top_level_153 : bool)  =
+  true
+
+end
+
+(* Module for possibly declaring a logic function for "switch_to_uppercase" defined at pkg_switch_to_uppercase.ads:8, created in Gnat2Why.Subprograms.Translate_Subprogram_Spec *)
+module Pkg_switch_to_uppercase__switch_to_uppercase
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module for defining the loop exit exception for the loop "L_1" defined at pkg_switch_to_uppercase.adb:13, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1
+ use import "_gnatprove_standard".Main
+
+ exception L_1
+
+end
+
+(* Module giving an empty axiom for the entity "L_1" defined at pkg_switch_to_uppercase.adb:13, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "iso_646" defined at a-chahan.ads:78, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Ada__characters__handling__iso_646___axiom
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Ada__characters__handling__iso_646
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_170 : int) (temp___is_init_166 : bool) (temp___skip_constant_167 : bool) (temp___do_toplevel_168 : bool) (temp___do_typ_inv_169 : bool)  =
+  (if (( temp___is_init_166 \/ (Ada__characters__handling__iso_646.first <= Ada__characters__handling__iso_646.last) )) then (
+   (Ada__characters__handling__iso_646.dynamic_property Ada__characters__handling__iso_646.first Ada__characters__handling__iso_646.last temp___expr_170)) else true)
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_171 : int) (temp___skip_top_level_172 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "Tch_arrayD1" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__Tch_arrayD1___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "Tch_arrayB" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__Tch_arrayB___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "ch_array" defined at pkg_switch_to_uppercase.ads:4, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__ch_array___axiom
+ use import "_gnatprove_standard".Main
+ use        Array__Int__Standard__character
+ use        Array__Int__Standard__character
+
+ predicate dynamic_invariant "inline" 
+   (temp___expr_193 : Array__Int__Standard__character.map) (temp___is_init_189 : bool) (temp___skip_constant_190 : bool) (temp___do_toplevel_191 : bool) (temp___do_typ_inv_192 : bool)  =
+  true
+ 
+ predicate default_initial_assumption "inline" 
+   (temp___expr_195 : Array__Int__Standard__character.map) (temp___skip_top_level_196 : bool)  =
+  true
+
+end
+
+(* Module giving axioms for type "T10s" defined at pkg_switch_to_uppercase.ads:17, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L9s__T10s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T4b" defined at pkg_switch_to_uppercase.adb:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1__L3b__T4b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T2b" defined at pkg_switch_to_uppercase.adb:21, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__L_1__L1b__T2b___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+(* Module for declaring a program function (and possibly an axiom) for "is_control" defined at a-chahan.ads:44, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_control___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_control
+
+ val is_control 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_control.is_control item)) /\ true ) /\ true ) }
+ 
+ axiom is_control__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_control.is_control item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_control.is_control item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_graphic" defined at a-chahan.ads:45, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_graphic___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_graphic
+
+ val is_graphic 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_graphic.is_graphic item)) /\ true ) /\ true ) }
+ 
+ axiom is_graphic__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_graphic.is_graphic item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_graphic.is_graphic item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_letter" defined at a-chahan.ads:46, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_letter___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_letter
+
+ val is_letter 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_letter.is_letter item)) /\ true ) /\ true ) }
+ 
+ axiom is_letter__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_letter.is_letter item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_letter.is_letter item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_lower" defined at a-chahan.ads:47, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_lower___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_lower
+
+ val is_lower 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_lower.is_lower item)) /\ true ) /\ true ) }
+ 
+ axiom is_lower__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_lower.is_lower item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_lower.is_lower item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_upper" defined at a-chahan.ads:48, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_upper___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_upper
+
+ val is_upper 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_upper.is_upper item)) /\ true ) /\ true ) }
+ 
+ axiom is_upper__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_upper.is_upper item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_upper.is_upper item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_basic" defined at a-chahan.ads:49, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_basic___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_basic
+
+ val is_basic 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_basic.is_basic item)) /\ true ) /\ true ) }
+ 
+ axiom is_basic__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_basic.is_basic item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_basic.is_basic item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_digit" defined at a-chahan.ads:50, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_digit___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_digit
+
+ val is_digit 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_digit.is_digit item)) /\ true ) /\ true ) }
+ 
+ axiom is_digit__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_digit.is_digit item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_digit.is_digit item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_hexadecimal_digit" defined at a-chahan.ads:53, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_hexadecimal_digit___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_hexadecimal_digit
+
+ val is_hexadecimal_digit 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_hexadecimal_digit.is_hexadecimal_digit item)) /\ true ) /\ true ) }
+ 
+ axiom is_hexadecimal_digit__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_hexadecimal_digit.is_hexadecimal_digit item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_hexadecimal_digit.is_hexadecimal_digit item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_alphanumeric" defined at a-chahan.ads:54, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_alphanumeric___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_alphanumeric
+
+ val is_alphanumeric 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_alphanumeric.is_alphanumeric item)) /\ true ) /\ true ) }
+ 
+ axiom is_alphanumeric__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_alphanumeric.is_alphanumeric item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_alphanumeric.is_alphanumeric item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_special" defined at a-chahan.ads:55, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_special___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_special
+
+ val is_special 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_special.is_special item)) /\ true ) /\ true ) }
+ 
+ axiom is_special__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_special.is_special item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_special.is_special item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_line_terminator" defined at a-chahan.ads:56, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_line_terminator___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_line_terminator
+
+ val is_line_terminator 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_line_terminator.is_line_terminator item)) /\ true ) /\ true ) }
+ 
+ axiom is_line_terminator__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_line_terminator.is_line_terminator item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_line_terminator.is_line_terminator item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_mark" defined at a-chahan.ads:57, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_mark___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_mark
+
+ val is_mark 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_mark.is_mark item)) /\ true ) /\ true ) }
+ 
+ axiom is_mark__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_mark.is_mark item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_mark.is_mark item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_other_format" defined at a-chahan.ads:58, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_other_format___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_other_format
+
+ val is_other_format 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_other_format.is_other_format item)) /\ true ) /\ true ) }
+ 
+ axiom is_other_format__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_other_format.is_other_format item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_other_format.is_other_format item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_punctuation_connector" defined at a-chahan.ads:59, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_punctuation_connector___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_punctuation_connector
+
+ val is_punctuation_connector 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_punctuation_connector.is_punctuation_connector item)) /\ true ) /\ true ) }
+ 
+ axiom is_punctuation_connector__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_punctuation_connector.is_punctuation_connector item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_punctuation_connector.is_punctuation_connector item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_space" defined at a-chahan.ads:60, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_space___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_space
+
+ val is_space 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_space.is_space item)) /\ true ) /\ true ) }
+ 
+ axiom is_space__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_space.is_space item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_space.is_space item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_lower" defined at a-chahan.ads:66, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_lower___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__to_lower
+
+ val to_lower 
+   (item : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_lower.to_lower item)) /\ true ) /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_lower__post_axiom :
+  (forall item   : int [(Ada__characters__handling__to_lower.to_lower item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_lower.to_lower item) in (
+    ( ( true /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_upper" defined at a-chahan.ads:67, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_upper___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__to_upper
+
+ val to_upper 
+   (item : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_upper.to_upper item)) /\ true ) /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_upper__post_axiom :
+  (forall item   : int [(Ada__characters__handling__to_upper.to_upper item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_upper.to_upper item) in (
+    ( ( true /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_basic" defined at a-chahan.ads:68, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_basic___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__to_basic
+
+ val to_basic 
+   (item : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_basic.to_basic item)) /\ true ) /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_basic__post_axiom :
+  (forall item   : int [(Ada__characters__handling__to_basic.to_basic item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_basic.to_basic item) in (
+    ( ( true /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_lower__2" defined at a-chahan.ads:70, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_lower__2___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Ada__characters__handling__to_lower__2
+
+ val to_lower__2 
+   (item : Standard__string.string) : Standard__string.string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_lower__2.to_lower__2 item)) /\ true ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_lower__2__post_axiom :
+  (forall item   : Standard__string.string [(Ada__characters__handling__to_lower__2.to_lower__2 item)].
+   ( (Standard__string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_lower__2.to_lower__2 item) in (
+    ( ( true /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_upper__2" defined at a-chahan.ads:71, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_upper__2___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Ada__characters__handling__to_upper__2
+
+ val to_upper__2 
+   (item : Standard__string.string) : Standard__string.string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_upper__2.to_upper__2 item)) /\ true ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_upper__2__post_axiom :
+  (forall item   : Standard__string.string [(Ada__characters__handling__to_upper__2.to_upper__2 item)].
+   ( (Standard__string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_upper__2.to_upper__2 item) in (
+    ( ( true /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_basic__2" defined at a-chahan.ads:72, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_basic__2___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Ada__characters__handling__to_basic__2
+
+ val to_basic__2 
+   (item : Standard__string.string) : Standard__string.string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_basic__2.to_basic__2 item)) /\ true ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_basic__2__post_axiom :
+  (forall item   : Standard__string.string [(Ada__characters__handling__to_basic__2.to_basic__2 item)].
+   ( (Standard__string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_basic__2.to_basic__2 item) in (
+    ( ( true /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_iso_646" defined at a-chahan.ads:81, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_iso_646___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__is_iso_646
+
+ val is_iso_646 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_iso_646.is_iso_646 item)) /\ true ) /\ true ) }
+ 
+ axiom is_iso_646__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_iso_646.is_iso_646 item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_iso_646.is_iso_646 item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_iso_646__2" defined at a-chahan.ads:82, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_iso_646__2___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Ada__characters__handling__is_iso_646__2
+
+ val is_iso_646__2 
+   (item : Standard__string.string) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_iso_646__2.is_iso_646__2 item)) /\ true ) /\ true ) }
+ 
+ axiom is_iso_646__2__post_axiom :
+  (forall item   : Standard__string.string [(Ada__characters__handling__is_iso_646__2.is_iso_646__2 item)].
+   ( (Standard__string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_iso_646__2.is_iso_646__2 item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_iso_646" defined at a-chahan.ads:84, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_iso_646___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Ada__characters__handling__to_iso_646
+ use        Ada__characters__handling__iso_646___axiom
+
+ val to_iso_646 
+   (item : int) (substitute : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_iso_646.to_iso_646 item substitute)) /\ true ) /\ (Ada__characters__handling__iso_646___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_iso_646__post_axiom :
+  (forall item   substitute   : int [(Ada__characters__handling__to_iso_646.to_iso_646 item substitute)].
+   ( ( (Standard__character___axiom.dynamic_invariant item True True True True) /\ (Ada__characters__handling__iso_646___axiom.dynamic_invariant substitute True True True True) ) -> (let result = (Ada__characters__handling__to_iso_646.to_iso_646 item substitute) in (
+    ( ( true /\ (Ada__characters__handling__iso_646___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_iso_646__2" defined at a-chahan.ads:88, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_iso_646__2___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Ada__characters__handling__to_iso_646__2
+ use        Ada__characters__handling__iso_646___axiom
+
+ val to_iso_646__2 
+   (item : Standard__string.string) (substitute : int) : Standard__string.string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_iso_646__2.to_iso_646__2 item substitute)) /\ true ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_iso_646__2__post_axiom :
+  (forall item   : Standard__string.string.
+  (forall substitute   : int [(Ada__characters__handling__to_iso_646__2.to_iso_646__2 item substitute)].
+   ( ( (Standard__string___axiom.dynamic_invariant item True True True True) /\ (Ada__characters__handling__iso_646___axiom.dynamic_invariant substitute True True True True) ) -> (let result = (Ada__characters__handling__to_iso_646__2.to_iso_646__2 item substitute) in (
+    ( ( true /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    )))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_character" defined at a-chahan.ads:105, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_character___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__wide_character___axiom
+ use        Ada__characters__handling__is_character
+
+ val is_character 
+   (item : int) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_character.is_character item)) /\ true ) /\ true ) }
+ 
+ axiom is_character__post_axiom :
+  (forall item   : int [(Ada__characters__handling__is_character.is_character item)].
+   ( (Standard__wide_character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_character.is_character item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "is_string" defined at a-chahan.ads:106, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__is_string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__wide_string
+ use        Standard__wide_string___axiom
+ use        Ada__characters__handling__is_string
+
+ val is_string 
+   (item : Standard__wide_string.wide_string) : bool
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__is_string.is_string item)) /\ true ) /\ true ) }
+ 
+ axiom is_string__post_axiom :
+  (forall item   : Standard__wide_string.wide_string [(Ada__characters__handling__is_string.is_string item)].
+   ( (Standard__wide_string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__is_string.is_string item) in (
+    ( ( true /\ true ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_character" defined at a-chahan.ads:121, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_character___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Standard__wide_character___axiom
+ use        Ada__characters__handling__to_character
+
+ val to_character 
+   (item : int) (substitute : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_character.to_character item substitute)) /\ true ) /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_character__post_axiom :
+  (forall item   substitute   : int [(Ada__characters__handling__to_character.to_character item substitute)].
+   ( ( (Standard__wide_character___axiom.dynamic_invariant item True True True True) /\ (Standard__character___axiom.dynamic_invariant substitute True True True True) ) -> (let result = (Ada__characters__handling__to_character.to_character item substitute) in (
+    ( ( true /\ (Standard__character___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_string" defined at a-chahan.ads:125, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__character___axiom
+ use        Standard__string___axiom
+ use        Standard__wide_string
+ use        Standard__wide_string___axiom
+ use        Ada__characters__handling__to_string
+
+ val to_string 
+   (item : Standard__wide_string.wide_string) (substitute : int) : Standard__string.string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_string.to_string item substitute)) /\ true ) /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_string__post_axiom :
+  (forall item   : Standard__wide_string.wide_string.
+  (forall substitute   : int [(Ada__characters__handling__to_string.to_string item substitute)].
+   ( ( (Standard__wide_string___axiom.dynamic_invariant item True True True True) /\ (Standard__character___axiom.dynamic_invariant substitute True True True True) ) -> (let result = (Ada__characters__handling__to_string.to_string item substitute) in (
+    ( ( true /\ (Standard__string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    )))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_wide_character" defined at a-chahan.ads:129, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_wide_character___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Standard__wide_character___axiom
+ use        Ada__characters__handling__to_wide_character
+
+ val to_wide_character 
+   (item : int) : int
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_wide_character.to_wide_character item)) /\ true ) /\ (Standard__wide_character___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_wide_character__post_axiom :
+  (forall item   : int [(Ada__characters__handling__to_wide_character.to_wide_character item)].
+   ( (Standard__character___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_wide_character.to_wide_character item) in (
+    ( ( true /\ (Standard__wide_character___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "to_wide_string" defined at a-chahan.ads:132, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Ada__characters__handling__to_wide_string___axiom
+ use import "_gnatprove_standard".Main
+ use        Standard__string
+ use        Standard__string___axiom
+ use        Standard__wide_string
+ use        Standard__wide_string___axiom
+ use        Ada__characters__handling__to_wide_string
+
+ val to_wide_string 
+   (item : Standard__string.string) : Standard__wide_string.wide_string
+  requires {  true }
+  ensures {  ( ( (result = (Ada__characters__handling__to_wide_string.to_wide_string item)) /\ true ) /\ (Standard__wide_string___axiom.dynamic_invariant result True False True True) ) }
+ 
+ axiom to_wide_string__post_axiom :
+  (forall item   : Standard__string.string [(Ada__characters__handling__to_wide_string.to_wide_string item)].
+   ( (Standard__string___axiom.dynamic_invariant item True True True True) -> (let result = (Ada__characters__handling__to_wide_string.to_wide_string item) in (
+    ( ( true /\ (Standard__wide_string___axiom.dynamic_invariant result True False True True) ) /\ true )))
+    ))
+
+end
+
+(* Module for declaring a program function (and possibly an axiom) for "switch_to_uppercase" defined at pkg_switch_to_uppercase.ads:8, created in Gnat2Why.Subprograms.Generate_Subprogram_Completion *)
+module Pkg_switch_to_uppercase__switch_to_uppercase___axiom
+ use        Pkg_switch_to_uppercase__char
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__character
+ use        Standard__character__rep
+ use        Array__Int__Standard__character
+ use        Ada__characters__handling__to_upper
+ use        Pkg_switch_to_uppercase__Tch_arrayD1
+ use        Pkg_switch_to_uppercase__ch_array___axiom
+ use        Pkg_switch_to_uppercase__char
+ use        Array__Int__Standard__character
+
+ val switch_to_uppercase 
+   (vector : Array__Int__Standard__character.map__ref) : unit
+  requires {  ( (97 <= Pkg_switch_to_uppercase__char.char.int__content) /\ (Pkg_switch_to_uppercase__char.char.int__content <= 122) ) }
+  ensures {  ( (if (not ( ((let temp___199 = (old vector.Array__Int__Standard__character.map__content ) in (
+   (Array__Int__Standard__character.bool_eq vector.Array__Int__Standard__character.map__content Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last temp___199 Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last)))
+   = True) )) then (
+   (exists j  : int.
+    ( ( (0 <= j) /\ (j <= 4) ) /\ ((Standard__character__rep.to_rep (Array__Int__Standard__character.get vector.Array__Int__Standard__character.map__content j)) = (Ada__characters__handling__to_upper.to_upper Pkg_switch_to_uppercase__char.char.int__content)) ))) else (
+   true)) /\ (Pkg_switch_to_uppercase__ch_array___axiom.dynamic_invariant vector.Array__Int__Standard__character.map__content True True True True) ) }
+  reads {Pkg_switch_to_uppercase__char.char}
+  writes {vector}
+
+end
+
+(* Module for checking absence of run-time errors and package initial condition on package elaboration of "pkg_switch_to_uppercase" defined at pkg_switch_to_uppercase.ads:2, created in Gnat2Why.Subprograms.Generate_VCs_For_Package_Elaboration *)
+module Pkg_switch_to_uppercase__package_def
+ use import "_gnatprove_standard".Main
+ use        Standard__character___axiom
+ use        Pkg_switch_to_uppercase__char
+ use        Standard__character___axiom
+ use        Pkg_switch_to_uppercase__char___axiom
+
+ let def #"pkg_switch_to_uppercase.ads" 2 0 0#"GP_Subp:pkg_switch_to_uppercase.ads:2" "W:diverges:N" 
+   (__void_param : unit)
+  requires { #"pkg_switch_to_uppercase.ads" 2 0 0# true }
+  ensures { #"pkg_switch_to_uppercase.ads" 2 0 0# true }
+   =
+  ( (#"pkg_switch_to_uppercase.ads" 2 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 4 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 6 0 0# ( #"pkg_switch_to_uppercase.ads" 6 0 0# abstract ensures {true}(let _ = () in (
+   ()))
+   end ;
+  #"pkg_switch_to_uppercase.ads" 6 0 0# assume { #"pkg_switch_to_uppercase.ads" 6 0 0# (Standard__character___axiom.default_initial_assumption Pkg_switch_to_uppercase__char.char.int__content False) };
+  #"pkg_switch_to_uppercase.ads" 6 0 0# assume { #"pkg_switch_to_uppercase.ads" 6 0 0# (Standard__character___axiom.dynamic_invariant Pkg_switch_to_uppercase__char.char.int__content False False True True) } ));
+  (#"pkg_switch_to_uppercase.ads" 8 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 15 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 12 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 12 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 12 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 13 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 12 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 11 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 10 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 10 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 10 0 0# ());
+  (#"pkg_switch_to_uppercase.ads" 10 0 0# ());
+  (#"pkg_switch_to_uppercase.adb" 2 0 0# ());
+  (#"pkg_switch_to_uppercase.adb" 4 0 0# ());
+  ( "GP_Sloc:pkg_switch_to_uppercase.adb:45:1" (#"pkg_switch_to_uppercase.adb" 45 0 0# ()) ) )
+end
+
+(* Module for checking contracts and absence of run-time errors in subprogram "switch_to_uppercase" defined at pkg_switch_to_uppercase.ads:8, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
+module Pkg_switch_to_uppercase__switch_to_uppercase__subprogram_def
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        "_gnatprove_standard".Boolean
+ use        Standard__integer
+ use        Standard__natural
+ use        Standard__natural___axiom
+ use        Standard__character
+ use        Standard__character___axiom
+ use        Standard__character__rep
+ use        Array__Int__Standard__character
+ use        Ada__characters__handling__to_upper
+ use        Ada__characters__handling__to_upper___axiom
+ use        Pkg_switch_to_uppercase__Tch_arrayD1
+ use        Pkg_switch_to_uppercase__ch_array___axiom
+ use        Pkg_switch_to_uppercase__char
+ use        Array__Int__Standard__character
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__vector
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__times
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__i
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__L_1
+ use        Standard__natural___axiom
+ use        Standard__character___axiom
+ use        Standard__integer___axiom
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__times___axiom
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__i___axiom
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__L_1___axiom
+ use        Pkg_switch_to_uppercase__ch_array___axiom
+ use        Pkg_switch_to_uppercase__char___axiom
+ use        Pkg_switch_to_uppercase__switch_to_uppercase__vector___axiom
+ use        Ada__characters__handling__to_upper___axiom
+ use        Pkg_switch_to_uppercase__Tch_arrayD1___axiom
+
+ let def #"pkg_switch_to_uppercase.ads" 8 0 0#"W:diverges:N" "GP_Subp:pkg_switch_to_uppercase.ads:8" 
+   (__void_param : unit)
+  requires { #"pkg_switch_to_uppercase.ads" 8 0 0# true }
+  ensures { #"pkg_switch_to_uppercase.ads" 8 0 0# (#"pkg_switch_to_uppercase.ads" 16 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.ads:16:6" "GP_Reason:VC_POSTCONDITION" "GP_Id:11" "comment:     (if Vector /= Vector'Old then 
+     ^ pkg_switch_to_uppercase.ads:16:6:VC_POSTCONDITION" "GP_Shape:pragargs__if" (if (not ( ((let temp___212 = (old Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content ) in (
+   (Array__Int__Standard__character.bool_eq Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last temp___212 Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last)))
+   = True) )) then (
+   (exists j  : int.
+    ( ( (0 <= j) /\ (j <= 4) ) /\ ( "GP_Pretty_Ada:2608" "GP_Sloc:pkg_switch_to_uppercase.ads:18:21" ((Standard__character__rep.to_rep (Array__Int__Standard__character.get Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content j)) = (Ada__characters__handling__to_upper.to_upper Pkg_switch_to_uppercase__char.char.int__content)) ) ))) else (
+   ( "GP_Pretty_Ada:3780" "GP_Sloc:pkg_switch_to_uppercase.ads:16:7" true ))) )) }
+   =
+  ( () (* Assume dynamic invariants of inputs of the subprogram pkg_switch_to_uppercase.ads:8 *)
+  ;
+   assume {  (Standard__character___axiom.dynamic_invariant Pkg_switch_to_uppercase__char.char.int__content True False True True) };
+   assume {  (Pkg_switch_to_uppercase__ch_array___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content True False True True) };
+   assume {  true };
+  () (* Declarations introduced by the compiler at the beginning of the subprogram pkg_switch_to_uppercase.ads:8 *)
+  ;
+  () (* Check for RTE in the Pre of the subprogram pkg_switch_to_uppercase.ads:8 *)
+  ;
+   abstract ensures {true}(let _ = ( (Boolean.of_int(1)) && ( (Boolean.of_int(1)) && ( (Boolean.andb((97 <= Pkg_switch_to_uppercase__char.char.int__content)) ((Pkg_switch_to_uppercase__char.char.int__content <= 122))) && ( (Boolean.of_int(1)) && (Boolean.of_int(1)) ) ) ) ) in (
+   ()))
+   end ;
+  () (* Assume Pre of the subprogram pkg_switch_to_uppercase.ads:8 *)
+  ;
+   assume {  ( (97 <= Pkg_switch_to_uppercase__char.char.int__content) /\ (Pkg_switch_to_uppercase__char.char.int__content <= 122) ) };
+   abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content in (
+   ()))
+   end ;
+  (let temp___old_210 =  (any Array__Int__Standard__character.map
+  ensures { (result = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content)} 
+  ) in (
+   (  try
+    ( (#"pkg_switch_to_uppercase.adb" 8 0 0# ( #"pkg_switch_to_uppercase.adb" 8 0 0# abstract ensures {true}(let _ = () in (
+     ()))
+     end ;
+    #"pkg_switch_to_uppercase.adb" 8 0 0# assume { #"pkg_switch_to_uppercase.adb" 8 0 0# (Standard__natural___axiom.default_initial_assumption Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content False) };
+    #"pkg_switch_to_uppercase.adb" 8 0 0# assume { #"pkg_switch_to_uppercase.adb" 8 0 0# (Standard__natural___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content False False True True) } ));
+    (#"pkg_switch_to_uppercase.adb" 9 0 0# ( #"pkg_switch_to_uppercase.adb" 9 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <- ( 0 );
+    #"pkg_switch_to_uppercase.adb" 9 0 0# assume { #"pkg_switch_to_uppercase.adb" 9 0 0# (Standard__natural___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content True False True True) } ));
+    (#"pkg_switch_to_uppercase.adb" 13 0 0# ());
+    ( "GP_Sloc:pkg_switch_to_uppercase.adb:11:7" (#"pkg_switch_to_uppercase.adb" 11 0 0# ()) );
+    ( "GP_Sloc:pkg_switch_to_uppercase.adb:11:13" (#"pkg_switch_to_uppercase.adb" 11 0 0# #"pkg_switch_to_uppercase.adb" 11 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content <- ( 4 )) );
+    ( "GP_Sloc:pkg_switch_to_uppercase.adb:13:24" (#"pkg_switch_to_uppercase.adb" 13 0 0# ( () (* Translation of an Ada loop from pkg_switch_to_uppercase.adb:13 *)
+    ;
+    (if ((Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content <> 0)) then (
+     #"pkg_switch_to_uppercase.adb" 13 0 0# try
+      ( #"pkg_switch_to_uppercase.adb" 13 0 0# abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content in (
+       ()))
+       end ;
+      (let temp___204 = #"pkg_switch_to_uppercase.adb" 13 0 0# (any Array__Int__Standard__character.map
+      ensures {#"pkg_switch_to_uppercase.adb" 13 0 0# (result = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content)} 
+      ) in (
+       ( #"pkg_switch_to_uppercase.adb" 13 0 0# abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content in (
+        ()))
+        end ;
+       (let temp___203 = #"pkg_switch_to_uppercase.adb" 13 0 0# (any int
+       ensures {#"pkg_switch_to_uppercase.adb" 13 0 0# (result = Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content)} 
+       ) in (
+        ( #"pkg_switch_to_uppercase.adb" 13 0 0# abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content in (
+         ()))
+         end ;
+        (let temp___206 = #"pkg_switch_to_uppercase.adb" 13 0 0# (any Array__Int__Standard__character.map
+        ensures {#"pkg_switch_to_uppercase.adb" 13 0 0# (result = Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content)} 
+        ) in (
+         ( #"pkg_switch_to_uppercase.adb" 13 0 0# abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content in (
+          ()))
+          end ;
+         (let temp___202 = #"pkg_switch_to_uppercase.adb" 13 0 0# (any int
+         ensures {#"pkg_switch_to_uppercase.adb" 13 0 0# (result = Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content)} 
+         ) in (
+          #"pkg_switch_to_uppercase.adb" 13 0 0# let temp___208 = { int__content = 0 } in 
+          #"pkg_switch_to_uppercase.adb" 13 0 0# let temp___207 = { int__content = 0 } in 
+           ( () (* First unroling of the loop statements appearing before the loop invariant of loop pkg_switch_to_uppercase.adb:13 *)
+           ;
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:20" (#"pkg_switch_to_uppercase.adb" 14 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:25" (#"pkg_switch_to_uppercase.adb" 14 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:10" (#"pkg_switch_to_uppercase.adb" 14 0 0# (if (((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (( #"pkg_switch_to_uppercase.adb" 14 0 0# assert { #"pkg_switch_to_uppercase.adb" 14 0 0# (#"pkg_switch_to_uppercase.adb" 14 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:14:20" "GP_Reason:VC_INDEX_CHECK" "GP_Id:2" "comment:         if Vector(I) = char then
+                   ^ pkg_switch_to_uppercase.adb:14:20:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__cmp__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+           Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content ))))) = Pkg_switch_to_uppercase__char.char.int__content)) then (
+            ( ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:20" (#"pkg_switch_to_uppercase.adb" 15 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:26" (#"pkg_switch_to_uppercase.adb" 15 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:23" (#"pkg_switch_to_uppercase.adb" 15 0 0# #"pkg_switch_to_uppercase.adb" 15 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content <- ( (Array__Int__Standard__character.set(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (( #"pkg_switch_to_uppercase.adb" 15 0 0# assert { #"pkg_switch_to_uppercase.adb" 15 0 0# (#"pkg_switch_to_uppercase.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:15:20" "GP_Reason:VC_INDEX_CHECK" "GP_Id:1" "comment:            Vector(I) := To_Upper(Vector(I)); 
+                   ^ pkg_switch_to_uppercase.adb:15:20:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__vector_assign__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+            Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content )) ((Standard__character__rep.of_rep((Ada__characters__handling__to_upper___axiom.to_upper((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) ((  assert {  (#"pkg_switch_to_uppercase.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:15:42" "GP_Reason:VC_INDEX_CHECK" "GP_Id:0" "comment:            Vector(I) := To_Upper(Vector(I)); 
+                                         ^ pkg_switch_to_uppercase.adb:15:42:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__vector_assign__call_to_upper__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+            Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content ))))))))))) )) ) )) else (
+            ()))) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:10" (#"pkg_switch_to_uppercase.adb" 18 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:19" (#"pkg_switch_to_uppercase.adb" 18 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:16" (#"pkg_switch_to_uppercase.adb" 18 0 0# #"pkg_switch_to_uppercase.adb" 18 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content <- ( (#"pkg_switch_to_uppercase.adb" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:18:24" "GP_Reason:VC_RANGE_CHECK" "GP_Id:3" "comment:         times := times-1; 
+                       ^ pkg_switch_to_uppercase.adb:18:24:VC_RANGE_CHECK" "GP_Shape:L_1_while__times_assign__sub" (Standard__natural.range_check_((Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content - 1))) )) )) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:10" (#"pkg_switch_to_uppercase.adb" 19 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:14" (#"pkg_switch_to_uppercase.adb" 19 0 0# ()) );
+           ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:11" (#"pkg_switch_to_uppercase.adb" 19 0 0# #"pkg_switch_to_uppercase.adb" 19 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <- ( (#"pkg_switch_to_uppercase.adb" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:19:15" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:4" "comment:         I:= I+1; 
+              ^ pkg_switch_to_uppercase.adb:19:15:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__i_assign__add" (Standard__integer.range_check_((Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content + 1))) )) )) );
+           () (* While loop translating the Ada loop from pkg_switch_to_uppercase.adb:13 *)
+           ;
+            while True do
+            invariant { 
+             (#"pkg_switch_to_uppercase.adb" 20 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:20:32" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:6" "comment:         pragma Loop_Invariant(if Vector'Loop_Entry /= Vector then
+                               ^ pkg_switch_to_uppercase.adb:20:32:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__if" (if (not ( ((Array__Int__Standard__character.bool_eq temp___206 Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content Pkg_switch_to_uppercase__Tch_arrayD1.first Pkg_switch_to_uppercase__Tch_arrayD1.last) = True) )) then (
+              (exists j  : int.
+               ( ( (0 <= j) /\ (j <= (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content - 1)) ) /\ ( "GP_Pretty_Ada:2424" "GP_Sloc:pkg_switch_to_uppercase.adb:22:37" ((Standard__character__rep.to_rep (Array__Int__Standard__character.get Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content j)) = (Ada__characters__handling__to_upper.to_upper Pkg_switch_to_uppercase__char.char.int__content)) ) ))) else (
+              ( "GP_Pretty_Ada:3865" "GP_Sloc:pkg_switch_to_uppercase.adb:20:32" true ))) ))
+             }
+            invariant { 
+             (#"pkg_switch_to_uppercase.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Sloc:pkg_switch_to_uppercase.adb:29:32" "GP_Id:8" "comment:         pragma Loop_Invariant(I+times = Vector'Length-1);
+                               ^ pkg_switch_to_uppercase.adb:29:32:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" ( "GP_Pretty_Ada:2436" "GP_Sloc:pkg_switch_to_uppercase.adb:29:32" ((Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content + Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content) = 4) ) ))
+             }
+            ( () (* Assume implicit invariants from the loop pkg_switch_to_uppercase.adb:13 *)
+            ;
+             assume {  ( ( ( ( ( ( true /\ (Standard__natural___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content False True True True) ) /\ true ) /\ (Standard__natural___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content False True True True) ) /\ true ) /\ (Pkg_switch_to_uppercase__ch_array___axiom.dynamic_invariant Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content True True True True) ) /\ true ) };
+            () (* Check for absence of RTE in the invariant of loop pkg_switch_to_uppercase.adb:13 *)
+            ;
+             abstract ensures {true}(let _ = (if (not ( (Array__Int__Standard__character.bool_eq(temp___206) (Pkg_switch_to_uppercase__Tch_arrayD1.first) (Pkg_switch_to_uppercase__Tch_arrayD1.last) (Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (Pkg_switch_to_uppercase__Tch_arrayD1.first) (Pkg_switch_to_uppercase__Tch_arrayD1.last)) )) then (
+             ( (let j =  (any int
+             ) in (
+              (if ((Boolean.andb((0 <= j)) ((j <= (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content - 1))))) then (
+                abstract ensures {true}(let _ = ((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) ((  assert {  (#"pkg_switch_to_uppercase.adb" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_switch_to_uppercase.adb:22:44" "GP_Id:5" "comment:                                    Vector(J) = To_Upper(char) 
+                                           ^ pkg_switch_to_uppercase.adb:22:44:VC_INDEX_CHECK" "GP_Shape:L_1_while__pragargs__if__forsome__cmp__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= j) /\ (j <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+               j ))))) = (Ada__characters__handling__to_upper___axiom.to_upper(Pkg_switch_to_uppercase__char.char.int__content))) in (
+                ()))
+                end ))))
+             ;
+              (any bool
+             requires { true} 
+             ensures { ( (result = True) <-> (exists j  : int.
+              ( ( (0 <= j) /\ (j <= (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content - 1)) ) /\ ((Standard__character__rep.to_rep (Array__Int__Standard__character.get Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content j)) = (Ada__characters__handling__to_upper.to_upper Pkg_switch_to_uppercase__char.char.int__content)) )) )} 
+             ) )) else (
+             (Boolean.of_int(1)))) in (
+             ()))
+             end ;
+             abstract ensures {true}(let _ = ((#"pkg_switch_to_uppercase.adb" 29 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_switch_to_uppercase.adb:29:33" "GP_Id:7" "comment:         pragma Loop_Invariant(I+times = Vector'Length-1);
+                                ^ pkg_switch_to_uppercase.adb:29:33:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__cmp__add" (Standard__integer.range_check_((Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content + Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content))) )) = 4) in (
+             ()))
+             end ;
+             temp___207.int__content <- ( Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content );
+             temp___208.int__content <- ( Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content );
+            () (* Loop statements appearing after the loop invariant of loop pkg_switch_to_uppercase.adb:13 *)
+            ;
+            () (* Check for the exit condition and loop statements appearing before the loop invariant of loop pkg_switch_to_uppercase.adb:13 *)
+            ;
+            (if (not ( (Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content <> 0) )) then (
+              raise Pkg_switch_to_uppercase__switch_to_uppercase__L_1.L_1));
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:20" (#"pkg_switch_to_uppercase.adb" 14 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:25" (#"pkg_switch_to_uppercase.adb" 14 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:14:10" (#"pkg_switch_to_uppercase.adb" 14 0 0# (if (((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (( #"pkg_switch_to_uppercase.adb" 14 0 0# assert { #"pkg_switch_to_uppercase.adb" 14 0 0# (#"pkg_switch_to_uppercase.adb" 14 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:14:20" "GP_Reason:VC_INDEX_CHECK" "GP_Id:2" "comment:         if Vector(I) = char then
+                   ^ pkg_switch_to_uppercase.adb:14:20:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__cmp__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+            Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content ))))) = Pkg_switch_to_uppercase__char.char.int__content)) then (
+             ( ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:20" (#"pkg_switch_to_uppercase.adb" 15 0 0# ()) );
+             ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:26" (#"pkg_switch_to_uppercase.adb" 15 0 0# ()) );
+             ( "GP_Sloc:pkg_switch_to_uppercase.adb:15:23" (#"pkg_switch_to_uppercase.adb" 15 0 0# #"pkg_switch_to_uppercase.adb" 15 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content <- ( (Array__Int__Standard__character.set(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (( #"pkg_switch_to_uppercase.adb" 15 0 0# assert { #"pkg_switch_to_uppercase.adb" 15 0 0# (#"pkg_switch_to_uppercase.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:15:20" "GP_Reason:VC_INDEX_CHECK" "GP_Id:1" "comment:            Vector(I) := To_Upper(Vector(I)); 
+                   ^ pkg_switch_to_uppercase.adb:15:20:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__vector_assign__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+             Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content )) ((Standard__character__rep.of_rep((Ada__characters__handling__to_upper___axiom.to_upper((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) ((  assert {  (#"pkg_switch_to_uppercase.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:15:42" "GP_Reason:VC_INDEX_CHECK" "GP_Id:0" "comment:            Vector(I) := To_Upper(Vector(I)); 
+                                         ^ pkg_switch_to_uppercase.adb:15:42:VC_INDEX_CHECK" "GP_Shape:L_1_while__if__vector_assign__call_to_upper__ixdcomp" ( (Pkg_switch_to_uppercase__Tch_arrayD1.first <= Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content) /\ (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <= Pkg_switch_to_uppercase__Tch_arrayD1.last) ) )) };
+             Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content ))))))))))) )) ) )) else (
+             ()))) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:10" (#"pkg_switch_to_uppercase.adb" 18 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:19" (#"pkg_switch_to_uppercase.adb" 18 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:18:16" (#"pkg_switch_to_uppercase.adb" 18 0 0# #"pkg_switch_to_uppercase.adb" 18 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content <- ( (#"pkg_switch_to_uppercase.adb" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:18:24" "GP_Reason:VC_RANGE_CHECK" "GP_Id:3" "comment:         times := times-1; 
+                       ^ pkg_switch_to_uppercase.adb:18:24:VC_RANGE_CHECK" "GP_Shape:L_1_while__times_assign__sub" (Standard__natural.range_check_((Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content - 1))) )) )) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:10" (#"pkg_switch_to_uppercase.adb" 19 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:14" (#"pkg_switch_to_uppercase.adb" 19 0 0# ()) );
+            ( "GP_Sloc:pkg_switch_to_uppercase.adb:19:11" (#"pkg_switch_to_uppercase.adb" 19 0 0# #"pkg_switch_to_uppercase.adb" 19 0 0# Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content <- ( (#"pkg_switch_to_uppercase.adb" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:19:15" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:4" "comment:         I:= I+1; 
+              ^ pkg_switch_to_uppercase.adb:19:15:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__i_assign__add" (Standard__integer.range_check_((Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content + 1))) )) )) );
+             abstract ensures {true}(let _ =  abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content in (
+             ()))
+             end  in (
+             ()))
+             end ;
+             check {  (#"pkg_switch_to_uppercase.adb" 30 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_switch_to_uppercase.adb:30:10" "GP_Reason:VC_LOOP_VARIANT" "GP_Id:9" "comment:         pragma Loop_Variant(Increases => I);
+         ^ pkg_switch_to_uppercase.adb:30:10:VC_LOOP_VARIANT" "GP_Shape:L_1_while" (Pkg_switch_to_uppercase__switch_to_uppercase__i.i.int__content > temp___207.int__content) )) };
+             abstract ensures {true}(let _ =  abstract ensures {true}(let _ = Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content in (
+             ()))
+             end  in (
+             ()))
+             end ;
+             check {  (#"pkg_switch_to_uppercase.adb" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_VARIANT" "GP_Shape:L_1_while" "GP_Sloc:pkg_switch_to_uppercase.adb:31:10" "GP_Id:10" "comment:         pragma Loop_Variant(Decreases => times); 
+         ^ pkg_switch_to_uppercase.adb:31:10:VC_LOOP_VARIANT" (Pkg_switch_to_uppercase__switch_to_uppercase__times.times.int__content < temp___208.int__content) )) } )
+           done )))
+          )))
+         )))
+        )))
+       )
+     with
+      Pkg_switch_to_uppercase__switch_to_uppercase__L_1.L_1 -> ()
+     end)) )) );
+     raise Return__exc )
+   with
+    Return__exc -> ()
+   end;
+    abstract ensures {true}(let _ = (if (not ( (Array__Int__Standard__character.bool_eq(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (Pkg_switch_to_uppercase__Tch_arrayD1.first) (Pkg_switch_to_uppercase__Tch_arrayD1.last) (temp___old_210) (Pkg_switch_to_uppercase__Tch_arrayD1.first) (Pkg_switch_to_uppercase__Tch_arrayD1.last)) )) then (
+    ( (let j =  (any int
+    ) in (
+     (if ((Boolean.andb((0 <= j)) ((j <= 4)))) then (
+       abstract ensures {true}(let _ = ((Standard__character__rep.to_rep((Array__Int__Standard__character.get(Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content) (j)))) = (Ada__characters__handling__to_upper___axiom.to_upper(Pkg_switch_to_uppercase__char.char.int__content))) in (
+       ()))
+       end ))))
+    ;
+     (any bool
+    requires { true} 
+    ensures { ( (result = True) <-> (exists j  : int.
+     ( ( (0 <= j) /\ (j <= 4) ) /\ ((Standard__character__rep.to_rep (Array__Int__Standard__character.get Pkg_switch_to_uppercase__switch_to_uppercase__vector.vector.Array__Int__Standard__character.map__content j)) = (Ada__characters__handling__to_upper.to_upper Pkg_switch_to_uppercase__char.char.int__content)) )) )} 
+    ) )) else (
+    (Boolean.of_int(1)))) in (
+    ()))
+    end  )))
+   )
+end

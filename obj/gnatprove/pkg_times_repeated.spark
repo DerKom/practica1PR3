@@ -1,0 +1,937 @@
+{
+  "spark": [
+    {
+      "name": "pkg_times_repeated",
+      "sloc": [
+        {
+          "file": "pkg_times_repeated.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_times_repeated.Times_Repeated",
+      "sloc": [
+        {
+          "file": "pkg_times_repeated.ads",
+          "line": 7
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 7,
+      "col": 72,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__31.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 22,
+      "col": 14,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__32.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 17,
+      "col": 8,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__33.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 9,
+      "col": 20,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__34.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 12,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__35.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 13,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__36.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 28,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__37.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 29,
+      "col": 17,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__38.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 30,
+      "col": 12,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_times_repeated__flow__39.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 18,
+      "col": 47,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.ads",
+      "check_line": 18,
+      "check_col": 47,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 9,
+      "col": 30,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 9,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 15,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 232,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 147,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 15,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 17,
+      "col": 7,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 38,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 38,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 124,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 126,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.ads",
+      "check_line": 17,
+      "check_col": 7,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 4,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 15,
+      "col": 15,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 52,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 19,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 15,
+      "check_col": 15,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 20,
+      "col": 46,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.ads",
+      "check_line": 20,
+      "check_col": 46,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.ads",
+      "line": 22,
+      "col": 36,
+      "rule": "VC_RANGE_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.ads",
+      "check_line": 22,
+      "check_col": 36,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 29,
+      "col": 27,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 29,
+      "check_col": 27,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 12,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 67,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 67,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 12,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 12,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 12,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 17,
+      "col": 29,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 17,
+      "check_col": 29,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 1.99999995529652E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 12,
+      "col": 49,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 12,
+      "check_col": 49,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_times_repeated.adb",
+      "line": 20,
+      "col": 30,
+      "rule": "VC_INDEX_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_times_repeated.Times_Repeated",
+        "sloc": [
+          {
+            "file": "pkg_times_repeated.ads",
+            "line": 7
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 2.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_times_repeated.adb",
+      "check_line": 20,
+      "check_col": 30,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "pkg_times_repeated.Times_Repeated",
+          "sloc": [
+            {
+              "file": "pkg_times_repeated.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_times_repeated.Times_Repeated",
+          "sloc": [
+            {
+              "file": "pkg_times_repeated.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pkg_times_repeated.Times_Repeated",
+          "sloc": [
+            {
+              "file": "pkg_times_repeated.ads",
+              "line": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pkg_times_repeated",
+          "sloc": [
+            {
+              "file": "pkg_times_repeated.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 1.77099995198660E-04,
+    "globals (basic)": 8.33000012789853E-05,
+    "globals/properties (advanced)": 2.82799999695271E-04,
+    "flow analysis": 2.06080009229481E-03,
+    "codepeer results": 2.90000002678426E-06,
+    "init_why_sections": 1.44399993587285E-04,
+    "translation of standard": 2.56250007078052E-03,
+    "translation of compilation unit": 2.53969989717007E-03,
+    "proof": 1.05890834331512E+00
+  }
+}

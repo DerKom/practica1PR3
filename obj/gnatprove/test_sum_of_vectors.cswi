@@ -1,0 +1,14 @@
+20191017175330
+-c
+-x
+ada
+-gnatA
+-gnatwa
+-g
+-fstack-check
+-gnata
+-gnato
+-gnat12
+-gnateE
+-gnatc
+-gnates=D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\gnatprove\9ac31a0f.tmp

@@ -17,7 +17,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U tests_multiply_by_max%b  tests_multiply_by_max.adb  4707ef0e NE OO SU
+U tests_multiply_by_max%b  tests_multiply_by_max.adb  80492d33 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -34,8 +34,8 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D pkg_multiply_by_max.ads  20191016224106 b32f6aa8 pkg_multiply_by_max%s
-D pkg_multiply_vector_by_value.ads  20191016180638 c892e620 pkg_multiply_vector_by_value%s
+D pkg_multiply_by_max.ads  20191017160554 4db41025 pkg_multiply_by_max%s
+D pkg_multiply_vector_by_value.ads  20191017175146 f1475e90 pkg_multiply_vector_by_value%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -58,11 +58,11 @@ X 6 a-textio.ads
 242U14*Put 26|12s7 23s7 35s7 47s7
 263U14*Put_Line 26|15s7 26s7 39s7 51s7 55s4
 X 10 pkg_multiply_by_max.ads
-2K9*pkg_multiply_by_max 12e24 26|2w6 2r35
+2K9*pkg_multiply_by_max 24e24 26|2w6 2r35
 6U14*Multiply_by_Max 26|13s7 24s7 37s7 49s7
 X 11 pkg_multiply_vector_by_value.ads
-1K9*pkg_multiply_vector_by_value 38e33 26|3w6 3r40
-5A9*T_Vector(integer)<integer> 26|8r16 9r26 19r16 20r26 31r16 32r26 43r16
+1K9*pkg_multiply_vector_by_value 40e33 26|3w6 3r40
+5A9*T_Vector(natural)<integer> 26|8r16 9r26 19r16 20r26 31r16 32r26 43r16
 . 44r26
 X 26 tests_multiply_by_max.adb
 5U11*Tests_Multiply_by_Max 5b11 61l5 61t26

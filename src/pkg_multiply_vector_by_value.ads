@@ -2,7 +2,7 @@ package pkg_multiply_vector_by_value with SPARK_Mode is
    
    
    
-   type T_Vector is array (Natural range 0..10) of Natural; 
+   type T_Vector is array (Natural range <>) of Natural; 
  
    
    procedure Multiply_by_Value (Vector : in out T_Vector; Value : in Integer)

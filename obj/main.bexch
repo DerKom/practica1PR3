@@ -6,12 +6,12 @@ D:\Orlando Daniel\Documentos\GitHub\practica1PR3\default.gpr
 [BOUND OBJECT FILES]
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_multiply_vector_by_value.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_multiply_by_value.o
-D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_multiply_by_max.o
-D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_multiply_by_max.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_search_value_inside_vector.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_vector_search.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_sum_of_vectors.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\Test_Sum_Of_Vectors.o
+D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_switch_to_uppercase.o
+D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_switch_to_uppercase.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_times_repeated.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_times_repeated.o
 D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\main.o

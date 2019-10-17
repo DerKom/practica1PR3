@@ -1,0 +1,63 @@
+V "GNAT Lib v2018"
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U pkg_switch_to_uppercase%b  pkg_switch_to_uppercase.adb  307cb4a8 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+
+U pkg_switch_to_uppercase%s  pkg_switch_to_uppercase.ads  c84c2fd2 OO PK IL
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
+D a-chahan.ads		20180524051736 1601a50f ada.characters.handling%s
+D pkg_switch_to_uppercase.ads  20191017175036 de4d8add pkg_switch_to_uppercase%s
+D pkg_switch_to_uppercase.adb  20191017174904 f8309b7a pkg_switch_to_uppercase%b
+D system.ads		20180524051738 32a08138 system%s
+X 1 ada.ads
+16K9*Ada 20e8 4|1r6 18r33 5|1r6 1r35
+X 2 a-charac.ads
+16K13*Characters 18e19 4|1r10 18r37 5|1r10 1r39
+X 3 a-chahan.ads
+36K24*Handling 159e28 4|1w21 18r48 5|1w21 1r50
+67V13*To_Upper{character} 4|18s57 5|15s26 22s49
+X 4 pkg_switch_to_uppercase.ads
+2K9*pkg_switch_to_uppercase 25l5 25e28 5|2b14 45l5 45t28
+4A9*Ch_Array(character)<integer> 8r51 5|4r51
+6e4*char{character} 10r26 11r37 13r7 18r66 5|14r25 22r58
+8U14*Switch_to_Uppercase 8=35 5|4b14 42l8 42t27
+8a35 Vector{4A9} 11r18 11r29 12r14 12r42 12r57 13r37 13r66 16r10 16r20 17r31
+. 18r21 5|4b35 11r16 14r13 15m13 15r35 20r35 20r56 21r49 22r37 29r42
+17i26 J{integer} 18r28
+X 5 pkg_switch_to_uppercase.adb
+8i7 times{natural} 11m7 13r13 18m10 18r19 29r34 31r43
+9i7 I{natural} 14r20 15r20 15r42 19m10 19r14 21r65 29r32 30r43
+21i44 J{integer} 22r44
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS pkg_switch_to_uppercase__switch_to_uppercase 1 ada__characters__handling__to_upper
+GG EK_GLOBALS pkg_switch_to_uppercase__switch_to_uppercase local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 0 refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 0 calls_proof 0 calls 0 calls_conditional 0 local_var 0 FALSE FALSE TRUE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 pkg_switch_to_uppercase__char LOCKS 0
+GG EK_DIRECT_CALLS pkg_switch_to_uppercase 0
+GG EK_GLOBALS pkg_switch_to_uppercase local FALSE E_PACKAGE TRUE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 initializes 0 calls_proof 0 calls 0 calls_conditional 0 local_var 1 pkg_switch_to_uppercase__char FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

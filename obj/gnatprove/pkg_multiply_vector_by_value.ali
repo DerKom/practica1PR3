@@ -14,18 +14,19 @@ P GP FX
 
 RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
 RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_multiply_vector_by_value%b  pkg_multiply_vector_by_value.adb  7bae458c OO PK IL
+U pkg_multiply_vector_by_value%b  pkg_multiply_vector_by_value.adb  ae664d8d OO PK IL
 
-U pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.ads  248f5691 OO PK IL
+U pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.ads  f1475e90 OO PK IL
 
-D pkg_multiply_vector_by_value.ads  20191017132606 248f5691 pkg_multiply_vector_by_value%s
-D pkg_multiply_vector_by_value.adb  20191017125008 5f21131d pkg_multiply_vector_by_value%b
+D pkg_multiply_vector_by_value.ads  20191017175146 f1475e90 pkg_multiply_vector_by_value%s
+D pkg_multiply_vector_by_value.adb  20191017160554 5f21131d pkg_multiply_vector_by_value%b
 D system.ads		20180524051738 32a08138 system%s
 X 1 pkg_multiply_vector_by_value.ads
 1K9*pkg_multiply_vector_by_value 40l5 40e33 2|1b14 35l5 35t33
