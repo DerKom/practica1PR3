@@ -1,0 +1,8 @@
+package body pkg_change_to_upper_case is
+
+   procedure Multiply_by_Max (Vector : in out T_Vector; Max : out Integer) is 
+      -- A la función se le pasa un array de caracteres y el caracter que se quiere pasar 
+      -- a upper case. Si el valor no se encuentra, el array se queda igual. 
+   begin 
+
+end pkg_change_to_upper_case;

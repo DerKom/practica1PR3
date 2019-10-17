@@ -7,20 +7,26 @@ package body pkg_multiply_by_max with SPARK_Mode is
       Max := 0;
       --Cogemos el valor máximo
       for I in Vector'Range loop
-         if Vector(I) >= Max then
+         if Vector(I) > Max then
             Max := Vector(I);
          end if; 
-         pragma Loop_Invariant(Max >=0 and Max >= Vector(I));
          pragma Loop_Invariant(for all J in Vector'First .. I =>
                                  Vector(J) <= Max
                               );
+         pragma Loop_Invariant(Max >= Max'Loop_Entry); 
+         pragma Loop_Invariant (Max <= Integer'Last/Vector(I) or Max >= Integer'First/Vector(I));
+         
+
+
+
 
       end loop;
       
 
       --Calculamos el vector resultado
-       
       Multiply_by_Value(Vector, Max); 
+
+      
       
       
    end Multiply_by_Max;

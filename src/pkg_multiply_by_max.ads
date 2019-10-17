@@ -15,7 +15,8 @@ package pkg_multiply_by_max with SPARK_Mode is
      ),
      Post => 
        (for all J in Vector'Range => 
-          Vector(J) = Vector'Old(J) * Max 
+          Max >= Vector'Old(J)    
+     
        ); 
    
     

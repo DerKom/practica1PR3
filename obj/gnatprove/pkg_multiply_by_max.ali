@@ -14,37 +14,38 @@ P GP FX
 
 RN
 RV NO_DIRECT_BOOLEAN_OPERATORS
-RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U pkg_multiply_by_max%b	pkg_multiply_by_max.adb	a43ad831 OO PK IL
+U pkg_multiply_by_max%b	pkg_multiply_by_max.adb	e3d326ee OO PK IL
 
-U pkg_multiply_by_max%s	pkg_multiply_by_max.ads	02fd8c19 OO PK IL
+U pkg_multiply_by_max%s	pkg_multiply_by_max.ads	693b46b4 OO PK IL
 W pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.adb  pkg_multiply_vector_by_value.ali
 
-D pkg_multiply_by_max.ads  20191016224038 ca6f6a39 pkg_multiply_by_max%s
-D pkg_multiply_by_max.adb  20191016224036 6e55b208 pkg_multiply_by_max%b
-D pkg_multiply_vector_by_value.ads  20191016180638 c892e620 pkg_multiply_vector_by_value%s
+D pkg_multiply_by_max.ads  20191017131558 4db41025 pkg_multiply_by_max%s
+D pkg_multiply_by_max.adb  20191017133558 ae6736cb pkg_multiply_by_max%b
+D pkg_multiply_vector_by_value.ads  20191017132606 248f5691 pkg_multiply_vector_by_value%s
 D system.ads		20180524051738 32a08138 system%s
 X 1 pkg_multiply_by_max.ads
-2K9*pkg_multiply_by_max 23l5 23e24 2|1b14 29l5 29t24
-6U14*Multiply_by_Max 6=31 6<57 2|3b14 26l8 26t23
+2K9*pkg_multiply_by_max 24l5 24e24 2|1b14 35l5 35t24
+6U14*Multiply_by_Max 6=31 6<57 2|3b14 32l8 32t23
 6a31 Vector{3|5A9} 10r18 10r28 10r43 12r9 12r38 12r69 12r97 12r112 13r20
-. 14r9 14r43 17r22 18r11 18r23 2|3b31 9r16 10r13 11r20 13r51 14r45 15r34
-. 23m25
-6i57 Max{integer} 10r36 18r39 2|3b57 7m7 10r26 11m13 13r32 13r44 15r47 23r33
+. 14r9 14r43 17r22 18r18 2|3b31 9r16 10r13 11r20 13r45 14r34 17r53 17r87
+. 27m25
+6i57 Max{integer} 10r36 18r11 2|3b57 7m7 10r25 11m13 14r47 16r32 16r39 17r33
+. 17r66 27r33
 13i15 J{integer} 14r16 14r50
-17i17 J{integer} 18r18 18r34
+17i17 J{integer} 18r29
 X 2 pkg_multiply_by_max.adb
-9i11 I{integer} 10r20 11r27 13r58 14r61
-14i40 J{integer} 15r41
+9i11 I{integer} 10r20 11r27 13r61 17r60 17r94
+13i40 J{integer} 14r41
 X 3 pkg_multiply_vector_by_value.ads
-1K9*pkg_multiply_vector_by_value 1|1w6 1r40 3|38e33
-5A9*T_Vector(integer)<integer> 1|6r47 2|3r47
-7U14*Multiply_by_Value 2|23s7
+1K9*pkg_multiply_vector_by_value 1|1w6 1r40 3|40e33
+5A9*T_Vector(natural)<integer> 1|6r47 2|3r47
+8U14*Multiply_by_Value 2|27s7
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS pkg_multiply_by_max__multiply_by_max 1 pkg_multiply_vector_by_value__multiply_by_value

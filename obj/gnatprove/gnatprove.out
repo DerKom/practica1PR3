@@ -6,17 +6,17 @@ SPARK Analysis results        Total       Flow   Interval   CodePeer     Provers
 -------------------------------------------------------------------------------------------------------
 Data Dependencies                 .          .          .          .           .           .          .
 Flow Dependencies                 .          .          .          .           .           .          .
-Initialization                    6          6          .          .           .           .          .
+Initialization                    8          8          .          .           .           .          .
 Non-Aliasing                      .          .          .          .           .           .          .
-Run-time Checks                   7          .          .          .    7 (CVC4)           .          .
-Assertions                        4          .          .          .    4 (CVC4)           .          .
+Run-time Checks                   3          .          .          .    3 (CVC4)           .          .
+Assertions                        6          .          .          .    6 (CVC4)           .          .
 Functional Contracts              2          .          .          .    1 (CVC4)           .          1
 LSP Verification                  .          .          .          .           .           .          .
 -------------------------------------------------------------------------------------------------------
-Total                            19    6 (32%)          .          .    12 (63%)           .     1 (5%)
+Total                            19    8 (42%)          .          .    10 (53%)           .     1 (5%)
 
 
 Analyzed 1 unit
 in unit pkg_multiply_by_max, 2 subprograms and packages out of 2 analyzed
   pkg_multiply_by_max at pkg_multiply_by_max.ads:2 flow analyzed (0 errors, 0 checks and 0 warnings) and proved (0 checks)
-  pkg_multiply_by_max.Multiply_by_Max at pkg_multiply_by_max.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 12 checks out of 13 proved
+  pkg_multiply_by_max.Multiply_by_Max at pkg_multiply_by_max.ads:6 flow analyzed (0 errors, 0 checks and 0 warnings) and not proved, 10 checks out of 11 proved
