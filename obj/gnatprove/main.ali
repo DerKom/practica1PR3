@@ -17,7 +17,7 @@ RN
 RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 
-U main%b		main.adb		7f8949fb OO SU
+U main%b		main.adb		9fcaa8b3 OO SU
 Z system%s		system.ads		system.ali
 W test_sum_of_vectors%b	test_sum_of_vectors.adb	test_sum_of_vectors.ali
 W tests_mostly_odds%b	tests_mostly_odds.adb	tests_mostly_odds.ali
@@ -46,7 +46,7 @@ D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_sum_of_vectors.adb  20191017112828 9a47bc2f test_sum_of_vectors%b
+D test_sum_of_vectors.adb  20191018121658 7a045d67 test_sum_of_vectors%b
 D tests_mostly_odds.adb	20191018114712 d8b1402b tests_mostly_odds%b
 D tests_multiply_by_value.adb  20191016101910 cf081fcf tests_multiply_by_value%b
 D tests_switch_to_uppercase.adb  20191018115830 3752e13a tests_switch_to_uppercase%b

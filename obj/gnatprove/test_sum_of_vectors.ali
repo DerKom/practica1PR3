@@ -19,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_ELABORATION_CODE
 RV SPARK_05
 
-U test_sum_of_vectors%b	test_sum_of_vectors.adb	3c8485c5 OO SU
+U test_sum_of_vectors%b	test_sum_of_vectors.adb	dcc7648d OO SU
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_sum_of_vectors%s	pkg_sum_of_vectors.adb	pkg_sum_of_vectors.ali
@@ -37,32 +37,36 @@ D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
 D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
 D s-parame.ads		20180524051738 48ec542b system.parameters%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_sum_of_vectors.adb  20191017112828 9a47bc2f test_sum_of_vectors%b
+D test_sum_of_vectors.adb  20191018121658 7a045d67 test_sum_of_vectors%b
 X 1 ada.ads
 16K9*Ada 20e8 13|1r6 1r23
 X 4 a-textio.ads
 49K13*Text_IO 471e16 13|1w10 1r27
-242U14*Put 13|11s7 22s7 34s7
-263U14*Put_Line 13|14s7 25s7 37s7 54s4
+242U14*Put 13|11s7 22s7 34s7 46s7
+263U14*Put_Line 13|14s7 25s7 37s7 49s7 55s4
 X 7 pkg_sum_of_vectors.ads
 1K9*pkg_sum_of_vectors 22e23 13|2w6 2r34
 3A9*T_Vector(integer)<integer> 13|7r26 8r26 9r26 18r26 19r26 20r26 30r26
-. 31r26 32r26
-5V13*Sum_of_Vectors{3A9} 13|13s22 24s22 36s22
+. 31r26 32r26 42r26 43r26 44r26
+5V13*Sum_of_Vectors{3A9} 13|13s22 24s22 36s22 48s22
 X 13 test_sum_of_vectors.adb
-4U11*Test_Sum_Of_Vectors 4b11 59l5 59t24
-6U14 Test_1 15l8 15t14 55s4
+4U11*Test_Sum_Of_Vectors 4b11 60l5 60t24
+6U14 Test_1 15l8 15t14 56s4
 7a7 vector1{7|3A9} 13r37
 8a7 vector2{7|3A9} 13r45
 9a7 result{7|3A9} 13r56
-17U14 Test_2 26l8 26t14 56s4
+17U14 Test_2 26l8 26t14 57s4
 18a7 vector1{7|3A9} 24r37
 19a7 vector2{7|3A9} 24r45
 20a7 result{7|3A9} 24r56
-29U14 Test_3 38l8 38t14 57s4
+29U14 Test_3 38l8 38t14 58s4
 30a7 vector1{7|3A9} 36r37
 31a7 vector2{7|3A9} 36r45
 32a7 result{7|3A9} 36r56
+41U14 Test_4 50l8 50t14 59s4
+42a7 vector1{7|3A9} 48r37
+43a7 vector2{7|3A9} 48r45
+44a7 result{7|3A9} 48r56
 
 QQ SPARKVERSION 2018 (20180523)
 GG EK_DIRECT_CALLS test_sum_of_vectors__test_1 0
@@ -71,6 +75,8 @@ GG EK_DIRECT_CALLS test_sum_of_vectors__test_2 0
 GG EK_GLOBALS test_sum_of_vectors__test_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_sum_of_vectors__sum_of_vectors local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS test_sum_of_vectors__test_3 0
 GG EK_GLOBALS test_sum_of_vectors__test_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_sum_of_vectors__sum_of_vectors local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_DIRECT_CALLS test_sum_of_vectors__test_4 0
+GG EK_GLOBALS test_sum_of_vectors__test_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_sum_of_vectors__sum_of_vectors local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_DIRECT_CALLS test_sum_of_vectors 0
 GG EK_GLOBALS test_sum_of_vectors local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_sum_of_vectors__sum_of_vectors local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
 GG EK_END_MARKER

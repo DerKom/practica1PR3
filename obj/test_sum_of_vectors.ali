@@ -18,7 +18,7 @@ RV NO_SECONDARY_STACK
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U test_sum_of_vectors%b	test_sum_of_vectors.adb	3c8485c5 NE OO SU
+U test_sum_of_vectors%b	test_sum_of_vectors.adb	dcc7648d NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.tags%s		a-tags.adb		a-tags.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -50,30 +50,34 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D test_sum_of_vectors.adb  20191017112828 9a47bc2f test_sum_of_vectors%b
+D test_sum_of_vectors.adb  20191018121644 7a045d67 test_sum_of_vectors%b
 X 1 ada.ads
 16K9*Ada 20e8 25|1r6 1r23
 X 6 a-textio.ads
 49K13*Text_IO 471e16 25|1w10 1r27
-242U14*Put 25|11s7 22s7 34s7
-263U14*Put_Line 25|14s7 25s7 37s7 54s4
+242U14*Put 25|11s7 22s7 34s7 46s7
+263U14*Put_Line 25|14s7 25s7 37s7 49s7 65s4
 X 10 pkg_sum_of_vectors.ads
 1K9*pkg_sum_of_vectors 22e23 25|2w6 2r34
 3A9*T_Vector(integer)<integer> 25|7r26 8r26 9r26 18r26 19r26 20r26 30r26
-. 31r26 32r26
-5V13*Sum_of_Vectors{3A9} 25|13s22 24s22 36s22
+. 31r26 32r26 42r26 43r26 44r26
+5V13*Sum_of_Vectors{3A9} 25|13s22 24s22 36s22 48s22
 X 25 test_sum_of_vectors.adb
-4U11*Test_Sum_Of_Vectors 4b11 59l5 59t24
-6U14 Test_1 6b14 15l8 15t14 55s4
+4U11*Test_Sum_Of_Vectors 4b11 70l5 70t24
+6U14 Test_1 6b14 15l8 15t14 66s4
 7a7 vector1{10|3A9} 13r37
 8a7 vector2{10|3A9} 13r45
 9a7 result{10|3A9} 13r56
-17U14 Test_2 17b14 26l8 26t14 56s4
+17U14 Test_2 17b14 26l8 26t14 67s4
 18a7 vector1{10|3A9} 24r37
 19a7 vector2{10|3A9} 24r45
 20a7 result{10|3A9} 24r56
-29U14 Test_3 29b14 38l8 38t14 57s4
+29U14 Test_3 29b14 38l8 38t14 68s4
 30a7 vector1{10|3A9} 36r37
 31a7 vector2{10|3A9} 36r45
 32a7 result{10|3A9} 36r56
+41U14 Test_4 41b14 50l8 50t14 69s4
+42a7 vector1{10|3A9} 48r37
+43a7 vector2{10|3A9} 48r45
+44a7 result{10|3A9} 48r56
 

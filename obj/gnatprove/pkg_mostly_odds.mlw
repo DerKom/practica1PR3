@@ -1923,7 +1923,7 @@ module Pkg_mostly_odds__mostly_odds__S1b
 
 end
 
-(* Module for axiomatizing type "T2b" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Types.Translate_Type *)
+(* Module for axiomatizing type "T2b" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Types.Translate_Type *)
 module Pkg_mostly_odds__mostly_odds__L_1__T2b
  use import "_gnatprove_standard".Main
  use import "int".Int
@@ -1960,54 +1960,54 @@ module Pkg_mostly_odds__mostly_odds__L_1__T2b
   writes {x}
 
 end
-(* Module for defining a ref holding the value of variable "pares" defined at pkg_mostly_odds.adb:5, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "pares" defined at pkg_mostly_odds.adb:6, created in Gnat2Why.Decls.Translate_Variable *)
 module Pkg_mostly_odds__mostly_odds__pares
  use import "_gnatprove_standard".Main
 
- val pares #"pkg_mostly_odds.adb" 5 0 0#"model_projected" "model_trace:2326" "name:Pares"  : int__ref 
+ val pares #"pkg_mostly_odds.adb" 6 0 0#"model_projected" "model_trace:2326" "name:Pares"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
 
 end
 
-(* Module giving an empty axiom for the entity "pares" defined at pkg_mostly_odds.adb:5, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "pares" defined at pkg_mostly_odds.adb:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Pkg_mostly_odds__mostly_odds__pares___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining a ref holding the value of variable "impares" defined at pkg_mostly_odds.adb:6, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "impares" defined at pkg_mostly_odds.adb:7, created in Gnat2Why.Decls.Translate_Variable *)
 module Pkg_mostly_odds__mostly_odds__impares
  use import "_gnatprove_standard".Main
 
- val impares #"pkg_mostly_odds.adb" 6 0 0#"model_projected" "model_trace:2335" "name:Impares"  : int__ref 
+ val impares #"pkg_mostly_odds.adb" 7 0 0#"model_projected" "model_trace:2335" "name:Impares"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
 
 end
 
-(* Module giving an empty axiom for the entity "impares" defined at pkg_mostly_odds.adb:6, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "impares" defined at pkg_mostly_odds.adb:7, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Pkg_mostly_odds__mostly_odds__impares___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module for defining a ref holding the value of variable "i" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Decls.Translate_Variable *)
+(* Module for defining a ref holding the value of variable "i" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Decls.Translate_Variable *)
 module Pkg_mostly_odds__mostly_odds__L_1__i
  use import "_gnatprove_standard".Main
 
- val i #"pkg_mostly_odds.adb" 10 0 0#"model_projected" "model_trace:2354" "name:I"  : int__ref 
+ val i #"pkg_mostly_odds.adb" 11 0 0#"model_projected" "model_trace:2354" "name:I"  : int__ref 
  
  function attr__ATTRIBUTE_ADDRESS 
    : int
 
 end
 
-(* Module giving an empty axiom for the entity "i" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "i" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Pkg_mostly_odds__mostly_odds__L_1__i___axiom
  use import "_gnatprove_standard".Main
 
@@ -2376,7 +2376,7 @@ module Standard__universal_integer___axiom
 
 end
 
-(* Module for defining the loop exit exception for the loop "L_1" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Decls.Translate_Loop_Entity *)
+(* Module for defining the loop exit exception for the loop "L_1" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Decls.Translate_Loop_Entity *)
 module Pkg_mostly_odds__mostly_odds__L_1
  use import "_gnatprove_standard".Main
 
@@ -2384,7 +2384,7 @@ module Pkg_mostly_odds__mostly_odds__L_1
 
 end
 
-(* Module giving an empty axiom for the entity "L_1" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
+(* Module giving an empty axiom for the entity "L_1" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Driver.Translate_Entity.Generate_Empty_Axiom_Theory *)
 module Pkg_mostly_odds__mostly_odds__L_1___axiom
  use import "_gnatprove_standard".Main
 
@@ -2431,7 +2431,7 @@ module Pkg_mostly_odds__mostly_odds__S1b___axiom
 
 end
 
-(* Module giving axioms for type "T2b" defined at pkg_mostly_odds.adb:10, created in Gnat2Why.Types.Generate_Type_Completion *)
+(* Module giving axioms for type "T2b" defined at pkg_mostly_odds.adb:11, created in Gnat2Why.Types.Generate_Type_Completion *)
 module Pkg_mostly_odds__mostly_odds__L_1__T2b___axiom
  use import "_gnatprove_standard".Main
 
@@ -2482,7 +2482,7 @@ module Pkg_mostly_odds__package_def
   (#"pkg_mostly_odds.ads" 9 0 0# ());
   (#"pkg_mostly_odds.adb" 1 0 0# ());
   (#"pkg_mostly_odds.adb" 3 0 0# ());
-  ( "GP_Sloc:pkg_mostly_odds.adb:32:1" (#"pkg_mostly_odds.adb" 32 0 0# ()) ) )
+  ( "GP_Sloc:pkg_mostly_odds.adb:33:1" (#"pkg_mostly_odds.adb" 33 0 0# ()) ) )
 end
 
 (* Module for checking contracts and absence of run-time errors in subprogram "mostly_odds" defined at pkg_mostly_odds.ads:5, created in Gnat2Why.Subprograms.Generate_VCs_For_Subprogram *)
@@ -2555,87 +2555,87 @@ module Pkg_mostly_odds__mostly_odds__subprogram_def
    assume {  ( ((Pkg_mostly_odds__t_vector.length Pkg_mostly_odds__mostly_odds__vector.vector) > 0) /\ ( ((Pkg_mostly_odds__t_vector.length Pkg_mostly_odds__mostly_odds__vector.vector) < 500) /\ ( ((Pkg_mostly_odds__t_vector.first Pkg_mostly_odds__mostly_odds__vector.vector) = 1) /\ ((Pkg_mostly_odds__t_vector.last Pkg_mostly_odds__mostly_odds__vector.vector) <> (Pkg_mostly_odds__t_vector.first Pkg_mostly_odds__mostly_odds__vector.vector)) ) ) ) };
    try
    ( (#"pkg_mostly_odds.adb" 3 0 0# ());
-   (#"pkg_mostly_odds.adb" 5 0 0# ( #"pkg_mostly_odds.adb" 5 0 0# abstract ensures {true}(let _ = () in (
-    ()))
-    end ;
-   #"pkg_mostly_odds.adb" 5 0 0# assume { #"pkg_mostly_odds.adb" 5 0 0# (Standard__integer___axiom.default_initial_assumption Pkg_mostly_odds__mostly_odds__pares.pares.int__content False) };
-   #"pkg_mostly_odds.adb" 5 0 0# assume { #"pkg_mostly_odds.adb" 5 0 0# (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__pares.pares.int__content False False True True) } ));
    (#"pkg_mostly_odds.adb" 6 0 0# ( #"pkg_mostly_odds.adb" 6 0 0# abstract ensures {true}(let _ = () in (
     ()))
     end ;
-   #"pkg_mostly_odds.adb" 6 0 0# assume { #"pkg_mostly_odds.adb" 6 0 0# (Standard__integer___axiom.default_initial_assumption Pkg_mostly_odds__mostly_odds__impares.impares.int__content False) };
-   #"pkg_mostly_odds.adb" 6 0 0# assume { #"pkg_mostly_odds.adb" 6 0 0# (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__impares.impares.int__content False False True True) } ));
-   (#"pkg_mostly_odds.adb" 10 0 0# ());
-   ( "GP_Sloc:pkg_mostly_odds.adb:8:7" (#"pkg_mostly_odds.adb" 8 0 0# ()) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:8:13" (#"pkg_mostly_odds.adb" 8 0 0# #"pkg_mostly_odds.adb" 8 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( 0 )) );
+   #"pkg_mostly_odds.adb" 6 0 0# assume { #"pkg_mostly_odds.adb" 6 0 0# (Standard__integer___axiom.default_initial_assumption Pkg_mostly_odds__mostly_odds__pares.pares.int__content False) };
+   #"pkg_mostly_odds.adb" 6 0 0# assume { #"pkg_mostly_odds.adb" 6 0 0# (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__pares.pares.int__content False False True True) } ));
+   (#"pkg_mostly_odds.adb" 7 0 0# ( #"pkg_mostly_odds.adb" 7 0 0# abstract ensures {true}(let _ = () in (
+    ()))
+    end ;
+   #"pkg_mostly_odds.adb" 7 0 0# assume { #"pkg_mostly_odds.adb" 7 0 0# (Standard__integer___axiom.default_initial_assumption Pkg_mostly_odds__mostly_odds__impares.impares.int__content False) };
+   #"pkg_mostly_odds.adb" 7 0 0# assume { #"pkg_mostly_odds.adb" 7 0 0# (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__impares.impares.int__content False False True True) } ));
+   (#"pkg_mostly_odds.adb" 11 0 0# ());
    ( "GP_Sloc:pkg_mostly_odds.adb:9:7" (#"pkg_mostly_odds.adb" 9 0 0# ()) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:9:15" (#"pkg_mostly_odds.adb" 9 0 0# #"pkg_mostly_odds.adb" 9 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( 0 )) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:10:29" (#"pkg_mostly_odds.adb" 10 0 0# (let temp___173 = ( #"pkg_mostly_odds.adb" 10 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__vector.vector in (
+   ( "GP_Sloc:pkg_mostly_odds.adb:9:13" (#"pkg_mostly_odds.adb" 9 0 0# #"pkg_mostly_odds.adb" 9 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( 0 )) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:10:7" (#"pkg_mostly_odds.adb" 10 0 0# ()) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:10:15" (#"pkg_mostly_odds.adb" 10 0 0# #"pkg_mostly_odds.adb" 10 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( 0 )) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:11:29" (#"pkg_mostly_odds.adb" 11 0 0# (let temp___173 = ( #"pkg_mostly_odds.adb" 11 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__vector.vector in (
     ()))
     end ;
    (Pkg_mostly_odds__t_vector.first(Pkg_mostly_odds__mostly_odds__vector.vector)) ) in (
-   (let temp___174 = ( #"pkg_mostly_odds.adb" 10 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__vector.vector in (
+   (let temp___174 = ( #"pkg_mostly_odds.adb" 11 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__vector.vector in (
     ()))
     end ;
    (Pkg_mostly_odds__t_vector.last(Pkg_mostly_odds__mostly_odds__vector.vector)) ) in (
-    ( #"pkg_mostly_odds.adb" 10 0 0# Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content <- ( temp___173 );
-    () (* Translation of an Ada loop from pkg_mostly_odds.adb:10 *)
+    ( #"pkg_mostly_odds.adb" 11 0 0# Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content <- ( temp___173 );
+    () (* Translation of an Ada loop from pkg_mostly_odds.adb:11 *)
     ;
     (if ((Boolean.andb((temp___173 <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content)) ((Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content <= temp___174)))) then (
-     #"pkg_mostly_odds.adb" 10 0 0# try
-      ( #"pkg_mostly_odds.adb" 10 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__pares.pares.int__content in (
+     #"pkg_mostly_odds.adb" 11 0 0# try
+      ( #"pkg_mostly_odds.adb" 11 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__pares.pares.int__content in (
        ()))
        end ;
-      (let temp___177 = #"pkg_mostly_odds.adb" 10 0 0# (any int
-      ensures {#"pkg_mostly_odds.adb" 10 0 0# (result = Pkg_mostly_odds__mostly_odds__pares.pares.int__content)} 
+      (let temp___177 = #"pkg_mostly_odds.adb" 11 0 0# (any int
+      ensures {#"pkg_mostly_odds.adb" 11 0 0# (result = Pkg_mostly_odds__mostly_odds__pares.pares.int__content)} 
       ) in (
-       ( #"pkg_mostly_odds.adb" 10 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content in (
+       ( #"pkg_mostly_odds.adb" 11 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content in (
         ()))
         end ;
-       (let temp___176 = #"pkg_mostly_odds.adb" 10 0 0# (any int
-       ensures {#"pkg_mostly_odds.adb" 10 0 0# (result = Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content)} 
+       (let temp___176 = #"pkg_mostly_odds.adb" 11 0 0# (any int
+       ensures {#"pkg_mostly_odds.adb" 11 0 0# (result = Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content)} 
        ) in (
-        ( #"pkg_mostly_odds.adb" 10 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__impares.impares.int__content in (
+        ( #"pkg_mostly_odds.adb" 11 0 0# abstract ensures {true}(let _ = Pkg_mostly_odds__mostly_odds__impares.impares.int__content in (
          ()))
          end ;
-        (let temp___175 = #"pkg_mostly_odds.adb" 10 0 0# (any int
-        ensures {#"pkg_mostly_odds.adb" 10 0 0# (result = Pkg_mostly_odds__mostly_odds__impares.impares.int__content)} 
+        (let temp___175 = #"pkg_mostly_odds.adb" 11 0 0# (any int
+        ensures {#"pkg_mostly_odds.adb" 11 0 0# (result = Pkg_mostly_odds__mostly_odds__impares.impares.int__content)} 
         ) in (
-         ( () (* First unroling of the loop statements appearing before the loop invariant of loop pkg_mostly_odds.adb:10 *)
+         ( () (* First unroling of the loop statements appearing before the loop invariant of loop pkg_mostly_odds.adb:11 *)
          ;
-         ( "GP_Sloc:pkg_mostly_odds.adb:11:10" (#"pkg_mostly_odds.adb" 11 0 0# (if (((#"pkg_mostly_odds.adb" 11 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:11:24" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:2" "comment:         if (Vector(I) mod 2) = 0 then
-                       ^ pkg_mostly_odds.adb:11:24:VC_DIVISION_CHECK" "GP_Shape:L_1_while__if__cmp__mod" (Int_Division.mod_((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_mostly_odds__t_vector.to_array(Pkg_mostly_odds__mostly_odds__vector.vector))) (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content))))) (2)) )) = 0)) then (
-          ( ( "GP_Sloc:pkg_mostly_odds.adb:12:13" (#"pkg_mostly_odds.adb" 12 0 0# ()) );
-          ( "GP_Sloc:pkg_mostly_odds.adb:12:22" (#"pkg_mostly_odds.adb" 12 0 0# ()) );
-          ( "GP_Sloc:pkg_mostly_odds.adb:12:19" (#"pkg_mostly_odds.adb" 12 0 0# #"pkg_mostly_odds.adb" 12 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( (#"pkg_mostly_odds.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:12:28" "GP_Id:1" "comment:            Pares := Pares +1 ;
-                           ^ pkg_mostly_odds.adb:12:28:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__pares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + 1))) )) )) ) )) else (
-          ( ( "GP_Sloc:pkg_mostly_odds.adb:14:13" (#"pkg_mostly_odds.adb" 14 0 0# ()) );
-          ( "GP_Sloc:pkg_mostly_odds.adb:14:24" (#"pkg_mostly_odds.adb" 14 0 0# ()) );
-          ( "GP_Sloc:pkg_mostly_odds.adb:14:21" (#"pkg_mostly_odds.adb" 14 0 0# #"pkg_mostly_odds.adb" 14 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( (#"pkg_mostly_odds.adb" 14 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:14:32" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Impares := Impares + 1;
-                               ^ pkg_mostly_odds.adb:14:32:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__impares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__impares.impares.int__content + 1))) )) )) ) )))) );
-         () (* While loop translating the Ada loop from pkg_mostly_odds.adb:10 *)
+         ( "GP_Sloc:pkg_mostly_odds.adb:12:10" (#"pkg_mostly_odds.adb" 12 0 0# (if (((#"pkg_mostly_odds.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:12:24" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:2" "comment:         if (Vector(I) mod 2) = 0 then
+                       ^ pkg_mostly_odds.adb:12:24:VC_DIVISION_CHECK" "GP_Shape:L_1_while__if__cmp__mod" (Int_Division.mod_((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_mostly_odds__t_vector.to_array(Pkg_mostly_odds__mostly_odds__vector.vector))) (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content))))) (2)) )) = 0)) then (
+          ( ( "GP_Sloc:pkg_mostly_odds.adb:13:13" (#"pkg_mostly_odds.adb" 13 0 0# ()) );
+          ( "GP_Sloc:pkg_mostly_odds.adb:13:22" (#"pkg_mostly_odds.adb" 13 0 0# ()) );
+          ( "GP_Sloc:pkg_mostly_odds.adb:13:19" (#"pkg_mostly_odds.adb" 13 0 0# #"pkg_mostly_odds.adb" 13 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( (#"pkg_mostly_odds.adb" 13 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:13:28" "GP_Id:1" "comment:            Pares := Pares +1 ;
+                           ^ pkg_mostly_odds.adb:13:28:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__pares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + 1))) )) )) ) )) else (
+          ( ( "GP_Sloc:pkg_mostly_odds.adb:15:13" (#"pkg_mostly_odds.adb" 15 0 0# ()) );
+          ( "GP_Sloc:pkg_mostly_odds.adb:15:24" (#"pkg_mostly_odds.adb" 15 0 0# ()) );
+          ( "GP_Sloc:pkg_mostly_odds.adb:15:21" (#"pkg_mostly_odds.adb" 15 0 0# #"pkg_mostly_odds.adb" 15 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( (#"pkg_mostly_odds.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:15:32" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Impares := Impares + 1;
+                               ^ pkg_mostly_odds.adb:15:32:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__impares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__impares.impares.int__content + 1))) )) )) ) )))) );
+         () (* While loop translating the Ada loop from pkg_mostly_odds.adb:11 *)
          ;
           while True do
           invariant { 
-           (#"pkg_mostly_odds.adb" 16 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:16:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:4" "comment:         pragma Loop_Invariant (I = Pares+Impares); 
-                                ^ pkg_mostly_odds.adb:16:33:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" ( "GP_Pretty_Ada:2391" "GP_Sloc:pkg_mostly_odds.adb:16:33" (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content = (Pkg_mostly_odds__mostly_odds__pares.pares.int__content + Pkg_mostly_odds__mostly_odds__impares.impares.int__content)) ) ))
+           (#"pkg_mostly_odds.adb" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:17:33" "GP_Reason:VC_LOOP_INVARIANT" "GP_Id:4" "comment:         pragma Loop_Invariant (I = Pares+Impares); 
+                                ^ pkg_mostly_odds.adb:17:33:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" ( "GP_Pretty_Ada:2391" "GP_Sloc:pkg_mostly_odds.adb:17:33" (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content = (Pkg_mostly_odds__mostly_odds__pares.pares.int__content + Pkg_mostly_odds__mostly_odds__impares.impares.int__content)) ) ))
            }
           invariant { 
-           (#"pkg_mostly_odds.adb" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" "GP_Sloc:pkg_mostly_odds.adb:17:33" "GP_Id:5" "comment:         pragma Loop_Invariant (Pares <= I);
-                                ^ pkg_mostly_odds.adb:17:33:VC_LOOP_INVARIANT" ( "GP_Pretty_Ada:2400" "GP_Sloc:pkg_mostly_odds.adb:17:33" (Pkg_mostly_odds__mostly_odds__pares.pares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) ) ))
+           (#"pkg_mostly_odds.adb" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" "GP_Sloc:pkg_mostly_odds.adb:18:33" "GP_Id:5" "comment:         pragma Loop_Invariant (Pares <= I);
+                                ^ pkg_mostly_odds.adb:18:33:VC_LOOP_INVARIANT" ( "GP_Pretty_Ada:2400" "GP_Sloc:pkg_mostly_odds.adb:18:33" (Pkg_mostly_odds__mostly_odds__pares.pares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) ) ))
            }
           invariant { 
-           (#"pkg_mostly_odds.adb" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" "GP_Sloc:pkg_mostly_odds.adb:18:33" "GP_Id:6" "comment:         pragma Loop_Invariant (Impares <= I);
-                                ^ pkg_mostly_odds.adb:18:33:VC_LOOP_INVARIANT" ( "GP_Pretty_Ada:2407" "GP_Sloc:pkg_mostly_odds.adb:18:33" (Pkg_mostly_odds__mostly_odds__impares.impares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) ) ))
+           (#"pkg_mostly_odds.adb" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_LOOP_INVARIANT" "GP_Shape:L_1_while__pragargs__cmp" "GP_Sloc:pkg_mostly_odds.adb:19:33" "GP_Id:6" "comment:         pragma Loop_Invariant (Impares <= I);
+                                ^ pkg_mostly_odds.adb:19:33:VC_LOOP_INVARIANT" ( "GP_Pretty_Ada:2407" "GP_Sloc:pkg_mostly_odds.adb:19:33" (Pkg_mostly_odds__mostly_odds__impares.impares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) ) ))
            }
-          ( () (* Assume implicit invariants from the loop pkg_mostly_odds.adb:10 *)
+          ( () (* Assume implicit invariants from the loop pkg_mostly_odds.adb:11 *)
           ;
            assume {  (Boolean.andb(( ( ( ( ( ( true /\ (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__impares.impares.int__content False True True True) ) /\ true ) /\ (if (((Pkg_mostly_odds__t_vector.first Pkg_mostly_odds__mostly_odds__vector.vector) <= (Pkg_mostly_odds__t_vector.last Pkg_mostly_odds__mostly_odds__vector.vector))) then (
            (Pkg_mostly_odds__mostly_odds__L_1__T2b.dynamic_property (Pkg_mostly_odds__t_vector.first Pkg_mostly_odds__mostly_odds__vector.vector) (Pkg_mostly_odds__t_vector.last Pkg_mostly_odds__mostly_odds__vector.vector) Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content)) else true) ) /\ true ) /\ (Standard__integer___axiom.dynamic_invariant Pkg_mostly_odds__mostly_odds__pares.pares.int__content False True True True) ) /\ true )) (( ((Pkg_mostly_odds__t_vector.first Pkg_mostly_odds__mostly_odds__vector.vector) <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) /\ (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content <= (Pkg_mostly_odds__t_vector.last Pkg_mostly_odds__mostly_odds__vector.vector)) ))) };
-          () (* Check for absence of RTE in the invariant of loop pkg_mostly_odds.adb:10 *)
+          () (* Check for absence of RTE in the invariant of loop pkg_mostly_odds.adb:11 *)
           ;
-           abstract ensures {true}(let _ = (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content = (#"pkg_mostly_odds.adb" 16 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:16:42" "GP_Id:3" "comment:         pragma Loop_Invariant (I = Pares+Impares); 
-                                         ^ pkg_mostly_odds.adb:16:42:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__cmp__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + Pkg_mostly_odds__mostly_odds__impares.impares.int__content))) ))) in (
+           abstract ensures {true}(let _ = (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content = (#"pkg_mostly_odds.adb" 17 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:17:42" "GP_Id:3" "comment:         pragma Loop_Invariant (I = Pares+Impares); 
+                                         ^ pkg_mostly_odds.adb:17:42:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__pragargs__cmp__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + Pkg_mostly_odds__mostly_odds__impares.impares.int__content))) ))) in (
            ()))
            end ;
            abstract ensures {true}(let _ = (Pkg_mostly_odds__mostly_odds__pares.pares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) in (
@@ -2644,23 +2644,23 @@ module Pkg_mostly_odds__mostly_odds__subprogram_def
            abstract ensures {true}(let _ = (Pkg_mostly_odds__mostly_odds__impares.impares.int__content <= Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content) in (
            ()))
            end ;
-          () (* Loop statements appearing after the loop invariant of loop pkg_mostly_odds.adb:10 *)
+          () (* Loop statements appearing after the loop invariant of loop pkg_mostly_odds.adb:11 *)
           ;
-          () (* Check for the exit condition and loop statements appearing before the loop invariant of loop pkg_mostly_odds.adb:10 *)
+          () (* Check for the exit condition and loop statements appearing before the loop invariant of loop pkg_mostly_odds.adb:11 *)
           ;
           (if ((Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content = temp___174)) then (
             raise Pkg_mostly_odds__mostly_odds__L_1.L_1));
            Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content <- ( (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content + 1) );
-          ( "GP_Sloc:pkg_mostly_odds.adb:11:10" (#"pkg_mostly_odds.adb" 11 0 0# (if (((#"pkg_mostly_odds.adb" 11 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:11:24" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:2" "comment:         if (Vector(I) mod 2) = 0 then
-                       ^ pkg_mostly_odds.adb:11:24:VC_DIVISION_CHECK" "GP_Shape:L_1_while__if__cmp__mod" (Int_Division.mod_((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_mostly_odds__t_vector.to_array(Pkg_mostly_odds__mostly_odds__vector.vector))) (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content))))) (2)) )) = 0)) then (
-           ( ( "GP_Sloc:pkg_mostly_odds.adb:12:13" (#"pkg_mostly_odds.adb" 12 0 0# ()) );
-           ( "GP_Sloc:pkg_mostly_odds.adb:12:22" (#"pkg_mostly_odds.adb" 12 0 0# ()) );
-           ( "GP_Sloc:pkg_mostly_odds.adb:12:19" (#"pkg_mostly_odds.adb" 12 0 0# #"pkg_mostly_odds.adb" 12 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( (#"pkg_mostly_odds.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:12:28" "GP_Id:1" "comment:            Pares := Pares +1 ;
-                           ^ pkg_mostly_odds.adb:12:28:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__pares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + 1))) )) )) ) )) else (
-           ( ( "GP_Sloc:pkg_mostly_odds.adb:14:13" (#"pkg_mostly_odds.adb" 14 0 0# ()) );
-           ( "GP_Sloc:pkg_mostly_odds.adb:14:24" (#"pkg_mostly_odds.adb" 14 0 0# ()) );
-           ( "GP_Sloc:pkg_mostly_odds.adb:14:21" (#"pkg_mostly_odds.adb" 14 0 0# #"pkg_mostly_odds.adb" 14 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( (#"pkg_mostly_odds.adb" 14 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:14:32" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Impares := Impares + 1;
-                               ^ pkg_mostly_odds.adb:14:32:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__impares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__impares.impares.int__content + 1))) )) )) ) )))) ) )
+          ( "GP_Sloc:pkg_mostly_odds.adb:12:10" (#"pkg_mostly_odds.adb" 12 0 0# (if (((#"pkg_mostly_odds.adb" 12 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:12:24" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:2" "comment:         if (Vector(I) mod 2) = 0 then
+                       ^ pkg_mostly_odds.adb:12:24:VC_DIVISION_CHECK" "GP_Shape:L_1_while__if__cmp__mod" (Int_Division.mod_((Standard__integer__rep.to_rep((Array__Int__Standard__integer.get((Pkg_mostly_odds__t_vector.to_array(Pkg_mostly_odds__mostly_odds__vector.vector))) (Pkg_mostly_odds__mostly_odds__L_1__i.i.int__content))))) (2)) )) = 0)) then (
+           ( ( "GP_Sloc:pkg_mostly_odds.adb:13:13" (#"pkg_mostly_odds.adb" 13 0 0# ()) );
+           ( "GP_Sloc:pkg_mostly_odds.adb:13:22" (#"pkg_mostly_odds.adb" 13 0 0# ()) );
+           ( "GP_Sloc:pkg_mostly_odds.adb:13:19" (#"pkg_mostly_odds.adb" 13 0 0# #"pkg_mostly_odds.adb" 13 0 0# Pkg_mostly_odds__mostly_odds__pares.pares.int__content <- ( (#"pkg_mostly_odds.adb" 13 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_mostly_odds.adb:13:28" "GP_Id:1" "comment:            Pares := Pares +1 ;
+                           ^ pkg_mostly_odds.adb:13:28:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__pares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__pares.pares.int__content + 1))) )) )) ) )) else (
+           ( ( "GP_Sloc:pkg_mostly_odds.adb:15:13" (#"pkg_mostly_odds.adb" 15 0 0# ()) );
+           ( "GP_Sloc:pkg_mostly_odds.adb:15:24" (#"pkg_mostly_odds.adb" 15 0 0# ()) );
+           ( "GP_Sloc:pkg_mostly_odds.adb:15:21" (#"pkg_mostly_odds.adb" 15 0 0# #"pkg_mostly_odds.adb" 15 0 0# Pkg_mostly_odds__mostly_odds__impares.impares.int__content <- ( (#"pkg_mostly_odds.adb" 15 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_mostly_odds.adb:15:32" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Id:0" "comment:            Impares := Impares + 1;
+                               ^ pkg_mostly_odds.adb:15:32:VC_OVERFLOW_CHECK" "GP_Shape:L_1_while__if__impares_assign__add" (Standard__integer.range_check_((Pkg_mostly_odds__mostly_odds__impares.impares.int__content + 1))) )) )) ) )))) ) )
          done )))
          )))
         )))
@@ -2670,13 +2670,13 @@ module Pkg_mostly_odds__mostly_odds__subprogram_def
      end)) )))
    ))
    ) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:23:10" (#"pkg_mostly_odds.adb" 23 0 0# ()) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:23:18" (#"pkg_mostly_odds.adb" 23 0 0# ()) );
-   ( "GP_Sloc:pkg_mostly_odds.adb:23:7" (#"pkg_mostly_odds.adb" 23 0 0# (if ((Pkg_mostly_odds__mostly_odds__pares.pares.int__content > Pkg_mostly_odds__mostly_odds__impares.impares.int__content)) then (
-    ( "GP_Sloc:pkg_mostly_odds.adb:24:10" (#"pkg_mostly_odds.adb" 24 0 0# ( #"pkg_mostly_odds.adb" 24 0 0# pkg_mostly_odds__mostly_odds__result.bool__content <- ( (Boolean.of_int(1)) );
-    #"pkg_mostly_odds.adb" 24 0 0# raise Return__exc )) )) else (
-    ( "GP_Sloc:pkg_mostly_odds.adb:26:10" (#"pkg_mostly_odds.adb" 26 0 0# ( #"pkg_mostly_odds.adb" 26 0 0# pkg_mostly_odds__mostly_odds__result.bool__content <- ( (Boolean.of_int(0)) );
-    #"pkg_mostly_odds.adb" 26 0 0# raise Return__exc )) )))) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:24:10" (#"pkg_mostly_odds.adb" 24 0 0# ()) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:24:18" (#"pkg_mostly_odds.adb" 24 0 0# ()) );
+   ( "GP_Sloc:pkg_mostly_odds.adb:24:7" (#"pkg_mostly_odds.adb" 24 0 0# (if ((Pkg_mostly_odds__mostly_odds__pares.pares.int__content > Pkg_mostly_odds__mostly_odds__impares.impares.int__content)) then (
+    ( "GP_Sloc:pkg_mostly_odds.adb:25:10" (#"pkg_mostly_odds.adb" 25 0 0# ( #"pkg_mostly_odds.adb" 25 0 0# pkg_mostly_odds__mostly_odds__result.bool__content <- ( (Boolean.of_int(1)) );
+    #"pkg_mostly_odds.adb" 25 0 0# raise Return__exc )) )) else (
+    ( "GP_Sloc:pkg_mostly_odds.adb:27:10" (#"pkg_mostly_odds.adb" 27 0 0# ( #"pkg_mostly_odds.adb" 27 0 0# pkg_mostly_odds__mostly_odds__result.bool__content <- ( (Boolean.of_int(0)) );
+    #"pkg_mostly_odds.adb" 27 0 0# raise Return__exc )) )))) );
     raise Return__exc )
   with
    Return__exc -> ()
