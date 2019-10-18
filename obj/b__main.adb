@@ -29,11 +29,12 @@ package body ada_main is
    E110 : Short_Integer; pragma Import (Ada, E110, "system__file_io_E");
    E104 : Short_Integer; pragma Import (Ada, E104, "ada__text_io_E");
    E118 : Short_Integer; pragma Import (Ada, E118, "system__assertions_E");
-   E121 : Short_Integer; pragma Import (Ada, E121, "pkg_multiply_vector_by_value_E");
-   E130 : Short_Integer; pragma Import (Ada, E130, "pkg_search_value_inside_vector_E");
+   E121 : Short_Integer; pragma Import (Ada, E121, "pkg_mostly_odds_E");
+   E124 : Short_Integer; pragma Import (Ada, E124, "pkg_multiply_vector_by_value_E");
+   E133 : Short_Integer; pragma Import (Ada, E133, "pkg_search_value_inside_vector_E");
    E116 : Short_Integer; pragma Import (Ada, E116, "pkg_sum_of_vectors_E");
-   E124 : Short_Integer; pragma Import (Ada, E124, "pkg_switch_to_uppercase_E");
-   E127 : Short_Integer; pragma Import (Ada, E127, "pkg_times_repeated_E");
+   E127 : Short_Integer; pragma Import (Ada, E127, "pkg_switch_to_uppercase_E");
+   E130 : Short_Integer; pragma Import (Ada, E130, "pkg_times_repeated_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -208,10 +209,11 @@ package body ada_main is
       System.Assertions'Elab_Spec;
       E118 := E118 + 1;
       E121 := E121 + 1;
-      E130 := E130 + 1;
-      E116 := E116 + 1;
       E124 := E124 + 1;
+      E133 := E133 + 1;
+      E116 := E116 + 1;
       E127 := E127 + 1;
+      E130 := E130 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -247,19 +249,21 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_multiply_vector_by_value.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_multiply_by_value.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_search_value_inside_vector.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_vector_search.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_sum_of_vectors.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\Test_Sum_Of_Vectors.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_switch_to_uppercase.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_switch_to_uppercase.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\pkg_times_repeated.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\tests_times_repeated.o
-   --   D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\main.o
-   --   -LD:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\
-   --   -LD:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_mostly_odds.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\tests_mostly_odds.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_multiply_vector_by_value.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\tests_multiply_by_value.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_search_value_inside_vector.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\tests_vector_search.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_sum_of_vectors.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\Test_Sum_Of_Vectors.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_switch_to_uppercase.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\tests_switch_to_uppercase.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\pkg_times_repeated.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\tests_times_repeated.o
+   --   C:\Users\orlan\Documents\practica1PR3\obj\main.o
+   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
+   --   -LC:\Users\orlan\Documents\practica1PR3\obj\
    --   -LC:/gnat/2018/lib/gcc/x86_64-pc-mingw32/7.3.1/adalib/
    --   -static
    --   -lgnat

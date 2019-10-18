@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "tests_mostly_odds",
+      "sloc": [
+        {
+          "file": "tests_mostly_odds.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 7.30630010366440E-03,
+    "globals (basic)": 3.43662016093731E-02,
+    "globals/properties (advanced)": 3.86934988200665E-02,
+    "flow analysis": 1.01799996627960E-04,
+    "codepeer results": 4.50000015916885E-06,
+    "init_why_sections": 3.85799998184666E-04,
+    "translation of standard": 5.98170002922416E-03,
+    "translation of compilation unit": 6.02432005107403E-02,
+    "proof": 4.39999985246686E-06
+  }
+}

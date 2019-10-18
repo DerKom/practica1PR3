@@ -27,8 +27,8 @@ U pkg_sum_of_vectors%s	pkg_sum_of_vectors.ads	2ede8ab0 EE NE OO PK IL
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D pkg_sum_of_vectors.ads  20191016140316 2ede8ab0 pkg_sum_of_vectors%s
-D pkg_sum_of_vectors.adb  20191016140316 19ad90ee pkg_sum_of_vectors%b
+D pkg_sum_of_vectors.ads  20191016103358 2ede8ab0 pkg_sum_of_vectors%s
+D pkg_sum_of_vectors.adb  20191016103606 19ad90ee pkg_sum_of_vectors%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s

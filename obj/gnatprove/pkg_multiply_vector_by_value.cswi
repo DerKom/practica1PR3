@@ -1,4 +1,4 @@
-20191017175254
+20191018115948
 -c
 -x
 ada
@@ -11,4 +11,4 @@ ada
 -gnat12
 -gnateE
 -gnatc
--gnates=D:\Orlando Daniel\Documentos\GitHub\practica1PR3\obj\gnatprove\9ac31a0f.tmp
+-gnates=C:\Users\orlan\Documents\practica1PR3\obj\gnatprove\5293895b.tmp

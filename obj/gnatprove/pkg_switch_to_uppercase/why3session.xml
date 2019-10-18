@@ -38,7 +38,7 @@
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="WP_parameter def.8" expl="loop invariant init" proved="true">
-  <proof prover="0"><result status="valid" steps="170"/></proof>
+  <proof prover="0"><result status="valid" steps="130"/></proof>
   </goal>
   <goal name="WP_parameter def.9" expl="loop invariant init" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
@@ -86,7 +86,7 @@
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="WP_parameter def.24" expl="loop invariant preservation" proved="true">
-  <proof prover="0"><result status="valid" steps="910"/></proof>
+  <proof prover="0"><result status="valid" steps="901"/></proof>
   </goal>
   <goal name="WP_parameter def.25" expl="loop invariant preservation" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>
@@ -95,7 +95,7 @@
   <proof prover="0"><result status="valid" steps="5"/></proof>
   </goal>
   <goal name="WP_parameter def.27" expl="postcondition" proved="true">
-  <proof prover="0"><result status="valid" steps="264"/></proof>
+  <proof prover="0"><result status="valid" steps="265"/></proof>
   </goal>
   <goal name="WP_parameter def.28" expl="postcondition" proved="true">
   <proof prover="0"><result status="valid" steps="5"/></proof>

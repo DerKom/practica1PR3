@@ -65,11 +65,9 @@ procedure tests_switch_to_uppercase is
    Put_Line ("********************* Tests_Switch_to_Uppercase");
    Test_1;
    Test_2;
-   --Test_3;
+   Test_3;
    Test_4;
-   --Test_5;
-   --Test_6;
-   --Test_7;
+
 
    
 end tests_switch_to_uppercase;

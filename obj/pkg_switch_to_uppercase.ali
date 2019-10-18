@@ -35,8 +35,8 @@ D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
 D a-chahan.ads		20180524051736 1601a50f ada.characters.handling%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
-D pkg_switch_to_uppercase.ads  20191017175036 de4d8add pkg_switch_to_uppercase%s
-D pkg_switch_to_uppercase.adb  20191017174904 f8309b7a pkg_switch_to_uppercase%b
+D pkg_switch_to_uppercase.ads  20191018091330 de4d8add pkg_switch_to_uppercase%s
+D pkg_switch_to_uppercase.adb  20191018091330 f8309b7a pkg_switch_to_uppercase%b
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s

@@ -37,7 +37,7 @@ package ada_main is
    pragma Export (C, main, "main");
 
    type Version_32 is mod 2 ** 32;
-   u00001 : constant Version_32 := 16#5c026de1#;
+   u00001 : constant Version_32 := 16#7f8949fb#;
    pragma Export (C, u00001, "mainB");
    u00002 : constant Version_32 := 16#050ff2f0#;
    pragma Export (C, u00002, "system__standard_libraryB");
@@ -273,34 +273,40 @@ package ada_main is
    pragma Export (C, u00117, "system__assertionsB");
    u00118 : constant Version_32 := 16#ff2dadac#;
    pragma Export (C, u00118, "system__assertionsS");
-   u00119 : constant Version_32 := 16#b652f205#;
-   pragma Export (C, u00119, "tests_multiply_by_valueB");
-   u00120 : constant Version_32 := 16#ae664d8d#;
-   pragma Export (C, u00120, "pkg_multiply_vector_by_valueB");
-   u00121 : constant Version_32 := 16#f1475e90#;
-   pragma Export (C, u00121, "pkg_multiply_vector_by_valueS");
-   u00122 : constant Version_32 := 16#cbb61979#;
-   pragma Export (C, u00122, "tests_switch_to_uppercaseB");
-   u00123 : constant Version_32 := 16#307cb4a8#;
-   pragma Export (C, u00123, "pkg_switch_to_uppercaseB");
-   u00124 : constant Version_32 := 16#c84c2fd2#;
-   pragma Export (C, u00124, "pkg_switch_to_uppercaseS");
-   u00125 : constant Version_32 := 16#46c511e1#;
-   pragma Export (C, u00125, "tests_times_repeatedB");
-   u00126 : constant Version_32 := 16#bf42c084#;
-   pragma Export (C, u00126, "pkg_times_repeatedB");
-   u00127 : constant Version_32 := 16#96835ea7#;
-   pragma Export (C, u00127, "pkg_times_repeatedS");
-   u00128 : constant Version_32 := 16#5ef8d860#;
-   pragma Export (C, u00128, "tests_vector_searchB");
-   u00129 : constant Version_32 := 16#9fa7b6ff#;
-   pragma Export (C, u00129, "pkg_search_value_inside_vectorB");
-   u00130 : constant Version_32 := 16#49228441#;
-   pragma Export (C, u00130, "pkg_search_value_inside_vectorS");
-   u00131 : constant Version_32 := 16#5dc07a5a#;
-   pragma Export (C, u00131, "system__memoryB");
-   u00132 : constant Version_32 := 16#6bdde70c#;
-   pragma Export (C, u00132, "system__memoryS");
+   u00119 : constant Version_32 := 16#84f91969#;
+   pragma Export (C, u00119, "tests_mostly_oddsB");
+   u00120 : constant Version_32 := 16#c5dda45c#;
+   pragma Export (C, u00120, "pkg_mostly_oddsB");
+   u00121 : constant Version_32 := 16#d455ea18#;
+   pragma Export (C, u00121, "pkg_mostly_oddsS");
+   u00122 : constant Version_32 := 16#b06a51ae#;
+   pragma Export (C, u00122, "tests_multiply_by_valueB");
+   u00123 : constant Version_32 := 16#a85eee26#;
+   pragma Export (C, u00123, "pkg_multiply_vector_by_valueB");
+   u00124 : constant Version_32 := 16#f77ffd3b#;
+   pragma Export (C, u00124, "pkg_multiply_vector_by_valueS");
+   u00125 : constant Version_32 := 16#6102d8bd#;
+   pragma Export (C, u00125, "tests_switch_to_uppercaseB");
+   u00126 : constant Version_32 := 16#307cb4a8#;
+   pragma Export (C, u00126, "pkg_switch_to_uppercaseB");
+   u00127 : constant Version_32 := 16#c84c2fd2#;
+   pragma Export (C, u00127, "pkg_switch_to_uppercaseS");
+   u00128 : constant Version_32 := 16#46c511e1#;
+   pragma Export (C, u00128, "tests_times_repeatedB");
+   u00129 : constant Version_32 := 16#bf42c084#;
+   pragma Export (C, u00129, "pkg_times_repeatedB");
+   u00130 : constant Version_32 := 16#96835ea7#;
+   pragma Export (C, u00130, "pkg_times_repeatedS");
+   u00131 : constant Version_32 := 16#5ef8d860#;
+   pragma Export (C, u00131, "tests_vector_searchB");
+   u00132 : constant Version_32 := 16#9fa7b6ff#;
+   pragma Export (C, u00132, "pkg_search_value_inside_vectorB");
+   u00133 : constant Version_32 := 16#49228441#;
+   pragma Export (C, u00133, "pkg_search_value_inside_vectorS");
+   u00134 : constant Version_32 := 16#5dc07a5a#;
+   pragma Export (C, u00134, "system__memoryB");
+   u00135 : constant Version_32 := 16#6bdde70c#;
+   pragma Export (C, u00135, "system__memoryS");
 
    --  BEGIN ELABORATION ORDER
    --  ada%s
@@ -419,6 +425,9 @@ package ada_main is
    --  ada.text_io%b
    --  system.assertions%s
    --  system.assertions%b
+   --  pkg_mostly_odds%s
+   --  pkg_mostly_odds%b
+   --  tests_mostly_odds%b
    --  pkg_multiply_vector_by_value%s
    --  pkg_multiply_vector_by_value%b
    --  tests_multiply_by_value%b

@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "tests_switch_to_uppercase",
+      "sloc": [
+        {
+          "file": "tests_switch_to_uppercase.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 5.68410009145737E-03,
+    "globals (basic)": 4.45628017187119E-02,
+    "globals/properties (advanced)": 4.30365018546581E-02,
+    "flow analysis": 1.37900002300739E-04,
+    "codepeer results": 6.40000007479102E-06,
+    "init_why_sections": 4.86700009787455E-04,
+    "translation of standard": 1.45500004291534E-02,
+    "translation of compilation unit": 7.28017985820770E-02,
+    "proof": 4.30000000051223E-06
+  }
+}

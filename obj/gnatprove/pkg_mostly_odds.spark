@@ -1,0 +1,738 @@
+{
+  "spark": [
+    {
+      "name": "pkg_mostly_odds",
+      "sloc": [
+        {
+          "file": "pkg_mostly_odds.ads",
+          "line": 1
+        }
+      ],
+      "spark": "all"
+    },
+    {
+      "name": "pkg_mostly_odds.Mostly_Odds",
+      "sloc": [
+        {
+          "file": "pkg_mostly_odds.ads",
+          "line": 5
+        }
+      ],
+      "spark": "all"
+    }
+  ],
+  "flow": [
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 12,
+      "col": 19,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__55.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 14,
+      "col": 21,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__56.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 16,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__57.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 16,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__58.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 17,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__59.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 18,
+      "col": 10,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__60.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 23,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__61.trace",
+      "how_proved": "flow"
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 23,
+      "col": 7,
+      "rule": "UNINITIALIZED",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": {
+      },
+      "tracefile": "pkg_mostly_odds__flow__62.trace",
+      "how_proved": "flow"
+    }
+  ],
+  "proof": [
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 18,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 27,
+              "time": 9.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 18,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 9.00000035762787E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 18,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 18,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.ads",
+      "line": 13,
+      "col": 14,
+      "rule": "VC_POSTCONDITION",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.ads",
+      "check_line": 13,
+      "check_col": 14,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 14,
+      "col": 32,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 14,
+      "check_col": 32,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 16,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 61,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 16,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 17,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_PRESERV",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 27,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 17,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 16,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 54,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 16,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 17,
+      "col": 33,
+      "rule": "VC_LOOP_INVARIANT_INIT",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 5.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 17,
+      "check_col": 33,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.00000007450581E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 16,
+      "col": 42,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 16,
+      "check_col": 42,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 1,
+          "max_steps": 1,
+          "max_time": 5.99999986588955E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 11,
+      "col": 24,
+      "rule": "VC_DIVISION_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 3.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 11,
+      "check_col": 24,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 2.99999993294477E-02
+        }
+      }
+    },
+    {
+      "file": "pkg_mostly_odds.adb",
+      "line": 12,
+      "col": 28,
+      "rule": "VC_OVERFLOW_CHECK",
+      "severity": "info",
+      "entity": {
+        "name": "pkg_mostly_odds.Mostly_Odds",
+        "sloc": [
+          {
+            "file": "pkg_mostly_odds.ads",
+            "line": 5
+          }
+        ]
+      },
+      "check_tree": [
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 14,
+              "time": 8.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        },
+        {
+          "proof_attempts": {
+            "CVC4": {
+              "result": "Valid",
+              "steps": 5,
+              "time": 6.00000000000000E-02
+            }
+          },
+          "transformations": {
+          }
+        }
+      ],
+      "check_file": "pkg_mostly_odds.adb",
+      "check_line": 12,
+      "check_col": 28,
+      "how_proved": "prover",
+      "stats": {
+        "CVC4": {
+          "count": 2,
+          "max_steps": 1,
+          "max_time": 7.99999982118607E-02
+        }
+      }
+    }
+  ],
+  "assumptions": [
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pkg_mostly_odds",
+          "sloc": [
+            {
+              "file": "pkg_mostly_odds.ads",
+              "line": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_POST",
+        "arg": {
+          "name": "pkg_mostly_odds.Mostly_Odds",
+          "sloc": [
+            {
+              "file": "pkg_mostly_odds.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_EFFECTS",
+        "arg": {
+          "name": "pkg_mostly_odds.Mostly_Odds",
+          "sloc": [
+            {
+              "file": "pkg_mostly_odds.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    },
+    {
+      "assumptions": [
+      ],
+      "claim": {
+        "predicate": "CLAIM_AORTE",
+        "arg": {
+          "name": "pkg_mostly_odds.Mostly_Odds",
+          "sloc": [
+            {
+              "file": "pkg_mostly_odds.ads",
+              "line": 5
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "timings": {
+    "marking": 3.97399999201298E-04,
+    "globals (basic)": 2.77100014500320E-04,
+    "globals/properties (advanced)": 8.12200014479458E-04,
+    "flow analysis": 5.18829980865121E-03,
+    "codepeer results": 6.70000008540228E-06,
+    "init_why_sections": 3.67500004358590E-04,
+    "translation of standard": 6.56979996711016E-03,
+    "translation of compilation unit": 4.35720011591911E-03,
+    "proof": 2.03095769882202E+00
+  }
+}

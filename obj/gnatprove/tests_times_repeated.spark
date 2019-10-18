@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "tests_times_repeated",
+      "sloc": [
+        {
+          "file": "tests_times_repeated.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 4.27460018545389E-03,
+    "globals (basic)": 5.06542995572090E-02,
+    "globals/properties (advanced)": 4.19376008212566E-02,
+    "flow analysis": 1.10799999674782E-04,
+    "codepeer results": 5.20000003234600E-06,
+    "init_why_sections": 4.80799993965775E-04,
+    "translation of standard": 7.78750004246831E-03,
+    "translation of compilation unit": 6.25486969947815E-02,
+    "proof": 3.50000004800677E-06
+  }
+}

@@ -20,36 +20,44 @@ RV NO_IMPLEMENTATION_ATTRIBUTES
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U pkg_multiply_by_max%b	pkg_multiply_by_max.adb	e3d326ee NE OO PK IL
+U pkg_multiply_by_max%b	pkg_multiply_by_max.adb	e01c2612 NE OO PK IL
 Z system.assertions%s	s-assert.adb		s-assert.ali
 
-U pkg_multiply_by_max%s	pkg_multiply_by_max.ads	bcf34eb5 EE NE OO PK IL
+U pkg_multiply_by_max%s	pkg_multiply_by_max.ads	95a493e2 EE NE OO PK IL
 W pkg_multiply_vector_by_value%s  pkg_multiply_vector_by_value.adb  pkg_multiply_vector_by_value.ali
 
 D ada.ads		20180524051736 76789da1 ada%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
-D pkg_multiply_by_max.ads  20191017160554 4db41025 pkg_multiply_by_max%s
-D pkg_multiply_by_max.adb  20191017160554 ae6736cb pkg_multiply_by_max%b
-D pkg_multiply_vector_by_value.ads  20191017175146 f1475e90 pkg_multiply_vector_by_value%s
+D pkg_multiply_by_max.ads  20191018104542 62db6ed9 pkg_multiply_by_max%s
+D pkg_multiply_by_max.adb  20191018095414 82c748cb pkg_multiply_by_max%b
+D pkg_multiply_vector_by_value.ads  20191018104802 f77ffd3b pkg_multiply_vector_by_value%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-exctab.ads		20180524051738 54135002 system.exception_table%s
 D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
 X 3 pkg_multiply_by_max.ads
-2K9*pkg_multiply_by_max 24l5 24e24 4|1b14 35l5 35t24
-6U14*Multiply_by_Max 6=31 6<57 4|3b14 32l8 32t23
-6a31 Vector{5|5A9} 10r18 10r28 10r43 12r9 12r38 12r69 12r97 12r112 13r20
-. 14r9 14r43 17r22 18r18 4|3b31 9r16 10r13 11r20 13r45 14r34 17r53 17r87
-. 27m25
-6i57 Max{integer} 10r36 18r11 4|3b57 7m7 10r25 11m13 14r47 16r32 16r39 17r33
-. 17r66 27r33
-13i15 J{integer} 14r16 14r50
-17i17 J{integer} 18r29
+2K9*pkg_multiply_by_max 56l5 56e24 4|1b14 42l5 42t24
+6U14*Multiply_by_Max 6=31 6=57 4|3b14 12l8 12t23
+6a31 Vector{5|5A9} 9r20 9r31 9r48 10r16 10r51 10r77 10r92 11r29 12r20 14r14
+. 15r14 17r17 18r14 20r17 21r14 24r26 24r68 29r22 30r8 30r42 32r30 33r17
+. 33r29 4|3b31 8r22 9m25
+6i57 Max{integer} 9r40 9r64 14r37 15r39 17r39 18r40 20r34 21r26 24r36 24r78
+. 33r43 4|3b57 8m7 9r33
+11i24 J{integer} 11r45
+12i15 J{integer} 14r21 15r21 17r24 18r21 20r24 21r21 24r33 24r75
+29i17 J{integer} 30r15 30r49
+32i25 J{integer} 33r24 33r40
+39V13*get_Max{integer} 39>22 42r20 50r11 4|8s14 15b10 38l5 38t12
+39a22 Vector{5|5A9} 42r39 44r9 44r38 44r69 44r97 44r112 45r22 46r8 46r42
+. 49r22 50r29 4|15b19 22r16 24r13 25r20 28r45 29r34 32r53 32r87
+45i17 J{integer} 46r15 46r49
+49i17 J{integer} 50r36
 X 4 pkg_multiply_by_max.adb
-9i11 I{integer} 10r20 11r27 13r61 17r60 17r94
-13i40 J{integer} 14r41
+17i7 Max{integer} 19m7 24r25 25m13 29r47 31r32 31r39 32r33 32r66 36r14
+22i11 I{integer} 24r20 25r27 28r61 32r60 32r94
+28i40 J{integer} 29r41
 X 5 pkg_multiply_vector_by_value.ads
-1K9*pkg_multiply_vector_by_value 3|1w6 1r40 5|40e33
-5A9*T_Vector(natural)<integer> 3|6r47 4|3r47
-8U14*Multiply_by_Value 4|27s7
+1K9*pkg_multiply_vector_by_value 3|1w6 1r40 5|43e33
+5A9*T_Vector(natural)<integer> 3|6r47 39r34 4|3r47 15r31
+8U14*Multiply_by_Value 4|9s7
 

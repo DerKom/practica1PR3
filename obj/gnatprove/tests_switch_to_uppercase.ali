@@ -1,0 +1,81 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -gnatc
+P GP FX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+RV SPARK_05
+
+U tests_switch_to_uppercase%b  tests_switch_to_uppercase.adb  6102d8bd OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_switch_to_uppercase%s  pkg_switch_to_uppercase.adb  pkg_switch_to_uppercase.ali
+Z system%s		system.ads		system.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
+D a-chahan.ads		20180524051736 1601a50f ada.characters.handling%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D pkg_switch_to_uppercase.ads  20191018091330 de4d8add pkg_switch_to_uppercase%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tests_switch_to_uppercase.adb  20191018115830 3752e13a tests_switch_to_uppercase%b
+X 1 ada.ads
+16K9*Ada 20e8 15|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 15|1w10 1r27
+242U14*Put 15|11s7 24s7 37s7 49s7
+263U14*Put_Line 15|15s7 28s7 41s7 53s7 65s4
+X 9 pkg_switch_to_uppercase.ads
+2K9*pkg_switch_to_uppercase 25e28 15|2w6 2r39
+4A9*Ch_Array(character)<integer> 15|7r16 9r27 20r16 22r27 33r16 35r27 45r16
+. 47r27
+6e4*char{character} 15|12m7 25m7 38m7 50m7
+8U14*Switch_to_Uppercase 15|13s7 26s7 39s7 51s7
+X 15 tests_switch_to_uppercase.adb
+4U11*tests_switch_to_uppercase 4b11 73l5 73t30
+6U14 Test_1 16l8 16t14 66s4
+7a7 vector{9|4A9} 13m27 13r27 14r22
+9a7 resultado{9|4A9} 14r31
+19U14 Test_2 29l8 29t14 67s4
+20a7 vector{9|4A9} 26m27 26r27 27r22
+22a7 resultado{9|4A9} 27r31
+32U14 Test_3 42l8 42t14 68s4
+33a7 vector{9|4A9} 39m27 39r27 40r22
+35a7 resultado{9|4A9} 40r31
+44U14 Test_4 54l8 54t14 69s4
+45a7 vector{9|4A9} 51m27 51r27 52r22
+47a7 resultado{9|4A9} 52r31
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS tests_switch_to_uppercase__test_1 0
+GG EK_GLOBALS tests_switch_to_uppercase__test_1 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 1 pkg_switch_to_uppercase__char refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 1 pkg_switch_to_uppercase__char calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_switch_to_uppercase__switch_to_uppercase local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 pkg_switch_to_uppercase__char LOCKS 0
+GG EK_DIRECT_CALLS tests_switch_to_uppercase__test_2 0
+GG EK_GLOBALS tests_switch_to_uppercase__test_2 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 1 pkg_switch_to_uppercase__char refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 1 pkg_switch_to_uppercase__char calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_switch_to_uppercase__switch_to_uppercase local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 pkg_switch_to_uppercase__char LOCKS 0
+GG EK_DIRECT_CALLS tests_switch_to_uppercase__test_3 0
+GG EK_GLOBALS tests_switch_to_uppercase__test_3 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 1 pkg_switch_to_uppercase__char refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 1 pkg_switch_to_uppercase__char calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_switch_to_uppercase__switch_to_uppercase local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 pkg_switch_to_uppercase__char LOCKS 0
+GG EK_DIRECT_CALLS tests_switch_to_uppercase__test_4 0
+GG EK_GLOBALS tests_switch_to_uppercase__test_4 local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 1 pkg_switch_to_uppercase__char refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 1 pkg_switch_to_uppercase__char calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_switch_to_uppercase__switch_to_uppercase local_var 0 FALSE FALSE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 1 pkg_switch_to_uppercase__char LOCKS 0
+GG EK_DIRECT_CALLS tests_switch_to_uppercase 0
+GG EK_GLOBALS tests_switch_to_uppercase local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 1 pkg_switch_to_uppercase__char proper_output 1 pkg_switch_to_uppercase__char refined_proof_in 0 refined_input 1 pkg_switch_to_uppercase__char refined_output 1 pkg_switch_to_uppercase__char calls_proof 0 calls 0 calls_conditional 3 ada__text_io__put__4 ada__text_io__put_line__2 pkg_switch_to_uppercase__switch_to_uppercase local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

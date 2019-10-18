@@ -17,7 +17,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_PRAGMAS
 RV SPARK_05
 
-U tests_switch_to_uppercase%b  tests_switch_to_uppercase.adb  cbb61979 NE OO SU IL
+U tests_switch_to_uppercase%b  tests_switch_to_uppercase.adb  6102d8bd NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
 W pkg_switch_to_uppercase%s  pkg_switch_to_uppercase.adb  pkg_switch_to_uppercase.ali
@@ -34,7 +34,7 @@ D a-textio.ads		20180524051738 881db35a ada.text_io%s
 D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20180524051736 5ab55268 interfaces%s
 D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
-D pkg_switch_to_uppercase.ads  20191017175036 de4d8add pkg_switch_to_uppercase%s
+D pkg_switch_to_uppercase.ads  20191018091330 de4d8add pkg_switch_to_uppercase%s
 D system.ads		20180524051738 32a08138 system%s
 D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
 D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
@@ -49,7 +49,7 @@ D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
 D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
 D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
-D tests_switch_to_uppercase.adb  20191017175456 9de620fe tests_switch_to_uppercase%b
+D tests_switch_to_uppercase.adb  20191018115830 3752e13a tests_switch_to_uppercase%b
 X 1 ada.ads
 16K9*Ada 20e8 27|1r6 1r23
 X 8 a-textio.ads
@@ -63,14 +63,14 @@ X 12 pkg_switch_to_uppercase.ads
 6e4*char{character} 27|12m7 25m7 38m7 50m7
 8U14*Switch_to_Uppercase 27|13s7 26s7 39s7 51s7
 X 27 tests_switch_to_uppercase.adb
-4U11*tests_switch_to_uppercase 4b11 75l5 75t30
+4U11*tests_switch_to_uppercase 4b11 73l5 73t30
 6U14 Test_1 6b14 16l8 16t14 66s4
 7a7 vector{12|4A9} 13m27 13r27 14r22
 9a7 resultado{12|4A9} 14r31
 19U14 Test_2 19b14 29l8 29t14 67s4
 20a7 vector{12|4A9} 26m27 26r27 27r22
 22a7 resultado{12|4A9} 27r31
-32U14 Test_3 32b14 42l8 42t14
+32U14 Test_3 32b14 42l8 42t14 68s4
 33a7 vector{12|4A9} 39m27 39r27 40r22
 35a7 resultado{12|4A9} 40r31
 44U14 Test_4 44b14 54l8 54t14 69s4

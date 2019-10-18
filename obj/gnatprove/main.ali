@@ -1,0 +1,73 @@
+V "GNAT Lib v2018"
+M P W=b
+A -x
+A ada
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -gnatc
+P GP FX
+
+RN
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_ELABORATION_CODE
+
+U main%b		main.adb		7f8949fb OO SU
+Z system%s		system.ads		system.ali
+W test_sum_of_vectors%b	test_sum_of_vectors.adb	test_sum_of_vectors.ali
+W tests_mostly_odds%b	tests_mostly_odds.adb	tests_mostly_odds.ali
+W tests_multiply_by_value%b  tests_multiply_by_value.adb  tests_multiply_by_value.ali
+W tests_switch_to_uppercase%b  tests_switch_to_uppercase.adb  tests_switch_to_uppercase.ali
+W tests_times_repeated%b  tests_times_repeated.adb  tests_times_repeated.ali
+W tests_vector_search%b	tests_vector_search.adb	tests_vector_search.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-charac.ads		20180524051736 2d3ec45b ada.characters%s
+D a-chahan.ads		20180524051736 1601a50f ada.characters.handling%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D main.adb		20191018114654 02b9586d main%b
+D pkg_mostly_odds.ads	20191018115624 d455ea18 pkg_mostly_odds%s
+D pkg_multiply_vector_by_value.ads  20191018104802 f77ffd3b pkg_multiply_vector_by_value%s
+D pkg_search_value_inside_vector.ads  20191016101910 49228441 pkg_search_value_inside_vector%s
+D pkg_sum_of_vectors.ads  20191016103358 2ede8ab0 pkg_sum_of_vectors%s
+D pkg_switch_to_uppercase.ads  20191018091330 de4d8add pkg_switch_to_uppercase%s
+D pkg_times_repeated.ads  20191017112828 96835ea7 pkg_times_repeated%s
+D system.ads		20180524051738 32a08138 system%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D test_sum_of_vectors.adb  20191017112828 9a47bc2f test_sum_of_vectors%b
+D tests_mostly_odds.adb	20191018114712 d8b1402b tests_mostly_odds%b
+D tests_multiply_by_value.adb  20191016101910 cf081fcf tests_multiply_by_value%b
+D tests_switch_to_uppercase.adb  20191018115830 3752e13a tests_switch_to_uppercase%b
+D tests_times_repeated.adb  20191016115220 585bfc1c tests_times_repeated%b
+D tests_vector_search.adb  20191016101910 9fc7ef7b tests_vector_search%b
+X 9 main.adb
+8U11*Main 8b11 17l5 17t9
+X 21 test_sum_of_vectors.adb
+4U11*Test_Sum_Of_Vectors 9|3w6 12s4
+X 22 tests_mostly_odds.adb
+4U11*tests_mostly_odds 9|6w6 15s4
+X 23 tests_multiply_by_value.adb
+4U11*Tests_Multiply_by_Value 9|2w6 11s4
+X 24 tests_switch_to_uppercase.adb
+4U11*tests_switch_to_uppercase 9|5w6 14s4
+X 25 tests_times_repeated.adb
+4U11*tests_times_repeated 9|4w6 13s4
+X 26 tests_vector_search.adb
+4U11*Tests_Vector_Search 9|1w6 10s4
+
+QQ SPARKVERSION 2018 (20180523)
+GG EK_DIRECT_CALLS main 0
+GG EK_GLOBALS main local FALSE E_PROCEDURE FALSE ORIGIN_FLOW proper_proof_in 0 proper_input 0 proper_output 0 refined_proof_in 0 refined_input 0 refined_output 0 calls_proof 0 calls 0 calls_conditional 6 tests_vector_search tests_multiply_by_value test_sum_of_vectors tests_times_repeated tests_switch_to_uppercase tests_mostly_odds local_var 0 FALSE TRUE FALSE ENTRY_CALLS 0 SUSPENDS_ON 0 UNSYNCH_ACCESSES 0 LOCKS 0
+GG EK_END_MARKER

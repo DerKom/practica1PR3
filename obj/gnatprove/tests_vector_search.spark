@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "Tests_Vector_Search",
+      "sloc": [
+        {
+          "file": "tests_vector_search.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 5.60780009254813E-03,
+    "globals (basic)": 4.49324995279312E-02,
+    "globals/properties (advanced)": 4.45390008389950E-02,
+    "flow analysis": 1.30600004922599E-04,
+    "codepeer results": 6.10000006417977E-06,
+    "init_why_sections": 4.84799995319918E-04,
+    "translation of standard": 8.06290004402399E-03,
+    "translation of compilation unit": 7.04495981335640E-02,
+    "proof": 2.90000002678426E-06
+  }
+}

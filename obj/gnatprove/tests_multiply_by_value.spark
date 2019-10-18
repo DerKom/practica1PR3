@@ -1,0 +1,31 @@
+{
+  "spark": [
+    {
+      "name": "Tests_Multiply_by_Value",
+      "sloc": [
+        {
+          "file": "tests_multiply_by_value.adb",
+          "line": 4
+        }
+      ],
+      "spark": "no"
+    }
+  ],
+  "flow": [
+  ],
+  "proof": [
+  ],
+  "assumptions": [
+  ],
+  "timings": {
+    "marking": 5.12730004265904E-03,
+    "globals (basic)": 3.57220992445946E-02,
+    "globals/properties (advanced)": 4.60868999361992E-02,
+    "flow analysis": 1.23899997561239E-04,
+    "codepeer results": 5.70000020161388E-06,
+    "init_why_sections": 4.66800003778189E-04,
+    "translation of standard": 7.20660015940666E-03,
+    "translation of compilation unit": 6.43493011593819E-02,
+    "proof": 3.20000003739551E-06
+  }
+}

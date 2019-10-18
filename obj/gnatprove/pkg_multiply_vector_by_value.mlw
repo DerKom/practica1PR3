@@ -1810,14 +1810,14 @@ module Pkg_multiply_vector_by_value__multiply_by_value__value___axiom
 
 end
 
-(* Module for axiomatizing type "T10s" defined at pkg_multiply_vector_by_value.ads:16, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_multiply_vector_by_value__multiply_by_value__L9s__T10s
+(* Module for axiomatizing type "T11s" defined at pkg_multiply_vector_by_value.ads:33, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L10s__T11s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t10s =
+ type t11s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -1825,37 +1825,37 @@ module Pkg_multiply_vector_by_value__multiply_by_value__L9s__T10s
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t10s, 
+ type t = t11s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t10s__ref =
-  { mutable t10s__content "model_trace:" "name:" : t10s }
+ type t11s__ref =
+  { mutable t11s__content "model_trace:" "name:" : t11s }
  
- function t10s__ref___projection 
-   (a : t10s__ref) : t10s =
-  a.t10s__content
+ function t11s__ref___projection 
+   (a : t11s__ref) : t11s =
+  a.t11s__content
  
- meta "model_projection" function t10s__ref___projection
+ meta "model_projection" function t11s__ref___projection
  
- meta "inline : no" function t10s__ref___projection
+ meta "inline : no" function t11s__ref___projection
  
- val t10s__havoc 
-   (x : t10s__ref) : unit
+ val t11s__havoc 
+   (x : t11s__ref) : unit
   writes {x}
 
 end
 
-(* Module for axiomatizing type "T12s" defined at pkg_multiply_vector_by_value.ads:33, created in Gnat2Why.Types.Translate_Type *)
-module Pkg_multiply_vector_by_value__multiply_by_value__L11s__T12s
+(* Module for axiomatizing type "T13s" defined at pkg_multiply_vector_by_value.ads:16, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L12s__T13s
  use import "_gnatprove_standard".Main
  use import "int".Int
  use        Standard__integer
  use        Standard__integer__rep
 
- type t12s =
+ type t13s =
   Standard__integer.integer
  
  predicate dynamic_property 
@@ -1863,25 +1863,101 @@ module Pkg_multiply_vector_by_value__multiply_by_value__L11s__T12s
   ( (first_int <= x) /\ (x <= last_int) )
  
  clone export "ada__model".Dynamic_Discrete with
- type t = t12s, 
+ type t = t13s, 
  type rep_type = int, 
  function base_to_rep = Standard__integer__rep.to_rep, 
  function base_of_rep = Standard__integer__rep.of_rep, 
  predicate dynamic_property = dynamic_property
  
- type t12s__ref =
-  { mutable t12s__content "model_trace:" "name:" : t12s }
+ type t13s__ref =
+  { mutable t13s__content "model_trace:" "name:" : t13s }
  
- function t12s__ref___projection 
-   (a : t12s__ref) : t12s =
-  a.t12s__content
+ function t13s__ref___projection 
+   (a : t13s__ref) : t13s =
+  a.t13s__content
  
- meta "model_projection" function t12s__ref___projection
+ meta "model_projection" function t13s__ref___projection
  
- meta "inline : no" function t12s__ref___projection
+ meta "inline : no" function t13s__ref___projection
  
- val t12s__havoc 
-   (x : t12s__ref) : unit
+ val t13s__havoc 
+   (x : t13s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T15s" defined at pkg_multiply_vector_by_value.ads:30, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L12s__L14s__T15s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t15s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t15s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t15s__ref =
+  { mutable t15s__content "model_trace:" "name:" : t15s }
+ 
+ function t15s__ref___projection 
+   (a : t15s__ref) : t15s =
+  a.t15s__content
+ 
+ meta "model_projection" function t15s__ref___projection
+ 
+ meta "inline : no" function t15s__ref___projection
+ 
+ val t15s__havoc 
+   (x : t15s__ref) : unit
+  writes {x}
+
+end
+
+(* Module for axiomatizing type "T17s" defined at pkg_multiply_vector_by_value.ads:36, created in Gnat2Why.Types.Translate_Type *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L16s__T17s
+ use import "_gnatprove_standard".Main
+ use import "int".Int
+ use        Standard__integer
+ use        Standard__integer__rep
+
+ type t17s =
+  Standard__integer.integer
+ 
+ predicate dynamic_property 
+   (first_int : int) (last_int : int) (x : int)  =
+  ( (first_int <= x) /\ (x <= last_int) )
+ 
+ clone export "ada__model".Dynamic_Discrete with
+ type t = t17s, 
+ type rep_type = int, 
+ function base_to_rep = Standard__integer__rep.to_rep, 
+ function base_of_rep = Standard__integer__rep.of_rep, 
+ predicate dynamic_property = dynamic_property
+ 
+ type t17s__ref =
+  { mutable t17s__content "model_trace:" "name:" : t17s }
+ 
+ function t17s__ref___projection 
+   (a : t17s__ref) : t17s =
+  a.t17s__content
+ 
+ meta "model_projection" function t17s__ref___projection
+ 
+ meta "inline : no" function t17s__ref___projection
+ 
+ val t17s__havoc 
+   (x : t17s__ref) : unit
   writes {x}
 
 end
@@ -2615,15 +2691,29 @@ module Pkg_multiply_vector_by_value__t_vector___axiom
 
 end
 
-(* Module giving axioms for type "T10s" defined at pkg_multiply_vector_by_value.ads:16, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_multiply_vector_by_value__multiply_by_value__L9s__T10s___axiom
+(* Module giving axioms for type "T11s" defined at pkg_multiply_vector_by_value.ads:33, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L10s__T11s___axiom
  use import "_gnatprove_standard".Main
 
 
 end
 
-(* Module giving axioms for type "T12s" defined at pkg_multiply_vector_by_value.ads:33, created in Gnat2Why.Types.Generate_Type_Completion *)
-module Pkg_multiply_vector_by_value__multiply_by_value__L11s__T12s___axiom
+(* Module giving axioms for type "T13s" defined at pkg_multiply_vector_by_value.ads:16, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L12s__T13s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T15s" defined at pkg_multiply_vector_by_value.ads:30, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L12s__L14s__T15s___axiom
+ use import "_gnatprove_standard".Main
+
+
+end
+
+(* Module giving axioms for type "T17s" defined at pkg_multiply_vector_by_value.ads:36, created in Gnat2Why.Types.Generate_Type_Completion *)
+module Pkg_multiply_vector_by_value__multiply_by_value__L16s__T17s___axiom
  use import "_gnatprove_standard".Main
 
 
@@ -2709,13 +2799,15 @@ module Pkg_multiply_vector_by_value__multiply_by_value___axiom
    (((Standard__integer__rep.to_rep vector__last) - (Standard__integer__rep.to_rep vector__first)) + 1)) else (
    0)) > 0) /\ ( ((if (((Standard__integer__rep.to_rep vector__first) <= (Standard__integer__rep.to_rep vector__last))) then (
    (((Standard__integer__rep.to_rep vector__last) - (Standard__integer__rep.to_rep vector__first)) + 1)) else (
-   0)) < 500) /\ ( ((Standard__integer__rep.to_rep vector__first) = 0) /\ ( ((Standard__integer__rep.to_rep vector__last) <> (Standard__integer__rep.to_rep vector__first)) /\ (forall j   "model" "model_trace:2550" "name:J"  : int.
-   ( ( ((Standard__integer__rep.to_rep vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep vector__last)) ) -> (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (value > 0) )) then (
+   0)) < 500) /\ ( ((Standard__integer__rep.to_rep vector__first) = 0) /\ ( ((Standard__integer__rep.to_rep vector__last) <> (Standard__integer__rep.to_rep vector__first)) /\ ( (forall j   "model" "name:J" "model_trace:2550"  : int.
+   ( ( ((Standard__integer__rep.to_rep vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep vector__last)) ) -> ( (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (value > 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) <= (Int_Division.div 2147483647 value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) < 0) /\ (value < 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) >= (Int_Division.div ( -2147483648 ) value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) = 0) \/ (value = 0) )) then (
     (((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) * value) = 0)) else (
-    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) value))))))))) )) ) ) ) ) }
-  ensures {  ( (forall j   "model" "name:J" "model_trace:2638"  : int.
+    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) value))))))))) /\ (forall j   "model" "name:J" "model_trace:2636"  : int.
+    ( ( ((Standard__integer__rep.to_rep vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep vector__last)) ) -> ( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) > ( -2147483648 )) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) < 2147483647) ) )) ) )) /\ (forall j   "model" "model_trace:2663" "name:J"  : int.
+   ( ( ((Standard__integer__rep.to_rep vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep vector__last)) ) -> (j >= 0) )) ) ) ) ) ) }
+  ensures {  ( (forall j   "model" "name:J" "model_trace:2680"  : int.
    ( ( ((Standard__integer__rep.to_rep vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep vector__last)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get vector.Array__Int__Standard__natural.map__content j)) = ((Standard__natural__rep.to_rep (let temp___161 = (old vector.Array__Int__Standard__natural.map__content ) in (
     (Array__Int__Standard__natural.get temp___161 j)))
    ) * value)) )) /\ (if (True) then (
@@ -2737,10 +2829,11 @@ module Pkg_multiply_vector_by_value__package_def
   ( (#"pkg_multiply_vector_by_value.ads" 1 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 5 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 8 0 0# ());
-  (#"pkg_multiply_vector_by_value.ads" 33 0 0# ());
+  (#"pkg_multiply_vector_by_value.ads" 36 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 13 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 13 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 13 0 0# ());
+  (#"pkg_multiply_vector_by_value.ads" 14 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 14 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 13 0 0# ());
   (#"pkg_multiply_vector_by_value.ads" 12 0 0# ());
@@ -2785,9 +2878,9 @@ module Pkg_multiply_vector_by_value__multiply_by_value__subprogram_def
  let def #"pkg_multiply_vector_by_value.ads" 8 0 0#"W:diverges:N" "GP_Subp:pkg_multiply_vector_by_value.ads:8" 
    (__void_param : unit)
   requires { #"pkg_multiply_vector_by_value.ads" 8 0 0# true }
-  ensures { #"pkg_multiply_vector_by_value.ads" 8 0 0# (#"pkg_multiply_vector_by_value.ads" 33 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:pkg_multiply_vector_by_value.ads:33:14" "GP_Reason:VC_POSTCONDITION" "GP_Id:26" "comment:     Post => (for all J in Vector'Range => 
-             ^ pkg_multiply_vector_by_value.ads:33:14:VC_POSTCONDITION" "GP_Shape:pragargs__forall" (forall j #"pkg_multiply_vector_by_value.ads" 33 0 0#  "model" "name:J" "model_trace:2638"  : int.
-   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( "GP_Pretty_Ada:2652" "GP_Sloc:pkg_multiply_vector_by_value.ads:34:17" ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) = ((Standard__natural__rep.to_rep (let temp___187 = (old Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content ) in (
+  ensures { #"pkg_multiply_vector_by_value.ads" 8 0 0# (#"pkg_multiply_vector_by_value.ads" 36 0 0# ( "model_vc_post" "keep_on_simp" "GP_Sloc:pkg_multiply_vector_by_value.ads:36:14" "GP_Reason:VC_POSTCONDITION" "GP_Id:28" "comment:     Post => (for all J in Vector'Range => 
+             ^ pkg_multiply_vector_by_value.ads:36:14:VC_POSTCONDITION" "GP_Shape:pragargs__forall" (forall j #"pkg_multiply_vector_by_value.ads" 36 0 0#  "model" "name:J" "model_trace:2680"  : int.
+   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( "GP_Pretty_Ada:2694" "GP_Sloc:pkg_multiply_vector_by_value.ads:37:17" ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) = ((Standard__natural__rep.to_rep (let temp___187 = (old Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content ) in (
     (Array__Int__Standard__natural.get temp___187 j)))
    ) * Pkg_multiply_vector_by_value__multiply_by_value__value.value)) ) )) )) }
    =
@@ -2821,7 +2914,7 @@ module Pkg_multiply_vector_by_value__multiply_by_value__subprogram_def
   Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last ))) <> (Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
    ()))
    end ;
-  Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first )))) && ( (let j =  (any int
+  Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first )))) && ( ( (let j =  (any int
   ) in (
    (if ((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
     ()))
@@ -2830,44 +2923,83 @@ module Pkg_multiply_vector_by_value__multiply_by_value__subprogram_def
     ()))
     end ;
    Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last ))))))) then (
-     abstract ensures {true}(let _ = (if (( ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:18:21" "GP_Id:25" "comment:        (if (Vector(J) > 0 and then Value >0) then
-                    ^ pkg_multiply_vector_by_value.ads:18:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+     abstract ensures {true}(let _ = ( (if (( ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 18 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:18:21" "GP_Id:25" "comment:        (if (Vector(J) > 0 and then Value >0) then
+                    ^ pkg_multiply_vector_by_value.ads:18:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
     j ))))) > 0) && (Pkg_multiply_vector_by_value__multiply_by_value__value.value > 0) )) then (
      ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:19:21" "GP_Id:13" "comment:             Vector(J) <= Integer'Last/Value
-                    ^ pkg_multiply_vector_by_value.ads:19:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+                    ^ pkg_multiply_vector_by_value.ads:19:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
      j ))))) <= (#"pkg_multiply_vector_by_value.ads" 19 0 0# ( "model_vc" "keep_on_simp" "GP_Sloc:pkg_multiply_vector_by_value.ads:19:39" "GP_Reason:VC_DIVISION_CHECK" "GP_Id:14" "comment:             Vector(J) <= Integer'Last/Value
-                                      ^ pkg_multiply_vector_by_value.ads:19:39:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__if__cmp__div" (Int_Division.div_(2147483647) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)) )))) else ((if (( ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:21:24" "GP_Id:24" "comment:         elsif (Vector(J) <0 and then Value <0) then
-                       ^ pkg_multiply_vector_by_value.ads:21:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+                                      ^ pkg_multiply_vector_by_value.ads:19:39:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__andthen__if__cmp__div" (Int_Division.div_(2147483647) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)) )))) else ((if (( ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 21 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:21:24" "GP_Id:24" "comment:         elsif (Vector(J) <0 and then Value <0) then
+                       ^ pkg_multiply_vector_by_value.ads:21:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__andthen__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
     j ))))) < 0) && (Pkg_multiply_vector_by_value__multiply_by_value__value.value < 0) )) then (
      ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:22:21" "GP_Id:15" "comment:             Vector(J) >= Integer'First/Value
-                    ^ pkg_multiply_vector_by_value.ads:22:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
-     j ))))) >= (#"pkg_multiply_vector_by_value.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:22:40" "GP_Shape:pragargs__forall__if__if__cmp__div" "GP_Id:17" "comment:             Vector(J) >= Integer'First/Value
+                    ^ pkg_multiply_vector_by_value.ads:22:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+     j ))))) >= (#"pkg_multiply_vector_by_value.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:22:40" "GP_Shape:pragargs__forall__andthen__if__if__cmp__div" "GP_Id:17" "comment:             Vector(J) >= Integer'First/Value
                                        ^ pkg_multiply_vector_by_value.ads:22:40:VC_OVERFLOW_CHECK" (Standard__integer.range_check_((#"pkg_multiply_vector_by_value.ads" 22 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_DIVISION_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:22:40" "GP_Id:16" "comment:             Vector(J) >= Integer'First/Value
-                                       ^ pkg_multiply_vector_by_value.ads:22:40:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__if__if__cmp__div" (Int_Division.div_(( -2147483648 )) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)) )))) )))) else ((if ((Boolean.orb(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:24:24" "GP_Id:23" "comment:         elsif (Vector(J) = 0 or Value = 0) then
-                       ^ pkg_multiply_vector_by_value.ads:24:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__if__or__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+                                       ^ pkg_multiply_vector_by_value.ads:22:40:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__cmp__div" (Int_Division.div_(( -2147483648 )) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)) )))) )))) else ((if ((Boolean.orb(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 24 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:24:24" "GP_Id:23" "comment:         elsif (Vector(J) = 0 or Value = 0) then
+                       ^ pkg_multiply_vector_by_value.ads:24:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__or__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
     j ))))) = 0)) ((Pkg_multiply_vector_by_value__multiply_by_value__value.value = 0)))) then (
      ((#"pkg_multiply_vector_by_value.ads" 25 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:25:24" "GP_Id:19" "comment:             Vector(J) * Value = 0
-                       ^ pkg_multiply_vector_by_value.ads:25:24:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__if__if__if__cmp__mult" (Standard__integer.range_check_(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) (( #"pkg_multiply_vector_by_value.ads" 25 0 0# assert { #"pkg_multiply_vector_by_value.ads" 25 0 0# (#"pkg_multiply_vector_by_value.ads" 25 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:25:21" "GP_Id:18" "comment:             Vector(J) * Value = 0
-                    ^ pkg_multiply_vector_by_value.ads:25:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__if__cmp__mult__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+                       ^ pkg_multiply_vector_by_value.ads:25:24:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__cmp__mult" (Standard__integer.range_check_(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) (( #"pkg_multiply_vector_by_value.ads" 25 0 0# assert { #"pkg_multiply_vector_by_value.ads" 25 0 0# (#"pkg_multiply_vector_by_value.ads" 25 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:25:21" "GP_Id:18" "comment:             Vector(J) * Value = 0
+                    ^ pkg_multiply_vector_by_value.ads:25:21:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__cmp__mult__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
      j ))))) * Pkg_multiply_vector_by_value__multiply_by_value__value.value))) )) = 0)) else (
      ((Int_Minmax.int_max((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 28 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:28:33" "GP_Id:20" "comment:             Integer'Max(Vector(J),Value) <= Integer'Last/Integer'Min(Vector(J),Value)
-                                ^ pkg_multiply_vector_by_value.ads:28:33:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__if__cmp__max_ref__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+                                ^ pkg_multiply_vector_by_value.ads:28:33:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__cmp__max_ref__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
      j )))))) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)) <= (#"pkg_multiply_vector_by_value.ads" 28 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_DIVISION_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:28:58" "GP_Id:22" "comment:             Integer'Max(Vector(J),Value) <= Integer'Last/Integer'Min(Vector(J),Value)
-                                                         ^ pkg_multiply_vector_by_value.ads:28:58:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__if__if__if__cmp__div" (Int_Division.div_(2147483647) ((Int_Minmax.int_min((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) (( #"pkg_multiply_vector_by_value.ads" 28 0 0# assert { #"pkg_multiply_vector_by_value.ads" 28 0 0# (#"pkg_multiply_vector_by_value.ads" 28 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:28:78" "GP_Id:21" "comment:             Integer'Max(Vector(J),Value) <= Integer'Last/Integer'Min(Vector(J),Value)
-                                                                             ^ pkg_multiply_vector_by_value.ads:28:78:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__if__if__if__cmp__div__min_ref__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
-     j )))))) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)))) ))))))))) in (
+                                                         ^ pkg_multiply_vector_by_value.ads:28:58:VC_DIVISION_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__cmp__div" (Int_Division.div_(2147483647) ((Int_Minmax.int_min((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) (( #"pkg_multiply_vector_by_value.ads" 28 0 0# assert { #"pkg_multiply_vector_by_value.ads" 28 0 0# (#"pkg_multiply_vector_by_value.ads" 28 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:28:78" "GP_Id:21" "comment:             Integer'Max(Vector(J),Value) <= Integer'Last/Integer'Min(Vector(J),Value)
+                                                                             ^ pkg_multiply_vector_by_value.ads:28:78:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__if__if__if__cmp__div__min_ref__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+     j )))))) (Pkg_multiply_vector_by_value__multiply_by_value__value.value)))) ))))))))) && ( (let j =  (any int
+    ) in (
+     (if ((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
+      ()))
+      end ;
+     Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first ))) <= j)) ((j <= (Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
+      ()))
+      end ;
+     Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last ))))))) then (
+       abstract ensures {true}(let _ = (Boolean.andb(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:31:23" "GP_Id:26" "comment:               Vector(J) > Integer'First and Vector(J) < Integer'Last
+                      ^ pkg_multiply_vector_by_value.ads:31:23:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__forall__and__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+      j ))))) > ( -2147483648 ))) (((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 31 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__andthen__forall__and__cmp__ixdcomp" "GP_Sloc:pkg_multiply_vector_by_value.ads:31:53" "GP_Id:27" "comment:               Vector(J) > Integer'First and Vector(J) < Integer'Last
+                                                    ^ pkg_multiply_vector_by_value.ads:31:53:VC_INDEX_CHECK" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+      j ))))) < 2147483647))) in (
+       ()))
+       end ))))
+    ;
+     (any bool
+    requires { true} 
+    ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2636"  : int.
+     ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > ( -2147483648 )) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) < 2147483647) ) )) )} 
+    ) ) ) in (
      ()))
      end ))))
   ;
    (any bool
   requires { true} 
-  ensures { ( (result = True) <-> (forall j   "model" "model_trace:2550" "name:J"  : int.
-   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value > 0) )) then (
+  ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2550"  : int.
+   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value > 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) <= (Int_Division.div 2147483647 Pkg_multiply_vector_by_value__multiply_by_value__value.value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) < 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value < 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) >= (Int_Division.div ( -2147483648 ) Pkg_multiply_vector_by_value__multiply_by_value__value.value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) = 0) \/ (Pkg_multiply_vector_by_value__multiply_by_value__value.value = 0) )) then (
     (((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) * Pkg_multiply_vector_by_value__multiply_by_value__value.value) = 0)) else (
-    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value))))))))) )) )} 
-  ) ) ) ) ) ) in (
+    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value))))))))) /\ (forall j   "model" "name:J" "model_trace:2636"  : int.
+    ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > ( -2147483648 )) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) < 2147483647) ) )) ) )) )} 
+  ) ) && ( (let j =  (any int
+  ) in (
+   (if ((Boolean.andb(((Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
+    ()))
+    end ;
+   Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first ))) <= j)) ((j <= (Standard__integer__rep.to_rep((  abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
+    ()))
+    end ;
+   Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last ))))))) then (
+     abstract ensures {true}(let _ = (j >= 0) in (
+     ()))
+     end ))))
+  ;
+   (any bool
+  requires { true} 
+  ensures { ( (result = True) <-> (forall j   "model" "model_trace:2663" "name:J"  : int.
+   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> (j >= 0) )) )} 
+  ) ) ) ) ) ) ) in (
    ()))
    end ;
   () (* Assume Pre of the subprogram pkg_multiply_vector_by_value.ads:8 *)
@@ -2876,12 +3008,14 @@ module Pkg_multiply_vector_by_value__multiply_by_value__subprogram_def
    (((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last) - (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first)) + 1)) else (
    0)) > 0) /\ ( ((if (((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last))) then (
    (((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last) - (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first)) + 1)) else (
-   0)) < 500) /\ ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) = 0) /\ ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last) <> (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first)) /\ (forall j   "model" "model_trace:2550" "name:J"  : int.
-   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value > 0) )) then (
+   0)) < 500) /\ ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) = 0) /\ ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last) <> (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first)) /\ ( (forall j   "model" "name:J" "model_trace:2550"  : int.
+   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( (if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value > 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) <= (Int_Division.div 2147483647 Pkg_multiply_vector_by_value__multiply_by_value__value.value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) < 0) /\ (Pkg_multiply_vector_by_value__multiply_by_value__value.value < 0) )) then (
     ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) >= (Int_Division.div ( -2147483648 ) Pkg_multiply_vector_by_value__multiply_by_value__value.value))) else ((if (( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) = 0) \/ (Pkg_multiply_vector_by_value__multiply_by_value__value.value = 0) )) then (
     (((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) * Pkg_multiply_vector_by_value__multiply_by_value__value.value) = 0)) else (
-    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value))))))))) )) ) ) ) ) };
+    ((Int_Minmax.int_max (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value) <= (Int_Division.div 2147483647 (Int_Minmax.int_min (Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) Pkg_multiply_vector_by_value__multiply_by_value__value.value))))))))) /\ (forall j   "model" "name:J" "model_trace:2636"  : int.
+    ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ( ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) > ( -2147483648 )) /\ ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) < 2147483647) ) )) ) )) /\ (forall j   "model" "model_trace:2663" "name:J"  : int.
+   ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> (j >= 0) )) ) ) ) ) ) };
    abstract ensures {true}(let _ = Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content in (
    ()))
    end ;
@@ -3041,18 +3175,18 @@ module Pkg_multiply_vector_by_value__multiply_by_value__subprogram_def
      ()))
      end ;
     Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last ))))))) then (
-      abstract ensures {true}(let _ = ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 34 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:34:24" "GP_Id:10" "comment:                Vector(J) = Vector'Old(J) * Value
-                       ^ pkg_multiply_vector_by_value.ads:34:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
-     j ))))) = (#"pkg_multiply_vector_by_value.ads" 34 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:34:43" "GP_Id:12" "comment:                Vector(J) = Vector'Old(J) * Value
-                                          ^ pkg_multiply_vector_by_value.ads:34:43:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__cmp__mult" (Standard__integer.range_check_(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(temp___old_184) (( #"pkg_multiply_vector_by_value.ads" 34 0 0# assert { #"pkg_multiply_vector_by_value.ads" 34 0 0# (#"pkg_multiply_vector_by_value.ads" 34 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:34:40" "GP_Id:11" "comment:                Vector(J) = Vector'Old(J) * Value
-                                       ^ pkg_multiply_vector_by_value.ads:34:40:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__mult__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+      abstract ensures {true}(let _ = ((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content) ((  assert {  (#"pkg_multiply_vector_by_value.ads" 37 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:37:24" "GP_Id:10" "comment:                Vector(J) = Vector'Old(J) * Value
+                       ^ pkg_multiply_vector_by_value.ads:37:24:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
+     j ))))) = (#"pkg_multiply_vector_by_value.ads" 37 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_OVERFLOW_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:37:43" "GP_Id:12" "comment:                Vector(J) = Vector'Old(J) * Value
+                                          ^ pkg_multiply_vector_by_value.ads:37:43:VC_OVERFLOW_CHECK" "GP_Shape:pragargs__forall__cmp__mult" (Standard__integer.range_check_(((Standard__natural__rep.to_rep((Array__Int__Standard__natural.get(temp___old_184) (( #"pkg_multiply_vector_by_value.ads" 37 0 0# assert { #"pkg_multiply_vector_by_value.ads" 37 0 0# (#"pkg_multiply_vector_by_value.ads" 37 0 0# ( "model_vc" "keep_on_simp" "GP_Reason:VC_INDEX_CHECK" "GP_Sloc:pkg_multiply_vector_by_value.ads:37:40" "GP_Id:11" "comment:                Vector(J) = Vector'Old(J) * Value
+                                       ^ pkg_multiply_vector_by_value.ads:37:40:VC_INDEX_CHECK" "GP_Shape:pragargs__forall__cmp__mult__ixdcomp" ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) )) };
      j ))))) * Pkg_multiply_vector_by_value__multiply_by_value__value.value))) ))) in (
       ()))
       end ))))
    ;
     (any bool
    requires { true} 
-   ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2638"  : int.
+   ensures { ( (result = True) <-> (forall j   "model" "name:J" "model_trace:2680"  : int.
     ( ( ((Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__first) <= j) /\ (j <= (Standard__integer__rep.to_rep Pkg_multiply_vector_by_value__multiply_by_value__vector.vector__last)) ) -> ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get Pkg_multiply_vector_by_value__multiply_by_value__vector.vector.Array__Int__Standard__natural.map__content j)) = ((Standard__natural__rep.to_rep (Array__Int__Standard__natural.get temp___old_184 j)) * Pkg_multiply_vector_by_value__multiply_by_value__value.value)) )) )} 
    ) ) in (
     ()))

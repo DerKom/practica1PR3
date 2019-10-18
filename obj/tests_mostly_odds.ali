@@ -1,0 +1,72 @@
+V "GNAT Lib v2018"
+M P W=b
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U tests_mostly_odds%b	tests_mostly_odds.adb	84f91969 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W pkg_mostly_odds%s	pkg_mostly_odds.adb	pkg_mostly_odds.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-except.ads		20180524051736 291912d5 ada.exceptions%s
+D a-ioexce.ads		20180524051736 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20180524051736 119b8fb3 ada.streams%s
+D a-tags.ads		20180524051738 491b781d ada.tags%s
+D a-textio.ads		20180524051738 881db35a ada.text_io%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20180524051736 5ab55268 interfaces%s
+D i-cstrea.ads		20180524051736 e53d8b8e interfaces.c_streams%s
+D pkg_mostly_odds.ads	20191018115624 d455ea18 pkg_mostly_odds%s
+D system.ads		20180524051738 32a08138 system%s
+D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
+D s-crtl.ads		20180524051736 0ebbdb71 system.crtl%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-ficobl.ads		20180524051738 078245e4 system.file_control_block%s
+D s-parame.ads		20180524051738 48ec542b system.parameters%s
+D s-secsta.ads		20180524051738 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20180524051736 a7318a92 system.soft_links%s
+D s-stache.ads		20180524051738 a37c21ec system.stack_checking%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+D s-stoele.ads		20180524051738 2dc34a04 system.storage_elements%s
+D s-traent.ads		20180524051736 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20180524051736 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20180524051738 1b7d22d2 system.wch_con%s
+D tests_mostly_odds.adb	20191018114712 d8b1402b tests_mostly_odds%b
+X 1 ada.ads
+16K9*Ada 20e8 25|1r6 1r23
+X 6 a-textio.ads
+49K13*Text_IO 471e16 25|1w10 1r27
+242U14*Put 25|11s7 21s7 31s7 41s7
+263U14*Put_Line 25|14s7 24s7 34s7 44s7 49s4
+X 10 pkg_mostly_odds.ads
+1K9*pkg_mostly_odds 17e20 25|2w6 2r27
+3A9*T_Vector(integer)<integer> 25|8r25 18r25 28r25 38r25
+5V13*Mostly_Odds{boolean} 25|13s22 23s22 33s22 43s22
+X 25 tests_mostly_odds.adb
+4U11*tests_mostly_odds 4b11 55l5 55t22
+7U14 Test_1 7b14 15l8 15t14 50s4
+8a7 vector{10|3A9} 13r34
+17U14 Test_2 17b14 25l8 25t14 51s4
+18a7 vector{10|3A9} 23r34
+27U14 Test_3 27b14 35l8 35t14 52s4
+28a7 vector{10|3A9} 33r34
+37U14 Test_4 37b14 45l8 45t14 53s4
+38a7 vector{10|3A9} 43r34
+

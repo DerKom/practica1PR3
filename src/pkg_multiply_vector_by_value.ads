@@ -26,8 +26,11 @@ package pkg_multiply_vector_by_value with SPARK_Mode is
          -- Distintos signos 
          else
              Integer'Max(Vector(J),Value) <= Integer'Last/Integer'Min(Vector(J),Value)
-        )     
-     )
+        )  and then 
+        (for all J in Vector'Range => 
+               Vector(J) > Integer'First and Vector(J) < Integer'Last
+        )
+     )and then (for all J in Vector'Range => J >= 0)
    
      ,
      Post => (for all J in Vector'Range => 

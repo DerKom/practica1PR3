@@ -1,0 +1,56 @@
+V "GNAT Lib v2018"
+A -gnatA
+A -gnatwa
+A -g
+A -fstack-check=specific
+A -gnata
+A -gnato
+A -gnat12
+A -gnateE
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_ASPECT_SPECIFICATIONS
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U pkg_sum_by_max%b	pkg_sum_by_max.adb	0d9d2743 NE OO PK IL
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U pkg_sum_by_max%s	pkg_sum_by_max.ads	f6c45f63 EE NE OO PK IL
+
+D ada.ads		20180524051736 76789da1 ada%s
+D a-unccon.ads		20180524051738 0e9b276f ada.unchecked_conversion%s
+D pkg_sum_by_max.ads	20191018113134 f6c45f63 pkg_sum_by_max%s
+D pkg_sum_by_max.adb	20191018112022 fb597820 pkg_sum_by_max%b
+D system.ads		20180524051738 32a08138 system%s
+D s-assert.ads		20180524051738 cd8d2c94 system.assertions%s
+D s-exctab.ads		20180524051738 54135002 system.exception_table%s
+D s-stalib.ads		20180524051738 09bd3940 system.standard_library%s
+X 3 pkg_sum_by_max.ads
+1K9*pkg_sum_by_max 42l5 42e19 4|1b14 55l5 55t19
+3i4*max{natural} 9r29 10r39 10r45 10r61 15r34 19r47 4|8r10 9m10 16r35 18r70
+5A9*T_Vector(integer)<integer> 6r42 27r34 4|3r42 29r31
+6U14*Sum_by_Max 6=26 4|3b14 26l8 26t18
+6a26 Vector{5A9} 10r20 10r31 10r53 11r14 11r43 11r74 11r102 11r117 14r20
+. 15r9 18r30 19r19 19r31 4|3b26 9r25 13r16 16m10 16r23 17r46 18r35 18r47
+14i15 J{integer} 15r16
+18i25 J{integer} 19r26 19r42
+27V13*get_Max{integer} 27>22 30r20 38r11 4|9s17 29b10 53l5 53t12
+27a22 Vector{5A9} 30r39 32r9 32r38 32r69 32r97 32r112 33r22 34r8 34r42 37r22
+. 38r29 4|29b19 36r16 38r13 39r20 42r45 43r34 46r53 46r87
+33i17 J{integer} 34r15 34r49
+37i17 J{integer} 38r36
+X 4 pkg_sum_by_max.adb
+13i11 I{integer} 16r17 16r30 17r62
+17i41 J{integer} 18r42 18r65
+31i7 Max{integer} 33m7 38r25 39m13 43r47 45r32 45r39 46r33 46r66 47r32 51r14
+36i11 I{integer} 38r20 39r27 42r61 46r60 46r94
+42i40 J{integer} 43r41
+
